@@ -291,10 +291,19 @@
         \item Can normalise easily with numerical integration.
     \end{itemize}
     \begin{overprint}
-        \centerline{\includegraphics[width=0.7\textwidth]{../diagrams/1d_marginals.pdf}}
+        \onslide<1>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_gp_prior_samples.pdf}}
+        \onslide<2>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_squashed_gp_prior_samples.pdf}}
+        \onslide<3>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_gp_post_samples.pdf}}
     \end{overprint}
 }
 % So I've told you that its difficult to do this integration, but I now want to illustrate why this is the case. Often when people talk about the posterior they only really illustrate the posterior in one dimension, I think its useful to understand what is really happening when we get to this problem with Gaussian processes, that is we need to do this integral in a far higher dimension.
+
+\frame{
+    \frametitle{Non-Gaussian posteriors illustrated}
+    \begin{overprint}
+        \centerline{\includegraphics[width=0.7\textwidth]{../diagrams/1d_marginals.pdf}}
+    \end{overprint}
+}
 
 \frame{
     \frametitle{Non-Gaussian posteriors illustrated}
@@ -303,7 +312,6 @@
         \item Need to calculate the joint posterior, $p(\fV|\yV) = p(f_{1}, f_{2}| y_{1}=1, y_{2}=1)$.
     \end{itemize}
     MAKE A MORE RELAVENT PLOT OF A GAUSSIAN PROCESS WITH TWO INPUT LOCATIONS
-
 }
 
 \frame{

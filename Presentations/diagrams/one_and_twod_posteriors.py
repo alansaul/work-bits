@@ -192,3 +192,145 @@ fig_joint_like.savefig('2d_joint_likelihood.pdf')
 fig_joint_prior.savefig('2d_joint_prior.pdf')
 fig_joint_post.savefig('2d_joint_posterior.pdf')
 fig_margs.savefig('1d_marginals.pdf')
+
+import numpy as np
+import scipy as sp
+import GPy
+import matplotlib.pyplot as plt
+save=True
+# sns.set_style("white")
+# sns.set_context("paper")
+# sns.set_palette('Set2')
+from matplotlib import rc
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica'], 'size': 22})
+rc('text', usetex=True)
+rc('xtick',**{'labelsize':15})
+rc('ytick',**{'labelsize':15})
+
+label_fontsize = 22
+#import prettyplotlib as pp
+fig_dir='.'
+
+# Make the GP draws
+def rbf(X1, X2):
+    return np.exp(-0.5*((X1-X2.T)**2))
+# old_f_locations = X.copy()
+X_f1 = np.atleast_2d(3)
+X_f2 = np.atleast_2d(4)
+X_f = np.hstack((X_f1,X_f2,X_f3)).T
+
+X_before_f1 = np.linspace(X_f.min()-2, X_f1[0,0], 50)[:, None]
+X_between_f1_f2 = np.linspace(X_f1[0,0], X_f2[0,0], 50)[:, None]
+X_after_f2 = np.linspace(X_f2[0,0], X_f.max()+2, 50)[:, None]
+X = np.vstack([X_before_f1, X_between_f1_f2, X_after_f2])
+K = kern.K(X)
+#Plot prior
+F = np.random.multivariate_normal(np.zeros(X.shape[0]), K, 50)
+squashed_F = inv_probit(F.T)
+
+def plot_prior(Xs):
+    fig_prior, ax = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
+    ax.plot(X, F.T, 'b')
+    for i, X_ in enumerate(Xs):
+        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+        # ax.axvline(X_f[1], F.min(), F.max(), label='$f_2$', c='k')
+    leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
+    leg.get_frame().set_linewidth(0.0)
+    ax.set_ylabel('$f$', fontsize=label_fontsize)
+    seaborn.despine()
+    return fig_prior
+
+def plot_prior_squashed(Xs):
+    fig_squashed, ax_squashed = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
+    ax_squashed.plot(X, squashed_F, 'b')
+    for i, X_ in enumerate(Xs):
+        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+    leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
+    leg.get_frame().set_linewidth(0.0)
+    ax_squashed.set_ylabel('$\lambda(f)$', fontsize=label_fontsize)
+    ax_squashed.set_xlabel('$x$', fontsize=label_fontsize)
+    seaborn.despine()
+    return fig_squashed
+
+def plot_likelihood_alpha(Xs):
+    all_lik = np.ones((F.shape[0], 1))
+
+    for X_ in Xs:
+        obs_X = X_
+        obs_y = np.ones_like(X_)
+        X_ind = np.argmax(X == X_)
+        f_ = F.T[X_ind]
+        lik_ = class_likelihood(obs_y, f_[:, None])
+        all_lik *= lik_
+
+    all_lik = ((all_lik- all_lik.min()) / (all_lik.max() - all_lik.min()))
+
+    # Hack the gradient
+    # lik_f1[0, np.argmin(lik_f1)] += 0.00001
+    # lik_f1[0, np.argmax(lik_f1)] -= 0.00001
+    #lik_f1 *= 5.0
+
+    fig_lik, ax = plt.subplots(1, 1, figsize=(10, 5))
+
+    for i in range(all_lik.shape[0]):
+        ax.plot(X, squashed_F[:,i:i+1], 'b', alpha=all_lik[i, 0])
+
+    for i, X_ in enumerate(Xs):
+        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+        ax.plot(X_, 1, 'r*')
+    leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
+    leg.get_frame().set_linewidth(0.0)
+    ax.set_ylabel('$\lambda(f)$', fontsize=label_fontsize)
+    ax.set_xlabel('$x$', fontsize=label_fontsize)
+    seaborn.despine()
+    return fig_lik
+
+fig_1d_prior = plot_prior(Xs=[X_f[0]])
+fig_1d_prior_squashed = plot_prior_squashed(Xs=[X_f[0]])
+fig_lik_1d = plot_likelihood_alpha(Xs=[X_f[0]])
+
+if save:
+    fig_1d_prior.savefig('{}/1d_gp_prior_samples.pdf'.format(fig_dir), bbox_inches='tight')
+    fig_1d_prior_squashed.savefig('{}/1d_squashed_gp_prior_samples.pdf'.format(fig_dir), bbox_inches='tight')
+    fig_lik_1d.savefig('{}/1d_gp_post_samples.pdf'.format(fig_dir), bbox_inches='tight')
+
+fig_2d_prior = plot_prior(Xs=[X_f[0], X_f[1]])
+fig_2d_prior_squashed = plot_prior_squashed(Xs=[X_f[0], X_f[1]])
+fig_lik_2d = plot_likelihood_alpha(Xs=[X_f[0], X_f[1]])
+
+if save:
+    fig_2d_prior.savefig('{}/2d_gp_prior_samples.pdf'.format(fig_dir), bbox_inches='tight')
+    fig_2d_prior_squashed.savefig('{}/2d_squashed_gp_prior_samples.pdf'.format(fig_dir), bbox_inches='tight')
+    fig_lik_2d.savefig('{}/2d_gp_post_samples.pdf'.format(fig_dir), bbox_inches='tight')
+
+
+"""
+X_real_loc = np.array([2.5, 4])[:, None]
+X = np.sin(X_real_loc)
+K = rbf(X, X)
+X_test_loc = np.linspace(X_f.min()-2, X_f.max()+2, 100)[:, None]
+K = rbf(X_real_loc, X_real_loc)
+Ks = rbf(X_real_loc, X_test_loc)
+Kss = rbf(X_test_loc, X_test_loc)
+Ki = np.linalg.inv(K)
+mean = np.dot(Ks.T, np.dot(Ki, X))
+mean = np.squeeze(mean)
+cov = Kss - np.dot(Ks.T, np.dot(Ki, Ks))
+Fs = np.random.multivariate_normal(mean, cov, 10)
+plt.figure(2)
+#plt.hold(True)
+plt.scatter(X_real_loc, X, marker='D', linewidths=5)
+plt.plot(X_test_loc, Fs.T)
+plt.axvline(X_f[0], F.min(), F.max(), label='$f_1$', c='g')
+plt.axvline(X_f[1], F.min(), F.max(), label='$f_2$', c='r')
+
+leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
+leg.get_frame().set_linewidth(0.0)
+
+plt.axis([X_f.min()-2, X_f.max()+2, -3, 3])
+plt.ylabel('$f$', fontsize=label_fontsize)
+plt.xlabel('$x$', fontsize=label_fontsize)
+sns.despine()
+if save:
+    plt.savefig('{}/gp_fit.pdf'.format(fig_dir), bbox_inches='tight')
+"""
