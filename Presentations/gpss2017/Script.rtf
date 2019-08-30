@@ -1,0 +1,226 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14460\viewh16280\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Header slide\
+I\'92m Alan Saul and today I\'92m going to talk to you about using non-Gaussian likelihoods in this GP framework we\'92ve been introducing throughout the summer school. We realised that we hadn\'92t really covered approximations used for non-Gaussian data in the summer school. I hope that some aspects of this talk might be useful to introduce or recap the summer school attendees to some of the methods likely used in the talks that are to come today, principally variational approximations, and help make a soft-start to the day.\
+\
+Outline\
+First of all I\'92m going to motivate the problem by discussing some of the different datatypes that we might be interested in, some of the assumptions we\'92ve been making so far in this GP framework.\
+Unfortunately by handling non-Gaussian data this gives rise to some intractabilities in the computation of the posterior distribution.\
+So I\'92m going to introduce a range of different methods that we can use to approximate this posterior distribution.\
+The first of which is a very simple method called the Laplace approximation.\
+The second is the KL method or the variational method, I\'92ll hopefully go through this a little bit slower for those of you are less familiar with variational methods.\
+I\'92ll very briefly touch on the Expectation Propagation algorithm which is also widely used. \
+And finally I\'92ll wrap up by comparing some of these different approximations on a toy classification example.\
+\
+GP Regression\
+So, so far we\'92ve been looking at this model, were interested in learning a distribution over these non-linear functions, f, so we\'92re trying to look for a posterior distribution over what we think these underlying latent functions might be doing considering both the data, and some initial prior assumptions about what properties this function is likely to have before we see any data.\
+So here in orange we can see some realisations of what think these functions drawn from this distribution could be doing. However we don\'92t necessarily believe that the functions are going exactly through the data that we\'92ve seen, we actually believe that the datapoints we actually see, y, are some Gaussian corruption of these functions.\
+So the corruption that we add is this Gaussian corruption with variance of sigma^2.\
+One of the implicit things that we assume by using a Gaussian likelihood is that these realisations could appear at anywhere in the real space. For example we believe that we could see an observation at -6.3, or +3.8, but in practice not all data that you collect in an experiment might have this property. It might have some restrictions about what you expect to see. And so we\'92re going to try and handle this with a non-Gaussian likelihood assumption instead.\
+\
+GP regression setting\
+So first of all I want to introduce some notation that we are going to use throughout this presentation.\
+So as before we are going to have this Gaussian process prior about what we think the functions could be doing, before we have observed any data. On the first day of the summer school we were talking a lot about different kernel functions that we might use which can make different assumptions about what we think the function could be doing. Nicolas was talking about these periodic kernels that we might use, which can say we don\'92t know what the function is doing exactly, but we think it might have some sort of periodic component to it. And then we have the RBF kernel, which is assuming that this function is going to be very smooth; and of course we have a range of other kernel functions that we can choose between for other assumptions, and they can be combined.\
+So this, the likelihood function, is the thing that I\'92m going to be concerned with today. So far we have been assuming that we\'92ve got these independent corruptions of these latent functions, and this is what we are observing in the end. They\'92re independent in the sense that the corruption is independent, given that we know what the function value is at this point - note we are not saying that the data-points are completely independent, as they are going to be correlated through the latent function values, f, which are not independent\
+So in standard Gaussian process regression, we have this nice property that if we have a Gaussian likelihood, and a Gaussian prior, we can get a handle on an analytical form for this Gaussian process posterior, and indeed it is Gaussian.\
+\
+Likelihood\
+I just want to make a little note on what the likelihood actually is. So the likelihood is the probability of the observed data, given we know the latent function values f.\
+We can also view it from the functions perspective, in which case it is the likelihood that the function will give rise to these observations that we have seen, given this chosen corruption. \
+So as I said, so far we have been assuming that this distortion is Gaussianly distributed around the function. but this implies that we could see observations anywhere.\
+This wouldn\'92t usually be the case for if we were looking at other datatypes. For example you might be interested in modelling count data, where you typically only expect to see integer values, and you expect expect them to always be positive or zero. So you don\'92t want to give any probability density to these situations where you have a negative value, because it doesn\'92t make sense under the data you are interested in.\
+Another example is if you were looking at a classification task, so you were interested in associating a particular input, with an associated class, either 1 or 0. In this case your observations would be whether the inputs were associated with class 0 or class 1, and in this case you only have a binary output, and it doesn\'92t make sense to give any density in the likelihood to observations of 6.3, it doesn\'92t make sense, you wouldn\'92t expect to see it.\
+\
+Binary example\
+So I\'92m just going to focus on this binary example for a moment, and in this case as I said we have binary outcomes, either 0 or 1.\
+In this case we want to model the probability that we see an outcome of class 1 in Bernoulli likelihood, given we are using this Gaussian process framework. \
+Here I have some realisations from what a Gaussian process posterior might look like, but if we have this restriction where if we want to use our Gaussian process as a probability, for example for a Bernoulli likelihood, we need its function value to be between zero and one. We can\'92t use the probability of 10, it doesn\'92t make sense. So in practice we need to squash this function in some way, such that after squashing it can only give rise to values between 0 an 1. So you could use a range of different squashing functions, so this is the same as if you were doing logistic regression or something, you could use a logistic squashing function; or here I have used a probit squashing function.\
+So you can see that here in orange, we have these squashed realisations coming from transforming each value from these sampled latent functions in green through a probit function. And so here now you can see our function values after having been squashed is between 0 and 1. We can then use these function values in orange to represent how probable it is that we see a observation of class 1. And hence if all these squashed function is close to 0 at a specific input, we only expect to see observations of class zero. If all the squashed functions are close to 1, we only expect to see observations of class 1. If the squashed functions all around 0.5, then we are not really sure what observations we are likely to see here, they could be of class 1 or 0.\
+So what we\'92ve done is we\'92ve transformed this function that lived in the real space to be in a space between 0 and 1, and then used it as the probability parameter in a Bernoulli likelihood.\
+\
+Count data example\
+So another example, this is a simplification of what we might do in a Poisson regression case. So here we\'92re interested in modelling count data, this is data that is non-negative and it only comes in integer values. So here I\'92ve got an example, where we have some observations that only come in discrete values and are non-negative, marked in black. There are only integer values and so there are no values of 2.5 for example.\
+One traditional model to use for this is to assume that the observations that we are seeing come from a Poisson distribution.\
+The Poisson distribution has a rate or intensity function, which describes what sort of rate we expect to see these events come in at a particular time-point. So you can see for example if the function value, or rate, is quite high, we expect to see a larger count to come out from this particular time-point.\
+Just as before, where we had to restrict this function to be between 0 and 1, we can see that in this case we need to use some transformation function that will mean the function will always be positive. So we might use an exponential function, or we might use a squared function.\
+So using this we can see that realisations from this now positively constrained function shown in orange, and this models the intensity of counts that we expect to see coming in for specific inputs. And this is what we are interested in for this specific case.\
+\
+Non-Gaussian posteriors\
+Unfortunately by introducing this non-Gaussian likelihood component, so substituting this Gaussian likelihood component we have been using so far, with a non-Gaussian likelihood, it means this marginal likelihood (this integral we need to compute the marginal likelihood), is no longer analytical tractable. As a result of this integral being no-longer tractable, computing the posterior distribution p(f|y) is also no longer tractable, and since everything is no-longer Gaussian, the posterior itself is no-longer Gaussian. \
+In some cases, it may not be possible to write down the likelihood in closed form, or even compute it, but I will focus on the case that it is possible to write in closed form, and is relatively easily computable. \
+Just as a recap, this posterior p(f|y) is what we think the function will do, given we have seen some data. Now that we have taken into account how likely this data was to arise given the function through the likelihood. So its \'91ruled out\'92 any of these functions that don\'92t go anywhere near the datapoint in some way. The posterior is of course of interest to us and so we want to have some representation of it.\
+Throughout the rest of this talk I\'92m going to introduce a series of approximations that we are going to make to this posterior distribution here. So this distribution is no longer Gaussian as by introducing this non-Gaussian likelihood we have ruined this Gaussian property. However all of the methods I am going to introduce today are going to make a Gaussian approximation to this non-Gaussian posterior distribution, p(f|y). And throughout I\'92ll call the approximation q(f), so q means an approximation in some way.\
+The nice thing about having a Gaussian approximation for this non-Gaussian distribution, is that in order to make predictions for new function values, which are made at some new input locations x^\{*\} that i\'92ve omitted here, we can continue to use the following integral for prediction by simply plugging the approximation to make new predictions. Again we can\'92t compute this p(f|y) analytically. But my making a Gaussian approximation, we can replace it with its approximation and the integral becomes exact again.\
+\
+Laplace approximation\
+The first approximation I\'92m going to introduce is the Laplace approximation. Its an extremely simple approximation, some of you may already know about it.\
+The idea of the LA is to take this posterior, and try and find a Gaussian approximation to this posterior, such that the mean of the approximation is the same as the modal point of the true posterior, and the curvature is the same at this singular point. We will then need to use an optimisation to find the modal point as we\'92ll come onto in a minute. We work in log-space and use a second order taylor expansion around this model point, which allows us to obtain the curvature at this location. I\'92ll show this visually in a second so I\'92m not just waving my hands around. \
+The form of the Gaussian approximation that we\'92re going to make with the LA is simply we\'92re going to set the mean equal to this modal value, that we find via optimisation, and we\'92re going to match its curvature at this point.\
+We\'92ve got this thing that we can\'92t compute, we\'92re going to get a Gaussian approximation, q, that has a mean set to some specific modal point, and the curvature equal to the curvature of the true posterior distribution at this modal point. \
+So we have this guy here which is the negative hessian of the log-likelihood, where the likelihood is now non-Gaussian. In general we can write down the second derivative of this log-likelihood mathematically, which is used to compute the covariance matrix of our approximate posterior, q.\
+For most likelihoods that we\'92d be interested in, we\'92ve got a factorising assumption for the likelihood, that is that the corruption is independent of other datapoints. That will mean that this matrix here, W, is diagonal, and allows us to compute things relatively numerically stably and efficiently. \
+\
+Visualisation of Laplace\
+So now we are going to look at this visually. So here we\'92re going to look at a single marginal of the posterior distribution. So here I\'92ve got the prior, coming from the Gaussian process prior.\
+Then we\'92ve got this non-Gaussian likelihood that is describing how likely it will be that we see a specific value for y, given a value for f.\
+When we take the product of these two, and we renormalise, then we have this non-Gaussian posterior distribution. You can see its non-Gaussian as its got a heavier tail on the left hand side, and hence is some slightly skewed distribution.\
+In general we can\'92t get a handle on exactly what this posterior, we would like it but its not usually analytically tractable, so we want to find some approximation to it.\
+What the LA does is it takes an initial guess at where this modal point might be, you do some optimisation to find the modal point where the gradient is zero. At this point you look at the curvature around this point. \
+And then simply you make a Gaussian approximation where you\'92re using the same mode, and the same curvature at this point. So its a local approximation, just around this modal point of the true posterior distribution.\
+And what you get is shown in magenta here, so you can see that we\'92ve managed to capture most of the density of the true posterior distribution, but we\'92ve missed some density here, and over-estimated it here.\
+\
+KL-method\
+\
+So now I\'92m going to talk about a variational method, the KL method.\
+I hope this will be useful recap from yesterdays sparse GP talk, and I assume Rajesh (and probably Zhenwen if he is talking?) will talk more about more advanced variational approximation techniques for more advanced models. \
+In this particular variational method, again we\'92re going to make a Gaussian approximation to this posterior distribution that we can\'92t compute, but note variational methods are more general than this and other approximate families can be used. \
+In this case, instead of simply setting the mean equal to the modal value of the posterior and matching the curvature at this point, we\'92re going to treat these two sets of parameters, mu and C, as what we call variational parameters.\
+These variational parameters are different from model parameters, in that by modifying, or optimising, these parameters we\'92re not effecting our underlying model, i.e. what we believe about how the data was generated, we\'92re just effecting the quality of our approximation. So we can move these guys around, and we\'92ll either get a better or worse approximation, to this true posterior distribution, which is our model of what we believe is actually generating the data.\
+The way that the KL divergence method works, is that we define a KL divergence between the two distributions that we have, our approximate distribution, q, and our true distribution, p(f|y).\
+Since this true posterior distribution isn\'92t exactly computable, we of course can\'92t compute this KL divergence. \
+The KL divergence methods looks to minimise this metric in a specific way, whilst making some assumptions about the form of these two sets of variational parameters.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 **(Seeger and Opper??) which?!**\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 KL divergence\
+First of all I want to briefly reintroduce the KL divergence. I\'92m going to introduce it in the general sense where we are just looking at two distributions q(x) and p(x), these could be any two types of distributions, not necessarily Gaussian, and we can always define the KL divergence between the two, though not necessarily easily compute it.\
+The KL divergence is the average additional amount of information required to specify the values of x, as a result of using an approximate distribution q(x) instead of the true distribution p(x).\
+You can write it in the following way:\
+\'85\
+It has a couple of useful properties, it is always 0 or positive, never negative. This will prove useful in a moment when we consider how to use this for GP approximations. It will only be 0 in the case when these two distributions are identical.\
+It also has this property that it is not symmetrical, KL(q(x)||p(x)) != KL(p(x)||q(x)).\
+Lets look at this visually, to see how the KL divergence changes in response to changes in the approximate distribution q(x). \
+\
+KL varying mean\
+Here I\'92m going to look at the KL divergence between two Gaussians, but you can do this visualisation for other distributions. I\'92m doing this for convenience as it makes it clear that the KL divergence goes to zero when the two distributions are identical.\
+To start off with, I\'92m assuming two Gaussian distributions, where we have exactly the right variance, but the mean is off by 2.\
+Initially the KL divergence between the approximate distribution and the true distribution, in red and blue respectively is quite high. \
+As we move the mean closer to the true mean, the two distributions diverge less, so the KL drops.\
+When the two means are identical, and hence the distributions are now identical, the KL divergence goes to 0.\
+And as you would expect as it moves away again, the divergence grows again.\
+\
+KL varying variance\
+This is the same example but where the means are identical, but we\'92re going to vary the variances instead. Initially our approximate distribution is underestimating the variance.\
+As you would expect as the variance becomes more accurate, the KL divergence drops.\
+When we start overestimating the variance, the KL divergence grows again. \
+Questions?\
+\
+KL-method derivation\
+The KL divergence method is going to use the KL divergence as we just defined it as you would expect. In this case we are going to assume a Gaussian approximation to the true posterior distribution, p(f|y) which we can\'92t compute and is non-Gaussian. This is a choice we make, as it aids computing predictions later. \
+It\'92s going to include two sets of variational parameters, mu and C, which we can change however we want and it will only effect how good our approximation is. \
+We\'92re going to write down using Bayes rule was the true posterior looks like, and it has this marginal likelihood term that we can\'92t compute. \
+As I said before we\'92re going to define the KL method as trying to minimise the KL divergence between the approximate distribution and our true distribution.\
+Of course we can\'92t minimise this directly as it isn\'92t possible to compute p(f|y). If we could compute p(f|y) then we likely wouldn\'92t bother doing any approximations in the first place. \
+Because we can\'92t compute this, we\'92re going to simply write down the KL divergence we want to minimise.\
+We\'92re then going to substitute this representation of p(f|y) as we had up here.\
+Anything marked in red isn\'92t typically tractable to write analytically in our situation.\
+So we have log q(f) /p(f) \'85. all under the expectation of q(f).\
+Following from the definition of the KL divergence thats just the KL divergence between q(f) and p(f).\
+We have this second term which is just the expectation of this guy under this guy, which I\'92ll come back to in a moment\
+and finally we have this log marginal likelihood term, under the expectation of q(f), however this marginal likelihood of the model is completely independent of what we do to our approximation, so that means that the expectation disappears and we don\'92t need to worry about it.\
+If we rearrange we have the marginal likelihood is equal to this guy, which i\'92ll come back to in a moment, which is green as we often can compute it.\
+we have this KL divergence here which is the KL divergence between two multivariate Gaussians, given we have chosen a Gaussian approximating distribution. \
+Finally we have this KL divergence between the approximate posterior and the true posterior, which we can\'92t compute.\
+So we have two things we can\'92t compute. One of which, the marginal distribution, is completely independent of what we do to our approximate distribution.\
+\
+KL-method derivation\
+Here we\'92ve got the same definition at the top. The way we handle this is that since we know that this guy is completely independent of what I do to q(f), and so I know this is a fixed value. If I maximise the sum of these two terms that I can compute,  I know that I am minimising this KL divergence q(f) || p(f|y), and if you remember this is what we were trying to do originally, try and make our approximate distribution q(f) diverge as little as possible from our true posterior distribution p(f|y).\
+In practice we can optimise these variational parameters to make these this KL divergence as little as possible. \
+So we still have this guy, <log p(y|f)>_q(f), which we need to compute. With factorising likelihoods we can approximately compute this using a sum of n 1d dimensional numerical integrations which can be done in a number of ways and relatively cheaply and accurately, as each term in the sum is only dependent on the current f_\{i\}. In other cases it might be possible to write this down analytically. \
+In practice we can reduce the number of variational parameters, instead of learning an individual value for each element of the covariance matrix C, by re-parameterising this C matrix in the following way.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 (Note to self) if you explicitly write p(y|\\lambda(f)) you would need to add a jacobian term as well, but here I\'92ve implicitly written that as part of the likelihood (i.e. the likelihood has the transformation in it, and hence handles the jacobian term)\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Expectation propagation \
+I\'92m now very briefly going to introduce the expectation propagation method. I\'92m not going to go into too much depth about this method as it is relatively complex, in fact in some previous years we have dedicated an entire lecture just on introducing this approximation, so I want to skip over some of the details and just give a broad overview of how it works.\
+The general way in which is works is again we have this non-gaussian posterior distribution, where the non-Gaussianity is again coming from the fact that our likelihood is no longer Gaussian. \
+Again the EP method approximates the true posterior with a Gaussian, where the Gaussian approximation is of a specific form. In fact it uses the following factorisation of the approximate Gaussian distribution.\
+In effect, we are replacing each one of these non-likelihood contributions on the top line, by what we call a site-distribution, t_\{i\}, and each one of these site distributions themselves are unnormalised Gaussians.\
+The value required to normalise the overall distribution is Z_\{ep\}, and the individual terms that mean each site term is not normalised are Z_\{i\}.\
+These unnormalised site distributions have some parameters of their own that essentially represent the approximation.\
+These parameters are learnt in an iterative fashion, where we fix all but one site term, and update the remaining unfixed site term such that the true distribution diverges less from the approximate distribution.\
+Z_\{EP\} is the EP algorithms approximation of the normalising term Z, i.e. the log marginal likelihood\
+\
+Expectation propagation\
+1. From the current approximate posterior, q(f|y), leave out one of the local likelihoods, t_\{i\} and marginal f_\{j\} where f_\{j\} is all the other latent function values. Essentially this is what the posterior would look like, if we hadn\'92t considered the additional site term t_\{i\} which we have removed.\
+2. So now we want to consider what the approximate posterior would like if we had instead used the correct likelihood contribution, p(y_\{i\}|f\{i\}) instead of the t_\{i\} that has now been removed, this of course would be non-Gaussian and unnormalised, as p(y_\{i\}|f_\{i\} is not normalised in f_\{i\} and is also non-Gaussian.\
+3. We now need to choose a Gaussian approximation to this distribution, we will find the parameters of the Gaussian distribution by simply matching the zeroth, 1st and second moment (i.e. the normalising constant, the mean, and the variance of this 1d distribution).\
+4. Now we figure out what parameters of the site term t_\{i\} would be needed in order to the multiplication of the cavity distribution, q_\{-i\} and the additional site term t_\{i\} share the same moments.\
+5. Choose a different local likelihood approximation to focus on, i, and repeat until convergence.\
+\
+Comparing posterior approximations.\
+So now I\'92m going to compare these approximations that we\'92ve been making, we\'92ve got LA, KL-method, and EP.\
+We want to see what properties each one of these different approximations have when we are using them, compared with the true value.\
+So here I\'92ve got a Gaussian process prior, and I\'92m going to consider just the joint and marginals for the function values at two input locations, x_\{1\} and x_\{2\}, represented by f_\{1\} and f_\{2\}.\
+So what this says that in our prior distribution, if we see a high value for the function at x_\{1\}, given by f_\{1\}, then we the value of the function f_\{2\} to be high for the input location x_\{2\}. That means that x_\{1\} and x_\{2\} are correlated strongly in some way, as given by the kernel function.\
+On the sides we have these marginal plots, and so these are projections of this, along this axis.\
+On the right we have the Bernoulli likelihood, and so this represents the probability that we\'92ll get a class 1 for both the input locations, x_\{1\} and x_\{2\}, corresponding to the function values f_\{1\} and f_\{2\}.\
+As you would expect this is highly probable situation, when both f_\{1\} and f_\{2\} are high, and is not very likely if either f_\{1\} or f_\{2\} are very small.\
+So essentially this likelihood is ruling out this whole area, i.e. it is very unlikely that both the observations y_\{1\} and y_\{2\} are 1, if either of the function values representing their respective probabilities of being class 1 is small.\
+** ANOTHER FIGURE SHOWING HOW IT CORRESPONDS TO THE FUNCTION VALUES BY LOOKING AT GPs AS IN THESIS **\
+\
+Comparing posterior approximations - LA\
+As we know, the true posterior is computed by multiplying the prior, by the likelihood, and denormalising the corresponding distribution. If the likelihood is non-Gaussian, then the resulting distribution is no longer Gaussian. \
+This is what the true posterior would look like by taking a multiplication between the prior and the likelihood in the previous plot. As you can see it is clearly non-Gaussian, in fact it is quite skewed and of course is no longer symmetrical, as any density given to low function values have now been ruled out.\
+So what we actually want to do is we want to approximate this guy but in an n-dimensional cases. I\'92ve shown a 1d case earlier when doing the laplace approximation, now we have a 2d-space to do the approximation in, but in practice we will have n-observations so it will be an n-dimensional space. \
+What the Laplace approximation will do, is it will find the modal point via optimisation, and look at what the curvature is doing around this localised point, and make a Gaussian approximation with the same curvature.\
+As we can see in this case, the LA is quite poor; the reason we can see it is quite poor is that in the true posterior we can see that it has almost no density assigned to areas in which both the latent function values are small, as the likelihood essentially ruled out this possibility and hence region of density.\
+However if we look at LA we\'92re assigning quite a lot of density to this case where f_\{1\} and f_\{2\} are small, and we are also not assigning enough density to this area where f_\{1\} and f_\{2\} are small, as we have approximated a skewed distribution with a localised Gaussian approximation, which must be symmetrical. The modal point is not very descriptive of what the distribution is doing as a whole.\
+Okay so thats the LA\
+\
+Comparing posterior approximations - KL\
+The KL method, in this case minimising the KL divergence metric between the approximate distribution, q(f), and true distribution p(f|y).\
+The KL divergence, penalises heavily for assigning density in the left hand distribution (in our case the approximate distribution) where there is very little density in the right hand distribution (in our case the true posterior distribution), that is it will penalise very heavily if you assigned density in your approximate distribution, where there is none in the true posterior distribution.\
+As you can see here the approximation is very careful not to put any density down here where f_\{1\} and f_\{2\} are negative where the true posterior distribution has also assigned no density.\
+However as a consequence it has failed to assign enough density in these longer tails; since we are using a Gaussian approximation to something very skewed, we are of course going to have to make a pay-off between capturing density where there is some, and excluding areas where there is none. \
+\
+Comparing posterior approximations - EP\
+EP in contrast tends to care less about assigning density where there is none in the true posterior, but is careful to try and assign density in the approximation where there is some in the posterior. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Compared with the KL method, it tends to spread out its density further, and is able to capture more of this high density region in the heavy tail that the KL method has failed to capture. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 I believe this characteristic comes from the fact that EP is somehow minimising the reversed KL of the KL-method I described previously, at a localised level - it is not identical to simply reversing the KL divergence of the method already described, but at a local level I believe it is somehow equivalent.\
+\
+Comparing posterior marginal posteriors\
+This is a plot to show the marginals of these three methods, so this is essentially just looking at the marginals on the right hand side of the previous set of plots - just to give a slightly clearer indication of how these methods assign their density.\
+The true posterior is in red\
+Laplace uses the modal point and makes an approximation - and hence assigns a lot of density to this region over here where there really shouldn\'92t be any - and hence it performs quite poorly for this particular likelihood that we\'92re interested in - used for classification.\
+The KL method in contrast tries really hard to not assign density to this region where there is none in the true posterior, but consequently quite drastically misses a lot of the density in the tails.\
+The EP method finally spreads its tails out even further, and is able to capture more of this density here.\
+\
+Pros - Cons - When - Laplace\
+So now I just want to compare some of the pros and cons of these three different approximations that we could make, and talk about when you might want to use each one in application.\
+The Laplace approximation is very fast and simple, and thats one of its main benefits\
+However as we saw a moment ago, if the mode of the posterior distribution isn\'92t very descriptive of what is happening to the distribution as a whole.\
+So I might use this approximation if the posterior was well characterised by its mode, for example in a Poisson situation, particularly when the counts are relatively large.\
+\
+Pros - Cons- When - KL\
+So the KL method has a pro in that its principled in that we are directly optimising a measure of divergence between an approximation and the true posterior distribution.\
+In practice it can be relatively quick, and lends itself quite well sparse approximations that can scale to larger datasets, a capability that is not usually associated with the Laplace approximation, though I believe EP is also becoming more widely used for this as well.\
+One of its cons is that it generally requires a factorising likelihood, in order to be able to compute the integrals easily. The Laplace approximation could instead be used in this situation.\
+In general I believe the KL method is quite applicable to a range of likelihoods, but as we saw earlier, it does sometimes have the tendency to underestimate the variance in some situations, as it is not being as heavily penalised for doing so, and so perhaps if you wanted to be more conservative about the uncertainty of your approximation you may want to consider other options.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Pros - Cons- When - EP\
+EP is known to be very effective for some likelihoods, in particular the Bernoulli likelihood as we discussed previously.\
+However the standard algorithm for EP is relatively slow in comparison with the other methods. It is possible to extend the approach to larger data however to provide a faster approach with further approximations required.\
+The method can in addition have convergence issues for some likelihoods, i.e. the iterations can take a long time, or never converge to a final solution. There are some approaches to rectifying this situation.\
+Finally one step in the EP method is to match the moments between two distributions, and you must be able to do this, in practice this is often possible but can be a bit of a headache to derive I believe.\
+I would most certainly consider using EP, in particular when when the likelihood is binary and you are doing classification as in comparisons it has been shown to be highly competitive in this situation. Censored data also has the property that you have a truncation in the likelihood, similar to binary data, and so it may be effective here as well.\
+\
+Pros - Cons - When - MCMC\
+Finally there is one other approach that you may take, and that is to try and sample from the posterior distribution itself. This has the obvious pro that in its theoretical limit this gives us samples from the true distribution of the posterior.\
+However in practice sampling GP\'92s can be difficult, in particular when the data is quite large, as you have highly correlated latent variables. Without more advanced MCMC methods this can mean that it is slow to obtain uncorrelated posterior samples. \
+In practice these methods can be useful if time is not as big of an issue, but exact accuracy of your posterior is.\
+It can also be useful if you are developing a model based on an approximation, as it can be used as a ground truth to see how well your approximation is working, similar to how we were showing the comparison between the ground truth before, and the 3 methods discussed.\
+\
+Thanks, I hope this was useful and will help with the rest of the day where more advanced approximate methods will be discussed.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+}

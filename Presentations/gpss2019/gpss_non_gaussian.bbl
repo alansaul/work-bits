@@ -1,0 +1,26 @@
+\begin{thebibliography}{}
+
+\bibitem[Hensman et~al., 2015]{Hensman:class15}
+Hensman, J., Matthews, A. G. D.~G., and Ghahramani, Z. (2015).
+\newblock Scalable variational gaussian process classification.
+\newblock In {\em In 18th International Conference on Artificial Intelligence
+  and Statistics}, pages 1--9, San Diego, California, USA.
+
+\bibitem[Ku{\ss}, 2006]{Kuss:robust06}
+Ku{\ss}, M. (2006).
+\newblock {\em Gaussian Process Models for Robust Regression, Classification,
+  and Reinforcement Learning}.
+\newblock PhD thesis, TU Darmstadt.
+
+\bibitem[Nickisch and Rasmussen, 2008]{Nickisch:class08}
+Nickisch, H. and Rasmussen, C.~E. (2008).
+\newblock {Approximations for Binary Gaussian Process Classification}.
+\newblock {\em Journal of Machine Learning Research}, 9:2035--2078.
+
+\bibitem[Vanhatalo et~al., 2015]{Vanhatalo:gpstuff15}
+Vanhatalo, J., Riihimaki, J., Hartikainen, J., Jylanki, P., Tolvanen, V., and
+  Vehtari, A. (2015).
+\newblock Gpstuff.
+\newblock \url{http://mloss.org/software/view/451/}.
+
+\end{thebibliography}
