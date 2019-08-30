@@ -232,7 +232,7 @@ def plot_prior(Xs):
     fig_prior, ax = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
     ax.plot(X, F.T, 'b')
     for i, X_ in enumerate(Xs):
-        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i+1), c='k')
         # ax.axvline(X_f[1], F.min(), F.max(), label='$f_2$', c='k')
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
@@ -244,7 +244,7 @@ def plot_prior_squashed(Xs):
     fig_squashed, ax_squashed = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
     ax_squashed.plot(X, squashed_F, 'b')
     for i, X_ in enumerate(Xs):
-        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+        ax_squashed.axvline(X_, 0, 1, label='$f_{}$'.format(i+1), c='k')
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
     ax_squashed.set_ylabel('$\lambda(f)$', fontsize=label_fontsize)
@@ -276,7 +276,7 @@ def plot_likelihood_alpha(Xs):
         ax.plot(X, squashed_F[:,i:i+1], 'b', alpha=all_lik[i, 0])
 
     for i, X_ in enumerate(Xs):
-        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i), c='k')
+        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i+1), c='k')
         ax.plot(X_, 1, 'r*')
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
