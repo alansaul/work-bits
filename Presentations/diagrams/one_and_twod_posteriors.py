@@ -14,9 +14,9 @@ label_size = 20
 meta = None
 
 #These are the points on the X axis where we want to look at the correlation between
-X_f1 = np.atleast_2d(0.1)
-X_f2 = np.atleast_2d(0.4)
-X_f3 = np.atleast_2d(4)
+X_f1 = np.atleast_2d(3.0)
+X_f2 = np.atleast_2d(3.4)
+X_f3 = np.atleast_2d(4.0)
 X_f = np.hstack((X_f1,X_f2,X_f3)).T
 
 marg_mean = np.vstack((X_f1,X_f2,X_f3)).flatten()
@@ -24,7 +24,7 @@ marg_mean = np.vstack((X_f1,X_f2,X_f3)).flatten()
 #This defines our prior for p(f), the larger the variance, the larger the variance of
 #each marginal
 variance = 5.0
-kern = GPy.kern.RBF(1, variance=variance)
+kern = GPy.kern.RBF(1, variance=variance, lengthscale=1.0)
 #These are the correlations between all the points and themselves
 fs_cov = kern.K(X_f)
 fs_mean = np.zeros(fs_cov.shape[0])
@@ -215,9 +215,9 @@ fig_dir='.'
 def rbf(X1, X2):
     return np.exp(-0.5*((X1-X2.T)**2))
 # old_f_locations = X.copy()
-X_f1 = np.atleast_2d(3)
-X_f2 = np.atleast_2d(4)
-X_f = np.hstack((X_f1,X_f2,X_f3)).T
+# X_f1 = np.atleast_2d(3)
+# X_f2 = np.atleast_2d(4)
+# X_f = np.hstack((X_f1,X_f2,X_f3)).T
 
 X_before_f1 = np.linspace(X_f.min()-2, X_f1[0,0], 50)[:, None]
 X_between_f1_f2 = np.linspace(X_f1[0,0], X_f2[0,0], 50)[:, None]
