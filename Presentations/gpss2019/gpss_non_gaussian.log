@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.14)  30 AUG 2019 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.14)  2 SEP 2019 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,48 +1283,56 @@ Package pdftex.def Info: ../diagrams/datatypes.pdf used on input line 173.
  <../diagrams/datatypes.pdf>] [6
 
 ]
-<../diagrams/all_likelihoods.pdf, id=144, 1040.68805pt x 593.3367pt>
+<../diagrams/all_likelihoods.pdf, id=144, 1084.05pt x 650.43pt>
 File: ../diagrams/all_likelihoods.pdf Graphic file (type pdf)
 
 <use ../diagrams/all_likelihoods.pdf>
 Package pdftex.def Info: ../diagrams/all_likelihoods.pdf used on input line 191
 .
-(pdftex.def)             Requested size: 304.21866pt x 173.44843pt.
+(pdftex.def)             Requested size: 304.21866pt x 182.52606pt.
  [7
 
  <../diagrams/all_likelihoods.pdf>]
-[8
+<../diagrams/all_actual_likelihoods.pdf, id=230, 1084.05pt x 650.43pt>
+File: ../diagrams/all_actual_likelihoods.pdf Graphic file (type pdf)
 
-] <../diagrams/BernoulliPosterior.pdf, id=235, 334.8677pt x 104.65692pt>
+<use ../diagrams/all_actual_likelihoods.pdf>
+Package pdftex.def Info: ../diagrams/all_actual_likelihoods.pdf used on input l
+ine 199.
+(pdftex.def)             Requested size: 304.21866pt x 182.52606pt.
+ [8
+
+ <../diagrams/all_actual_likelihoods.pdf>]
+<../diagrams/BernoulliPosterior.pdf, id=316, 334.8677pt x 104.65692pt>
 File: ../diagrams/BernoulliPosterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/BernoulliPosterior.pdf>
 Package pdftex.def Info: ../diagrams/BernoulliPosterior.pdf used on input line 
-232.
+234.
 (pdftex.def)             Requested size: 307.28987pt x 96.04439pt.
  [9
 
- <../diagrams/BernoulliPosterior.pdf>] <../diagrams/PoissonPosterior.pdf, id=28
-6, 552.0832pt x 212.7738pt>
+ <../diagrams/BernoulliPosterior.pdf>] <../diagrams/PoissonPosterior.pdf, id=36
+8, 552.0832pt x 212.7738pt>
 File: ../diagrams/PoissonPosterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/PoissonPosterior.pdf>
 Package pdftex.def Info: ../diagrams/PoissonPosterior.pdf used on input line 25
-0.
+2.
 (pdftex.def)             Requested size: 276.559pt x 106.58792pt.
 
-Overfull \vbox (13.91156pt too high) detected at line 250
+Overfull \vbox (13.91156pt too high) detected at line 252
  []
 
 [10
 
  <../diagrams/PoissonPosterior.pdf>]
-<../diagrams/crime_func_f_fast.pdf, id=350, 377.24939pt x 523.9575pt>
+<../diagrams/crime_func_f_fast.pdf, id=431, 377.24939pt x 523.9575pt>
 File: ../diagrams/crime_func_f_fast.pdf Graphic file (type pdf)
 
 <use ../diagrams/crime_func_f_fast.pdf>
 Package pdftex.def Info: ../diagrams/crime_func_f_fast.pdf used on input line 2
-68.
+70.
 (pdftex.def)             Requested size: 153.64493pt x 213.40086pt.
  [11
 
@@ -1333,28 +1341,28 @@ Package pdftex.def Info: ../diagrams/crime_func_f_fast.pdf used on input line 2
 ] [13
 
 ]
-<../diagrams/1d_gp_prior_samples.pdf, id=385, 641.66415pt x 319.1227pt>
+<../diagrams/1d_gp_prior_samples.pdf, id=466, 641.66415pt x 319.1227pt>
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 298.
+ 300.
 (pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
 
-<../diagrams/1d_squashed_gp_prior_samples.pdf, id=386, 715.60997pt x 343.49843p
+<../diagrams/1d_squashed_gp_prior_samples.pdf, id=467, 715.60997pt x 343.49843p
 t>
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 298.
+nput line 300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 
-<../diagrams/1d_gp_post_samples.pdf, id=387, 715.60997pt x 343.49843pt>
+<../diagrams/1d_gp_post_samples.pdf, id=468, 715.60997pt x 343.49843pt>
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-298.
+300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [14
 
@@ -1362,19 +1370,19 @@ Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 298.
+ 300.
 (pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 298.
+nput line 300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-298.
+300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [15
 
@@ -1382,54 +1390,54 @@ Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 298.
+ 300.
 (pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 298.
+nput line 300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-298.
+300.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [16
 
- <../diagrams/1d_gp_post_samples.pdf>] <../diagrams/1d_marginals.pdf, id=455, 4
+ <../diagrams/1d_gp_post_samples.pdf>] <../diagrams/1d_marginals.pdf, id=536, 4
 62.52798pt x 346.89601pt>
 File: ../diagrams/1d_marginals.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_marginals.pdf>
-Package pdftex.def Info: ../diagrams/1d_marginals.pdf used on input line 306.
+Package pdftex.def Info: ../diagrams/1d_marginals.pdf used on input line 308.
 (pdftex.def)             Requested size: 215.10196pt x 161.32614pt.
  [17
 
  <../diagrams/1d_marginals.pdf>]
-<../diagrams/2d_gp_prior_samples.pdf, id=478, 641.66415pt x 319.1227pt>
+<../diagrams/2d_gp_prior_samples.pdf, id=559, 721.59578pt x 319.1227pt>
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 320.
-(pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
+ 322.
+(pdftex.def)             Requested size: 245.83282pt x 108.71452pt.
 
-<../diagrams/2d_squashed_gp_prior_samples.pdf, id=479, 715.60997pt x 343.49843p
+<../diagrams/2d_squashed_gp_prior_samples.pdf, id=560, 715.60997pt x 343.49843p
 t>
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 320.
+nput line 322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 
-<../diagrams/2d_gp_post_samples.pdf, id=480, 715.60997pt x 343.49843pt>
+<../diagrams/2d_gp_post_samples.pdf, id=561, 715.60997pt x 343.49843pt>
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-320.
+322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [18
 
@@ -1437,19 +1445,19 @@ Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 320.
-(pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
+ 322.
+(pdftex.def)             Requested size: 245.83282pt x 108.71452pt.
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 320.
+nput line 322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-320.
+322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [19
 
@@ -1457,45 +1465,45 @@ Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 320.
-(pdftex.def)             Requested size: 245.83282pt x 122.26123pt.
+ 322.
+(pdftex.def)             Requested size: 245.83282pt x 108.71452pt.
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 320.
+nput line 322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-320.
+322.
 (pdftex.def)             Requested size: 245.83282pt x 118.0039pt.
  [20
 
- <../diagrams/2d_gp_post_samples.pdf>] <../diagrams/2d_joint_prior.pdf, id=539,
+ <../diagrams/2d_gp_post_samples.pdf>] <../diagrams/2d_joint_prior.pdf, id=620,
  462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 333.
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 335.
 
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 
-<../diagrams/2d_joint_likelihood.pdf, id=540, 462.52798pt x 346.89601pt>
+<../diagrams/2d_joint_likelihood.pdf, id=621, 462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_likelihood.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 333.
+ 335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 
-<../diagrams/2d_joint_posterior.pdf, id=541, 462.52798pt x 346.89601pt>
+<../diagrams/2d_joint_posterior.pdf, id=622, 462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_posterior.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-333.
+335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
  [21
 
@@ -1503,39 +1511,39 @@ Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line
 File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 333.
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 335.
 
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/2d_joint_likelihood.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 333.
+ 335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_posterior.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-333.
+335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
  [22
 
  <../diagrams/2d_joint_likelihood.pdf>]
 File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 333.
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 335.
 
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_likelihood.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 333.
+ 335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_posterior.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-333.
+335.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
  [23
 
@@ -1558,879 +1566,1120 @@ Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line
 ] [32
 
 ]
-<../diagrams/laplace-anim-log-0.pdf, id=659, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-0.pdf, id=740, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<../diagrams/animations/laplace-anim-log-Poisson-1.pdf, id=741, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<../diagrams/laplace-anim-log-1.pdf, id=660, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-2.pdf, id=742, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<../diagrams/animations/laplace-anim-log-Poisson-3.pdf, id=743, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<../diagrams/laplace-anim-log-2.pdf, id=661, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-4.pdf, id=744, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<../diagrams/animations/laplace-anim-log-Poisson-5.pdf, id=745, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<../diagrams/laplace-anim-log-3.pdf, id=662, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-6.pdf, id=746, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<../diagrams/animations/laplace-anim-log-Poisson-7.pdf, id=747, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<../diagrams/laplace-anim-log-4.pdf, id=663, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-8.pdf, id=748, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<../diagrams/animations/laplace-anim-log-Poisson-9.pdf, id=749, 462.52798pt x 3
+46.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<../diagrams/laplace-anim-log-5.pdf, id=664, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<../diagrams/animations/laplace-anim-log-Poisson-10.pdf, id=750, 462.52798pt x 
+346.89601pt>
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][][] 
+ []
 
-<../diagrams/laplace-anim-log-6.pdf, id=665, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<../diagrams/laplace-anim-log-7.pdf, id=666, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+[33
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+ <../diagrams/animations/laplace-anim-log-Poisson-0.pdf> <../diagrams/animation
+s/laplace-anim-log-Poisson-1.pdf
 
-<../diagrams/laplace-anim-log-8.pdf, id=667, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-2.pdf
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-3.pdf
 
-<../diagrams/laplace-anim-log-9.pdf, id=668, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+3.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-4.pdf
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-5.pdf
 
-<../diagrams/laplace-anim-log-10.pdf, id=669, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-6.pdf
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [33
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+6.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-7.pdf
 
- <../diagrams/laplace-anim-log-0.pdf> <../diagrams/laplace-anim-log-1.pdf
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+7.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-8.pdf
 
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-1.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-2.pdf
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+8.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-9.pdf
 
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-2.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-3.pdf
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+9.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> <../diagrams/animations/laplace-anim-log-Poisson-10.pdf
 
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-3.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-4.pdf
+pdfTeX warning: pdflatex (file ../diagrams/animations/laplace-anim-log-Poisson-
+10.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-4.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-5.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-5.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-6.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-6.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-7.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-7.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-8.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-8.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-9.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-9.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
-> <../diagrams/laplace-anim-log-10.pdf
-
-pdfTeX warning: pdflatex (file ../diagrams/laplace-anim-log-10.pdf): PDF inclus
-ion: multiple pdfs with page group included in a single page
 >]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
- <use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [34
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [35
+[34
 
 ]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [36
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
 
-]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [37
+[35
 
 ]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [38
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
 
-]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [39
+[36
 
 ]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [40
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
 
-]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [41
+[37
 
 ]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
 
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
 
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [42
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
 
-]
-File: ../diagrams/laplace-anim-log-0.pdf Graphic file (type pdf)
 
-<use ../diagrams/laplace-anim-log-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-0.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-1.pdf Graphic file (type pdf)
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
 
-<use ../diagrams/laplace-anim-log-1.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-1.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-2.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-2.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-3.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-3.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-4.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-4.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-5.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-5.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-5.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-6.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-6.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-6.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-7.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-7.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-7.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-8.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-8.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-8.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-9.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-9.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-9.pdf used on input line 
-431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/laplace-anim-log-10.pdf Graphic file (type pdf)
-
-<use ../diagrams/laplace-anim-log-10.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-log-10.pdf used on input line
- 431.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [43
+[38
 
 ]
-<../diagrams/laplace-anim-full-0.pdf, id=1287, 751.60799pt x 516.73048pt>
-File: ../diagrams/laplace-anim-full-0.pdf Graphic file (type pdf)
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
 
-<use ../diagrams/laplace-anim-full-0.pdf>
-Package pdftex.def Info: ../diagrams/laplace-anim-full-0.pdf used on input line
- 436.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [44
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
 
- <../diagrams/laplace-anim-full-0.pdf>] [45
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
 
-] [46
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
+
+[39
+
+]
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
+
+[40
+
+]
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
+
+[41
+
+]
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
+
+[42
+
+]
+File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
+pdf)
+ <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
+pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
+used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
+ pdf)
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
+ used on input line 434.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 434--434
+ [][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 434
+ []
+
+[43
+
+]
+<../diagrams/animations/laplace-anim-full-Poisson-0.pdf, id=1360, 462.52798pt x
+ 346.89601pt>
+File: ../diagrams/animations/laplace-anim-full-Poisson-0.pdf Graphic file (type
+ pdf)
+ <use ../diagrams/animations/laplace-anim-full-Poisson-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-full-Poisson-0.pdf
+ used on input line 440.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 440--440
+ [][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 440
+ []
+
+[44
+
+ <../diagrams/animations/laplace-anim-full-Poisson-0.pdf>]
+<../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf, id=1416, 462.52798pt
+ x 346.89601pt>
+File: ../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf Graphic file (ty
+pe pdf)
+ <use ../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf>
+Package pdftex.def Info: ../diagrams/animations/laplace-anim-full-Bernoulli-0.p
+df used on input line 446.
+(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+
+Overfull \hbox (16.4775pt too wide) in paragraph at lines 446--446
+ [][][][][][][][] 
+ []
+
+
+Overfull \vbox (4.3811pt too high) detected at line 446
+ []
+
+[45
+
+ <../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf>] [46
 
 ] [47
 
 ]
-<../diagrams/KL_gaussian_mu-0.pdf, id=1363, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-0.pdf, id=1484, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-1.pdf, id=1364, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-1.pdf, id=1485, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-2.pdf, id=1365, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-2.pdf, id=1486, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-3.pdf, id=1366, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-3.pdf, id=1487, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-4.pdf, id=1367, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-4.pdf, id=1488, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [48
 
@@ -2454,29 +2703,29 @@ pdfTeX warning: pdflatex (file ../diagrams/KL_gaussian_mu-4.pdf): PDF inclusion
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
 [49
@@ -2485,29 +2734,29 @@ Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
 [50
@@ -2516,29 +2765,29 @@ Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
 [51
@@ -2547,71 +2796,71 @@ Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 47
-0.
+5.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
 [52
 
-] <../diagrams/KL_gaussian_var-0.pdf, id=1672, 751.60799pt x 516.73048pt>
+] <../diagrams/KL_gaussian_var-0.pdf, id=1793, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-1.pdf, id=1673, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-1.pdf, id=1794, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-2.pdf, id=1674, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-2.pdf, id=1795, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-3.pdf, id=1675, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-3.pdf, id=1796, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-4.pdf, id=1676, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-4.pdf, id=1797, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [53
 
@@ -2635,31 +2884,31 @@ n: multiple pdfs with page group included in a single page
 File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [54
 
@@ -2668,31 +2917,31 @@ File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [55
 
@@ -2701,31 +2950,31 @@ File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [56
 
@@ -2734,38 +2983,38 @@ File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 4
-76.
+81.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
  [57
 
 ] [58
 
 ]
-Overfull \hbox (10.54977pt too wide) in paragraph at lines 498--498
+Overfull \hbox (10.54977pt too wide) in paragraph at lines 503--503
 []  
  []
 
@@ -2786,58 +3035,58 @@ Overfull \hbox (10.54977pt too wide) in paragraph at lines 498--498
 ] [66
 
 ]
-<../diagrams/joint_prior.pdf, id=2042, 751.60799pt x 516.73048pt>
+<../diagrams/joint_prior.pdf, id=2163, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_likelihood.pdf, id=2043, 751.60799pt x 516.73048pt>
+<../diagrams/joint_likelihood.pdf, id=2164, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 61
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 62
+1.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_posterior.pdf, id=2044, 751.60799pt x 516.73048pt>
+<../diagrams/joint_posterior.pdf, id=2165, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_laplace.pdf, id=2045, 751.60799pt x 516.73048pt>
+<../diagrams/joint_laplace.pdf, id=2166, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_kl.pdf, id=2046, 751.60799pt x 516.73048pt>
+<../diagrams/joint_kl.pdf, id=2167, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_ep.pdf, id=2047, 751.60799pt x 516.73048pt>
+<../diagrams/joint_ep.pdf, id=2168, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
  [67
 
@@ -2848,42 +3097,42 @@ pdfTeX warning: pdflatex (file ../diagrams/joint_likelihood.pdf): PDF inclusion
 >]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 61
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 62
+1.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
  <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
  <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
  <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
  [68
 
@@ -2894,96 +3143,96 @@ ultiple pdfs with page group included in a single page
 >]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 61
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 62
+1.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
  <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
  <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
  <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
  [69
 
  <../diagrams/joint_kl.pdf>]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 61
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 62
+1.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 616
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 621
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 616.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 621.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
  [70
 
  <../diagrams/joint_ep.pdf>] [71
 
 ]
-<../diagrams/marginals.pdf, id=2274, 751.60799pt x 516.73048pt>
+<../diagrams/marginals.pdf, id=2395, 751.60799pt x 516.73048pt>
 File: ../diagrams/marginals.pdf Graphic file (type pdf)
 
 <use ../diagrams/marginals.pdf>
-Package pdftex.def Info: ../diagrams/marginals.pdf used on input line 633.
+Package pdftex.def Info: ../diagrams/marginals.pdf used on input line 638.
 (pdftex.def)             Requested size: 215.10196pt x 136.6216pt.
  [72
 
@@ -3002,13 +3251,15 @@ Package pdftex.def Info: ../diagrams/marginals.pdf used on input line 633.
 
 ] [79
 
+] [80
+
 ] (./gpss_non_gaussian.bbl
 LaTeX Font Info:    Try loading font information for OT1+pxtt on input line 24.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/ot1pxtt.fd
 File: ot1pxtt.fd 2000/12/14 v1.0
-)) [80
+)) [81
 
 ]
 \tf@nav=\write7
@@ -3020,20 +3271,20 @@ File: ot1pxtt.fd 2000/12/14 v1.0
 \tf@snm=\write9
 \openout9 = `gpss_non_gaussian.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 754.
 
 (./gpss_non_gaussian.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 740.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 740.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 754.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 754.
 Package rerunfilecheck Info: File `gpss_non_gaussian.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31981 strings out of 492995
- 758570 string characters out of 6132703
+ 31997 strings out of 492995
+ 760156 string characters out of 6132703
  959815 words of memory out of 5000000
- 34626 multiletter control sequences out of 15000+600000
+ 34636 multiletter control sequences out of 15000+600000
  43237 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,21n,120p,802b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3057,10 +3308,10 @@ pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></u
 sr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on gpss_non_gaussian.pdf (80 pages, 2267283 bytes).
+Output written on gpss_non_gaussian.pdf (81 pages, 2313836 bytes).
 PDF statistics:
- 2469 PDF objects out of 2487 (max. 8388607)
- 1143 compressed objects within 12 object streams
- 166 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2595 PDF objects out of 2984 (max. 8388607)
+ 1131 compressed objects within 12 object streams
+ 168 named destinations out of 1000 (max. 500000)
+ 284 words of extra memory for PDF output out of 10000 (max. 10000000)
 

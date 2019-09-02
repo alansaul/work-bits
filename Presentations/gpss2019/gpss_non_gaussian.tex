@@ -184,7 +184,7 @@
 
 \frame{
     \frametitle{Likelihood}
-    $p(y|f)$ with fixed f
+    \centering $p(y|f)$ as a function of y, with fixed f
     \begin{overprint}
         \centerline{\includegraphics[width=.99\textwidth]{../diagrams/all_likelihoods.pdf}}
     \end{overprint}
@@ -192,8 +192,10 @@
 
 \frame{
     \frametitle{Likelihood}
-    $p(y|f)$ as a function of f
-    MAKE PLOT OF LIKELIHOOD AS A FUNCTION OF F, SHOULD SHOW IT NOT NORMALISING
+    \centering $p(y|f)$ as a function of f, with fixed y
+    \begin{overprint}
+        \centerline{\includegraphics[width=.99\textwidth]{../diagrams/all_actual_likelihoods.pdf}}
+    \end{overprint}
 }
 % ON THE BOARD ILLUSTRATE THE STUDENT-T
 
@@ -288,7 +290,7 @@
     \begin{itemize}
         \item Why is it so difficult?
         \item Consider one observation, $y_{1} = 1$, at input $x_{1}$.
-        \item Can normalise easily with numerical integration, $\int p(y_1=1|f_1)p(f_1) df_1$.
+        \item Can normalise easily with numerical integration, $\int p(y_1=1|\lambda(f_1))p(f_1) df_1$.
     \end{itemize}
     \begin{overprint}
         \onslide<1>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_gp_prior_samples.pdf}}
@@ -310,7 +312,7 @@
     \begin{itemize}
         \item Now consider two observations, $y_{1} = 1$ and $y_{2} = 1$ at $x_{1}$ and $x_{2}$
         \item Need to calculate the joint posterior, $p(\fV|\yV) = p(f_{1}, f_{2}| y_{1}=1, y_{2}=1)$.
-        \item Requires 2D integral $p(y_1=1,y_2=1|f_1,f_2)p(f_1, f_2) df_1 df_2$.
+        \item Requires 2D integral $p(y_1=1,y_2=1|\lambda(f_1),\lambda(f_2))p(f_1, f_2) df_1 df_2$.
     \end{itemize}
     \begin{overprint}
         \onslide<1>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/2d_gp_prior_samples.pdf}}
@@ -427,17 +429,20 @@
 \frame{
     \frametitle{Visualization of Laplace}
     %\animategraphics[controls]{1}{../diagrams/laplace-anim}{0}{6}
-    \multiinclude[<+>][format=pdf,graphics={scale=0.4}]{../diagrams/laplace-anim-log}
+    \centering
+    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-log-Poisson}
 }
 \frame{
     \frametitle{Visualization of Laplace}
     %\animategraphics[controls]{1}{../diagrams/laplace-anim}{0}{6}
-    \multiinclude[<+>][format=pdf,graphics={scale=0.4}]{../diagrams/laplace-anim-full}
+    \centering
+    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Poisson}
 }
 
 \frame{
     \frametitle{Visualise of Laplace - Bernoulli}
-    MAKE A VISUALISATION OF THE LAPLACE ON THE BERNOULLI TO ILLUSTRATE WHERE IT FALLS DOWN.
+    \centering
+    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Bernoulli}
 }
 
 \frame{
@@ -707,11 +712,12 @@
 
 \frame{
     \frametitle{Conclusion}
-    MANY TASKS REQUIRE NON-GAUSSIAN OBSERVATION MODELS
-    SOMETIMES BESPOKE LIKELIHOODS NEED TO BE CONSTRUCTED
-    NON-GAUSSIAN LIKELIHOODS CAUSE COMPLICATIONS IN OUR FRAMEWORK
-    DIFFERENT WAYS TO DEAL WITH THE PROBLEM, MANY ARE BASED ON GAUSSIAN APPROXIMATIONS
-    DIFFERENT METHODS HAVE THEIR OWN ADVANTAGES AND DISADVANTAGES
+    \begin{itemize}
+        \item Many real world tasks require non-Gaussian observation models.
+        \item Non-Gaussian likelihoods cause complications in applying our framework.
+        \item Several different ways to deal with the problem. Many are based on Gaussian approximations.
+        \item Different methods have their own advantages and disadvantages.
+    \end{itemize}
 }
 
 \frame{
@@ -728,6 +734,14 @@
     \frametitle{Bonus}
     HETEROSCEDASTIC LIKELIHOODS
 }
+
+\frame{
+    \frametitle{Bonus}
+    HOW TO ENSURE YOU HAVE THE RIGHT LIKELIHOOD?
+    WHAT TESTS CAN BE DONE?
+    HOW DO WE KNOW OUR APPROXIMATION IS GOOD ENOUGH?
+}
+
 
 \frame[allowframebreaks]{
     \frametitle{References}
