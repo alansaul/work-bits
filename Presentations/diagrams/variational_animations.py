@@ -289,6 +289,6 @@ def animate_fit_binary(plot_Z=False):
         fig, animate, init_func=init, interval=40, blit=True, save_count=500)
 
     w = animation.ImageMagickWriter(fps=25)
-    ani.save('fit_binary.gif', writer=w)
+    ani.save('VGP-classification.gif', writer=w)
     return ani
 
