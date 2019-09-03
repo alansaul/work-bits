@@ -3,6 +3,7 @@
 %\documentclass[notes]{beamer}       % print frame + notes
 %\documentclass[notes=only]{beamer}   % only notes
 %\documentclass{beamer}              % only frames
+\usepackage{animate}
 \usetheme{BlueGrey}
 \usenavigationsymbolstemplate{}
 \renewcommand{\newblock}{}
@@ -70,13 +71,7 @@
 
 \frame{
 \frametitle{Outline}
-    \begin{itemize}
-        \item Motivation
-        \item Laplace approximation
-        \item KL method
-        \item Expectation Propagation
-        \item Comparing approximations
-    \end{itemize}
+    \tableofcontents%[currentsection]%,hideallsubsections,subsubsectionstyle=hide]
 }
 \note{
     Motivation:
@@ -157,6 +152,12 @@
         \text{Gaussian likelihood:} & & \yV \sim \gaussianSamp{\fV}{\noiseVar\eye} = \prod^{\numData}_{i=1} p(\yV_{i}|\fV_{i})\\
         \text{Gaussian posterior:} & & p(\fV|\yV) \propto \gaussianDist{\yV}{\fV}{\noiseVar\eye}\gaussianDist{\fV}{\zerosVector}{\Kff}
     \end{align*}
+}
+
+\section{Motivation}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
 }
 
 \frame{
@@ -275,6 +276,12 @@
 }
 
 
+\section{Non-Gaussian posteriors}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
+}
+
 \frame{
     \frametitle{Non-Gaussian posteriors}
     \begin{itemize}
@@ -372,6 +379,12 @@
     HOW DOES IT HELP US EVERYWHERE ELSE?
 }
 
+\section{Approximate methods}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
+}
+
 \frame{
     \frametitle{Methods overview}
     Given choice of Gaussian approximation of posterior. How do we choose the parameter values $\mu$ and $\Cmat$?
@@ -380,8 +393,13 @@
 }
 
 \frame{
-    \frametitle{Parameters effect}
-    ILLUSTRATION OF WHAT HAPPENS WHEN ADJUSTING THE MEAN AND COVARIANCE PARAMETERS TO THE CONDITIONAL GAUSSIAN
+    \frametitle{Parameters effect - mean}
+    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/mean-change-frame-}{0}{199}
+}
+
+\frame{
+    \frametitle{Parameters effect - variance}
+    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/L-change-frame-}{0}{199}
 }
 
 \frame{
@@ -397,6 +415,12 @@
         \item KL-method takes the latter
         \item EP kind of takes the latter
     \end{itemize}
+}
+
+\subsection{Laplace approximation}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
 }
 
 \frame{
@@ -445,6 +469,12 @@
     \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Bernoulli}
 }
 
+\subsection{KL-method}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
+}
+
 \frame{
     \frametitle{KL-method}
     \begin{itemize}
@@ -471,19 +501,20 @@
 \frame{
     \frametitle{KL varying mean}
     %\animategraphics[controls]{1}{../diagrams/KL_gaussian_mu}{0}{6}
+    %\animategraphics[loop,width=1\linewidth]{12}{../diagrams/KL_gaussian_mu-}{0}{4}
     \multiinclude[<+>][format=pdf,graphics={scale=0.4}]{../diagrams/KL_gaussian_mu}
 }
 
 \frame{
     \frametitle{KL varying variance}
     %\animategraphics[controls]{1}{../diagrams/KL_gaussian_mu}{0}{6}
+    %\animategraphics[loop,width=1\linewidth]{12}{../diagrams/KL_gaussian_var-}{0}{4}
     \multiinclude[<+>][format=pdf,graphics={scale=0.4}]{../diagrams/KL_gaussian_var}
 }
 
 \frame{
     \frametitle{Optimisation illustration}
-    SINCE YOU HAVE SEEN WHAT THE KL DIVERGENCE BETWEEN TWO DISTRIBUTIONS. CONSIDER WHAT WOULD HAPPEN IF YOU COULD OPTIMISE 
-    ILLUSTRATION OF WHAT IS BEING OPTIMISED, MAYBE SEVERAL SLIDES ON THIS SIMILAR TO JAMES
+    \animategraphics[loop,width=1\linewidth]{12}{../diagrams/animations/vb-frame-}{0}{39}
 }
 
 \frame{
@@ -519,6 +550,12 @@
 \frame{
     \frametitle{KL validity}
     WHY IS IT OKAY TO DEFINE THE KL DIVERGENCE BETWEEN TWO INFINITE PROCESSES BASED ON ONLY TRAINING POINTS?
+}
+
+\subsection{Expectation Propagation}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
 }
 
 \frame{
@@ -575,6 +612,12 @@
     ALTHOUGH NOT OUR FOCUS, WHY IS IT DIFFICUILT AND WHAT METHODS ARE CURRENTLY USED?
 
     HOW CAN SAMPLES (HOWEVER THEY ARE OBTAINED) BE USED TO COMPUTE QUANTITIES OF INTEREST?
+}
+
+\subsection{Comparisons}
+\frame{
+\frametitle{Outline}
+    \tableofcontents[currentsection]
 }
 
 \frame{

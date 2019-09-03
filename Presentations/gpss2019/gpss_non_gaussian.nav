@@ -6,111 +6,140 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {0}{0}{4}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {0}{0}{5}{5/5}{}{0}}
+\headcommand {\sectionentry {1}{Motivation}{5}{Motivation}{0}}
+\headcommand {\beamer@sectionpages {1}{4}}
+\headcommand {\beamer@subsectionpages {1}{4}}
+\headcommand {\slideentry {1}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {0}{0}{6}{6/6}{}{0}}
+\headcommand {\slideentry {1}{0}{2}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {0}{0}{7}{7/7}{}{0}}
+\headcommand {\slideentry {1}{0}{3}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {0}{0}{8}{8/8}{}{0}}
+\headcommand {\slideentry {1}{0}{4}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {0}{0}{9}{9/9}{}{0}}
+\headcommand {\slideentry {1}{0}{5}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {0}{0}{10}{10/10}{}{0}}
+\headcommand {\slideentry {1}{0}{6}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\slideentry {0}{0}{11}{11/11}{}{0}}
+\headcommand {\slideentry {1}{0}{7}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {0}{0}{12}{12/12}{}{0}}
+\headcommand {\slideentry {1}{0}{8}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {0}{0}{13}{13/13}{}{0}}
+\headcommand {\slideentry {1}{0}{9}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {0}{0}{14}{14/16}{}{0}}
-\headcommand {\beamer@framepages {14}{16}}
-\headcommand {\slideentry {0}{0}{15}{17/17}{}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {0}{0}{16}{18/20}{}{0}}
-\headcommand {\beamer@framepages {18}{20}}
-\headcommand {\slideentry {0}{0}{17}{21/23}{}{0}}
-\headcommand {\beamer@framepages {21}{23}}
-\headcommand {\slideentry {0}{0}{18}{24/24}{}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {0}{0}{19}{25/25}{}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {0}{0}{20}{26/26}{}{0}}
+\headcommand {\sectionentry {2}{Non-Gaussian posteriors}{14}{Non-Gaussian posteriors}{0}}
+\headcommand {\beamer@sectionpages {5}{13}}
+\headcommand {\beamer@subsectionpages {5}{13}}
+\headcommand {\slideentry {2}{0}{1}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {2}{0}{2}{15/15}{}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{0}{3}{16/18}{}{0}}
+\headcommand {\beamer@framepages {16}{18}}
+\headcommand {\slideentry {2}{0}{4}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {2}{0}{5}{20/22}{}{0}}
+\headcommand {\beamer@framepages {20}{22}}
+\headcommand {\slideentry {2}{0}{6}{23/25}{}{0}}
+\headcommand {\beamer@framepages {23}{25}}
+\headcommand {\slideentry {2}{0}{7}{26/26}{}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {0}{0}{21}{27/27}{}{0}}
+\headcommand {\slideentry {2}{0}{8}{27/27}{}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {0}{0}{22}{28/28}{}{0}}
+\headcommand {\slideentry {2}{0}{9}{28/28}{}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {0}{0}{23}{29/29}{}{0}}
+\headcommand {\slideentry {2}{0}{10}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {0}{0}{24}{30/30}{}{0}}
+\headcommand {\sectionentry {3}{Approximate methods}{30}{Approximate methods}{0}}
+\headcommand {\beamer@sectionpages {14}{29}}
+\headcommand {\beamer@subsectionpages {14}{29}}
+\headcommand {\slideentry {3}{0}{1}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {0}{0}{25}{31/31}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{31/31}{}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {0}{0}{26}{32/32}{}{0}}
+\headcommand {\slideentry {3}{0}{3}{32/32}{}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {0}{0}{27}{33/43}{}{0}}
-\headcommand {\beamer@framepages {33}{43}}
-\headcommand {\slideentry {0}{0}{28}{44/44}{}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {0}{0}{29}{45/45}{}{0}}
-\headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {0}{0}{30}{46/46}{}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {0}{0}{31}{47/47}{}{0}}
-\headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {0}{0}{32}{48/52}{}{0}}
-\headcommand {\beamer@framepages {48}{52}}
-\headcommand {\slideentry {0}{0}{33}{53/57}{}{0}}
-\headcommand {\beamer@framepages {53}{57}}
-\headcommand {\slideentry {0}{0}{34}{58/58}{}{0}}
-\headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {0}{0}{35}{59/59}{}{0}}
-\headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {0}{0}{36}{60/60}{}{0}}
-\headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {0}{0}{37}{61/61}{}{0}}
-\headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {0}{0}{38}{62/62}{}{0}}
-\headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {0}{0}{39}{63/63}{}{0}}
-\headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {0}{0}{40}{64/64}{}{0}}
+\headcommand {\slideentry {3}{0}{4}{33/33}{}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\slideentry {3}{0}{5}{34/34}{}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{35}{Laplace approximation}}\headcommand {\beamer@subsectionpages {30}{34}}
+\headcommand {\slideentry {3}{1}{1}{35/35}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\slideentry {3}{1}{2}{36/36}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {36}{36}}
+\headcommand {\slideentry {3}{1}{3}{37/37}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {37}{37}}
+\headcommand {\slideentry {3}{1}{4}{38/48}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {38}{48}}
+\headcommand {\slideentry {3}{1}{5}{49/49}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {3}{1}{6}{50/50}{Laplace approximation}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{51}{KL-method}}\headcommand {\beamer@subsectionpages {35}{50}}
+\headcommand {\slideentry {3}{2}{1}{51/51}{KL-method}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {3}{2}{2}{52/52}{KL-method}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {3}{2}{3}{53/53}{KL-method}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {3}{2}{4}{54/58}{KL-method}{0}}
+\headcommand {\beamer@framepages {54}{58}}
+\headcommand {\slideentry {3}{2}{5}{59/63}{KL-method}{0}}
+\headcommand {\beamer@framepages {59}{63}}
+\headcommand {\slideentry {3}{2}{6}{64/64}{KL-method}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {0}{0}{41}{65/65}{}{0}}
+\headcommand {\slideentry {3}{2}{7}{65/65}{KL-method}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {0}{0}{42}{66/66}{}{0}}
+\headcommand {\slideentry {3}{2}{8}{66/66}{KL-method}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\slideentry {0}{0}{43}{67/70}{}{0}}
-\headcommand {\beamer@framepages {67}{70}}
-\headcommand {\slideentry {0}{0}{44}{71/71}{}{0}}
+\headcommand {\slideentry {3}{2}{9}{67/67}{KL-method}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{68}{Expectation Propagation}}\headcommand {\beamer@subsectionpages {51}{67}}
+\headcommand {\slideentry {3}{3}{1}{68/68}{Expectation Propagation}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {3}{3}{2}{69/69}{Expectation Propagation}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {3}{3}{3}{70/70}{Expectation Propagation}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {3}{3}{4}{71/71}{Expectation Propagation}{0}}
 \headcommand {\beamer@framepages {71}{71}}
-\headcommand {\slideentry {0}{0}{45}{72/72}{}{0}}
+\headcommand {\slideentry {3}{3}{5}{72/72}{Expectation Propagation}{0}}
 \headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {0}{0}{46}{73/73}{}{0}}
+\headcommand {\slideentry {3}{3}{6}{73/73}{Expectation Propagation}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\slideentry {0}{0}{47}{74/74}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{74}{Comparisons}}\headcommand {\beamer@subsectionpages {68}{73}}
+\headcommand {\slideentry {3}{4}{1}{74/74}{Comparisons}{0}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\slideentry {0}{0}{48}{75/75}{}{0}}
-\headcommand {\beamer@framepages {75}{75}}
-\headcommand {\slideentry {0}{0}{49}{76/76}{}{0}}
-\headcommand {\beamer@framepages {76}{76}}
-\headcommand {\slideentry {0}{0}{50}{77/77}{}{0}}
-\headcommand {\beamer@framepages {77}{77}}
-\headcommand {\slideentry {0}{0}{51}{78/78}{}{0}}
-\headcommand {\beamer@framepages {78}{78}}
-\headcommand {\slideentry {0}{0}{52}{79/79}{}{0}}
+\headcommand {\slideentry {3}{4}{2}{75/78}{Comparisons}{0}}
+\headcommand {\beamer@framepages {75}{78}}
+\headcommand {\slideentry {3}{4}{3}{79/79}{Comparisons}{0}}
 \headcommand {\beamer@framepages {79}{79}}
-\headcommand {\slideentry {0}{0}{53}{80/80}{}{0}}
+\headcommand {\slideentry {3}{4}{4}{80/80}{Comparisons}{0}}
 \headcommand {\beamer@framepages {80}{80}}
-\headcommand {\sectionentry {1}{\translate {References}}{81}{\translate {References}}{0}}
-\headcommand {\beamer@sectionpages {1}{80}}
-\headcommand {\beamer@subsectionpages {1}{80}}
-\headcommand {\slideentry {1}{0}{0}{81/81}{}{0}}
+\headcommand {\slideentry {3}{4}{5}{81/81}{Comparisons}{0}}
 \headcommand {\beamer@framepages {81}{81}}
-\headcommand {\beamer@partpages {1}{81}}
-\headcommand {\beamer@subsectionpages {1}{81}}
-\headcommand {\beamer@sectionpages {1}{81}}
-\headcommand {\beamer@documentpages {81}}
-\headcommand {\def \inserttotalframenumber {54}}
+\headcommand {\slideentry {3}{4}{6}{82/82}{Comparisons}{0}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\slideentry {3}{4}{7}{83/83}{Comparisons}{0}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {3}{4}{8}{84/84}{Comparisons}{0}}
+\headcommand {\beamer@framepages {84}{84}}
+\headcommand {\slideentry {3}{4}{9}{85/85}{Comparisons}{0}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\slideentry {3}{4}{10}{86/86}{Comparisons}{0}}
+\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\slideentry {3}{4}{11}{87/87}{Comparisons}{0}}
+\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {3}{4}{12}{88/88}{Comparisons}{0}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\sectionentry {4}{\translate {References}}{89}{\translate {References}}{0}}
+\headcommand {\beamer@sectionpages {30}{88}}
+\headcommand {\beamer@subsectionpages {74}{88}}
+\headcommand {\slideentry {4}{0}{0}{89/89}{Comparisons}{0}}
+\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\beamer@partpages {1}{89}}
+\headcommand {\beamer@subsectionpages {74}{89}}
+\headcommand {\beamer@sectionpages {30}{89}}
+\headcommand {\beamer@documentpages {89}}
+\headcommand {\def \inserttotalframenumber {62}}
