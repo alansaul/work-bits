@@ -4,20 +4,43 @@ import matplotlib.pyplot as plt
 # plt.style.use('ops.mplstyle')
 import gpflow
 import matplotlib.animation as animation
+from scipy import special
 
 import matplotlib
 matplotlib.rcParams['figure.figsize'] = (10, 6)
 matplotlib.rcParams['lines.linewidth'] = 3
 
-M = 20
-x = np.random.rand(30,1) * 10
-y = np.sin(x) + np.cos(3 * x) + np.random.randn(x.size, 1) * 0.1
-Z = np.linspace(2,8,M)[:, None]
-m = gpflow.models.SVGP(x,y, Z=Z, kern=gpflow.kernels.Matern52(1, lengthscales=3.), likelihood=gpflow.likelihoods.Gaussian())
-m.likelihood.variance = 0.01
+def inv_probit(x):
+    jitter = 1e-5  # ensures output is strictly between 0 and 1
+    return 0.5 * (1.0 + special.erf(x / np.sqrt(2.0))) * (1 - 2 * jitter) + jitter
+
+binary = True
+
+if binary:
+    N = 60
+    M = N
+    x = np.random.rand(N,1) * 10
+    f = 8*np.sin(2*x) #+ 8*np.cos(5 * x)
+    inv_link_f = inv_probit(f)
+    y = (np.random.uniform(low=0, high=1.0, size=inv_link_f.shape) > inv_link_f).astype(np.float64)
+    likelihood = gpflow.likelihoods.Bernoulli()
+else:
+    M = 30
+    x = np.random.rand(30,1) * 10
+    f = np.sin(x) + np.cos(3 * x)
+    y = f + np.random.randn(x.size, 1) * 0.05
+    likelihood = gpflow.likelihoods.Gaussian()
+    likelihood.variance = 0.01
+
+# Z = np.linspace(2,8,M)[:, None]
+Z = x.copy()
+m = gpflow.models.SVGP(x, y, Z=Z,
+                       kern=gpflow.kernels.Matern52(1, lengthscales=1.5, variance=7.0),
+                       likelihood=likelihood)
 m.q_sqrt = (np.eye(M) * .2).reshape(1, M, M)
-m.kern.trainable = False
+m.kern.trainable = False #True #False
 m.likelihood.trainable = False
+m.feature.Z.trainable = False
 num_samples = 30
 
 
@@ -29,7 +52,7 @@ def interpolate(x_start, x_end, i, num_iter, loop=False):
 
 def animate_mean():
     np.random.seed(12)
-    q_mu_start = np.random.randn(M,1) * 3 
+    q_mu_start = np.random.randn(M,1) * 3
     q_mu_end = np.random.randn(M,1)* 0.1
     fig, ax = plt.subplots(1, 1)
     x_test = np.linspace(0, 10, 200)[:, None]
@@ -169,7 +192,7 @@ def animate_fit(plot_Z=False):
         fig, animate, init_func=init, interval=40, blit=True, save_count=500)
 
     w = animation.ImageMagickWriter(fps=25)
-    # ani.save('fit.gif', writer=w)
+    ani.save('fit.gif', writer=w)
     return ani
 
 
@@ -216,3 +239,56 @@ def animate_inference():
 
     w = animation.ImageMagickWriter(fps=25)
     ani.save('inference.gif', writer=w)
+
+
+def animate_fit_binary(plot_Z=False):
+    # m.kern.lengthscales = 1.0
+    np.random.seed(0)
+    m.q_mu = np.random.randn(M, 1)
+    m.q_sqrt = np.random.randn(1, M, M) * 0.1
+    x_test = np.linspace(0, 10, 400)[:, None]
+    white_samples = np.random.randn(x_test.shape[0], num_samples)
+
+    white_samples_squashed = white_samples
+
+    fig, ax = plt.subplots(1, 1)
+    samples_lines = ax.plot(x_test, white_samples_squashed, "C0", lw=1)
+    data_line, = ax.plot(x, y, 'kx', mew=2, ms=6)
+    data_line.set_zorder(1e6)
+    text = ax.text(0.99, 0.99, '', horizontalalignment='right', verticalalignment='top', transform=ax.transAxes, fontsize=18)
+    Z_line, = ax.plot(np.zeros(M), np.zeros(M)-2.6, 'C1|', mew=4, alpha=1.0*plot_Z)
+
+    ax.set_xlim(0, 10)
+    ax.set_ylim(0, 1)
+
+    opt = gpflow.train.AdamOptimizer(0.1)
+    optimizer_tensor = opt.make_optimize_tensor(m)
+    session = gpflow.get_default_session()
+
+    def init():
+        return samples_lines + [data_line, text, Z_line]
+
+    def animate(i):
+        [session.run(optimizer_tensor) for _ in range(1)]
+        mean, var = m.predict_f_full_cov(x_test)
+        L = np.linalg.cholesky(var.squeeze())
+        samples = np.dot(L, white_samples) + mean
+        samples_squashed = inv_probit(samples)
+        [l.set_data(x_test.flatten(), s) for l, s in zip(samples_lines, samples_squashed.T)]
+        text.set_text('ELBO:{0:.2f}'.format(m.compute_log_likelihood()))
+        Z_line.set_xdata(session.run(m.feature.Z.parameter_tensor).flatten())
+
+        print(m.kern.read_trainables(session=session))#session.run(m.kern.variance.parameter_tensor).flatten())
+        # print(session.run(m.kern.variance.parameter_tensor).flatten())
+        # print(session.run(m.kern.lengthscales.parameter_tensor).flatten())
+        # print(m.kern.as_pandas_table())
+        print("")
+        return samples_lines + [data_line, text, Z_line]
+
+    ani = animation.FuncAnimation(
+        fig, animate, init_func=init, interval=40, blit=True, save_count=500)
+
+    w = animation.ImageMagickWriter(fps=25)
+    ani.save('fit_binary.gif', writer=w)
+    return ani
+
