@@ -12,17 +12,20 @@ seaborn.set_style("white")
 location = '../diagrams/animations/'
 form = 'pdf'
 fig_i = 0
-lw = 3.0
+lw = 1.5
 
 X = np.zeros((1,1))
 # loglogistic = LogLogistic(r=15.)
-bernoulli = GPy.likelihoods.Bernoulli()
+probit_link_function = GPy.likelihoods.link_functions.ScaledProbit(nu=5.0)
+bernoulli = GPy.likelihoods.Bernoulli(gp_link=probit_link_function)
 poisson = GPy.likelihoods.Poisson()
 
 l = poisson
 
+
+
 for l, y, k in [(poisson, 4.0, GPy.kern.RBF(1, variance=2)),
-                (bernoulli, 1.0, GPy.kern.RBF(1, variance=10))]:
+                (bernoulli, 1.0, GPy.kern.RBF(1, variance=2))]:
 
     fig, ax1 = plt.subplots(1,1)
     #Note this is how the posterior changes in f, not link_f, thus likelihood has
@@ -74,7 +77,8 @@ for l, y, k in [(poisson, 4.0, GPy.kern.RBF(1, variance=2)),
     log_prior_f = np.log(prior_f)
     ylim = (log_prior_f.min(), log_prior_f.max()+3)
     ax1.plot(ff, log_prior_f, label='log prior, $\log p(f)$', lw=lw)
-    ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg = ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg.get_frame().set_linewidth(0.0)
     # ax1.set_ylim(log_prior_f.min(), log_prior_f.max()+3)
     ax1.set_ylim(*ylim)
     seaborn.despine()
@@ -85,7 +89,8 @@ for l, y, k in [(poisson, 4.0, GPy.kern.RBF(1, variance=2)),
     log_lik_f = nan_to_ninf(np.log(lik_f))
     #Plot the likelihood
     ax1.plot(ff, log_lik_f, label='log likelihood, $\log p(y={:.0f}|\lambda(f))$'.format(y), lw=lw)
-    ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg = ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg.get_frame().set_linewidth(0.0)
     # ax1.set_ylim(log_prior_f.min(), log_prior_f.max()+3)
     ax1.set_ylim(*ylim)
     seaborn.despine()
@@ -103,7 +108,8 @@ for l, y, k in [(poisson, 4.0, GPy.kern.RBF(1, variance=2)),
     #plot the posterior
     ax1.plot(ff, log_post, '--', lw=lw, label='log posterior, $\log p(f|y={:.0f})$'.format(y))
     ax1.fill_between(ff.flatten(), log_prior_f.min(), log_post.flatten(), alpha=0.3)
-    ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg = ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg.get_frame().set_linewidth(0.0)
     ax1.set_ylim(*ylim)
     # ax1.set_ylim(log_prior_f.min(), log_prior_f.max()+3)
     seaborn.despine()
@@ -155,24 +161,26 @@ for l, y, k in [(poisson, 4.0, GPy.kern.RBF(1, variance=2)),
     lap_m, lap_v = m_lap._raw_predict(X)
     ax1.plot(ff, np.log(g_pdf(ff, lap_m, lap_v)), label='', lw=lw)
     ax1.vlines(m_lap.inference_method.f_hat, ylim[0], ylim[1], label='mode, $\hat{f}$', lw=2, alpha=0.5)
-    ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg = ax1.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg.get_frame().set_linewidth(0.0)
     seaborn.despine()
     save_anim_fig()
 
     fig2, ax2 = plt.subplots(1,1)
     ax2.set_xlabel('$f_1$')
-    ax2.plot(ff, prior_f, label='prior, $p(f)$', lw=lw)
-    ax2.plot(ff, lik_f, label='likelihood, $p(y={:.0f}|\lambda(f))$'.format(y), lw=lw)
-    ax2.plot(ff, post, '--', lw=lw, label='posterior, $p(f|y={:.0f})$'.format(y))
-    ax2.plot(ff, g_pdf(ff, lap_m, lap_v), label='laplace, $q(f)$', lw=lw)
-    ax2.fill_between(ff.flatten(), 0, post.flatten(), alpha=0.3)
+    ax2.plot(ff, prior_f, color='C0', label='prior, $p(f)$', lw=lw)
+    ax2.plot(ff, lik_f, color='C1', label='likelihood, $p(y={:.0f}|\lambda(f))$'.format(y), lw=lw)
+    ax2.plot(ff, post, '--', color='C2', lw=lw, label='posterior, $p(f|y={:.0f})$'.format(y))
+    ax2.plot(ff, g_pdf(ff, lap_m, lap_v), color='C3', label='laplace, $q(f)$', lw=lw)
+    ax2.fill_between(ff.flatten(), 0, post.flatten(), color='C2', alpha=0.3)
     # if "Poisson" in l.name:
         # ax2.set_ylim(0, 1)
     # else:
     # ax2.set_ylim(post.min(), post.max()+post.max()*0.2)
     ax2.set_ylim(0, 1)
-    ax2.vlines(m_lap.inference_method.f_hat, 0, 1, label='mode, $\hat{f}$', lw=2, alpha=0.5)
-    ax2.legend(loc="upper right", bbox_to_anchor=bbox)
+    ax2.vlines(m_lap.inference_method.f_hat, 0, 1, label='mode, $\hat{f}$', color='k', lw=1.5, alpha=0.5)
+    leg = ax2.legend(loc="upper right", bbox_to_anchor=bbox)
+    leg.get_frame().set_linewidth(0.0)
     animation_name = '{}laplace-anim-full-{}'.format(location, l.name)
     save_anim_fig2 = generate_save_func(fig2)
     seaborn.despine()
