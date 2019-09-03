@@ -37,6 +37,7 @@
 \input{definitions.tex}
 \input{notationDef.tex}
 
+\newcommand{\aV}{\mathbf{a}}
 \newcommand{\fV}{\mappingFunctionVector}
 \newcommand{\yV}{\dataVector}
 \newcommand{\noiseVar}{\dataStd^{2}}
@@ -96,7 +97,7 @@
         The trick is to try and minimize the $KL[q(f|y)||p(f|y)]$, by forming a lower bound on the marginal likelihood which we will in turn maximise
         This needs lots of figures!
         Leads to distributions $q(f)$ that avoid regions of $p(f|y)$ that have low density (heavily penalized for putting density where there is little)
-    Expectation Propagation
+    Expectation propagation
         This is a more algorithmic approach to making the approximation. Shown to be the most effective method for the classification likelihood.
         Looks at approximating the true posterior with a product of site-approximations (Gaussian distributions).
         These site distributions are -not- Gaussian approximations to each likelihood component, but overall make the marginal likelihood similar to true marginal
@@ -290,19 +291,20 @@
     \begin{equation*}
         {\color{intract}p(\fV|\yV)} = \frac{p(\fV)\prod^{\numData}_{i=1}p(\yV_{i}|\fV_{i})}{\color{intract}\int p(\fV)\prod^{\numData}_{i=1}p(\yV_{i}|\fV_{i})\,d\fV}
     \end{equation*}
+
+    Why is it so difficult?
 }
 
 \frame{
     \frametitle{Non-Gaussian posteriors illustrated}
     \begin{itemize}
-        \item Why is it so difficult?
         \item Consider one observation, $y_{1} = 1$, at input $x_{1}$.
         \item Can normalise easily with numerical integration, $\int p(y_1=1|\lambda(f_1))p(f_1) df_1$.
     \end{itemize}
     \begin{overprint}
-        \onslide<1>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_gp_prior_samples.pdf}}
-        \onslide<2>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_squashed_gp_prior_samples.pdf}}
-        \onslide<3>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/1d_gp_post_samples.pdf}}
+        \onslide<1>\centerline{\includegraphics[width=0.9\textwidth]{../diagrams/1d_gp_prior_samples.pdf}}
+        \onslide<2>\centerline{\includegraphics[width=0.9\textwidth]{../diagrams/1d_squashed_gp_prior_samples.pdf}}
+        \onslide<3>\centerline{\includegraphics[width=0.9\textwidth]{../diagrams/1d_gp_post_samples.pdf}}
     \end{overprint}
 }
 % So I've told you that its difficult to do this integration, but I now want to illustrate why this is the case. Often when people talk about the posterior they only really illustrate the posterior in one dimension, I think its useful to understand what is really happening when we get to this problem with Gaussian processes, that is we need to do this integral in a far higher dimension.
@@ -310,14 +312,14 @@
 \frame{
     \frametitle{Non-Gaussian posteriors illustrated}
     \begin{overprint}
-        \centerline{\includegraphics[width=0.7\textwidth]{../diagrams/1d_marginals.pdf}}
+        \centerline{\includegraphics[width=0.9\textwidth]{../diagrams/1d_marginals.pdf}}
     \end{overprint}
 }
 
 \frame{
     \frametitle{Non-Gaussian posteriors illustrated}
     \begin{itemize}
-        \item Now consider two observations, $y_{1} = 1$ and $y_{2} = 1$ at $x_{1}$ and $x_{2}$
+        \item Now two observations, $y_{1} = 1$ and $y_{2} = 1$ at $x_{1}$ and $x_{2}$
         \item Need to calculate the joint posterior, $p(\fV|\yV) = p(f_{1}, f_{2}| y_{1}=1, y_{2}=1)$.
         \item Requires 2D integral $p(y_1=1,y_2=1|\lambda(f_1),\lambda(f_2))p(f_1, f_2) df_1 df_2$.
     \end{itemize}
@@ -355,28 +357,25 @@
 }
 
 \frame{
-    \frametitle{Why do we want an analytical form?}
-    We have said you can't get a nice analytical form because we can't figure out the normaliser. 
-    Why is this a problem though? 
-    What do we want to do with this posterior?
-}
-
-\frame{
     \frametitle{Non-Gaussian posterior approximation}
     \begin{itemize}
-        \item Various methods to make a Gaussian approximation, $q(\fV) \approx {\color{intract}p(\fV|\yV)} = \gaussianDist{\fV}{\mathbf{\mu}=?}{\Cmat=?}$.
-        \item Allows simple predictions 
+        \item Various methods to make a Gaussian approximation, ${\color{intract}p(\fV|\yV)} \approx q(\fV) = \gaussianDist{\fV}{\mathbf{\mu}=?}{\Cmat=?}$.
+        \item Only need to obtain an approximate posterior at the training locations.
+        \item At test locations, the data only effects their probabily via the posterior at these locations.
     \end{itemize}
     \begin{align*}
-        p(\fV^{*}|\yV) &= \int p(\fV^{*}|\fV){\color{intract}{p(\fV|\yV)}} d\fV\\
-                       &\approx \int p(\fV^{*}|\fV)q(\fV) d\fV
+        p(\fV, \fV^{*}|\xV^{*}, \xV, \yV) &= p(\fV^*|\fV, \xV^{*})p(\fV|\xV, \yV)\\
+        &\propto p(\fV^{*}|\fV, \xV^{*})p(\yV|\fV, \xV)p(\fV|\xV)
     \end{align*}
 }
 
 \frame{
-    \frametitle{Approximation validity}
-    WHY IS IT OKAY TO APPROXIMATE A GAUSSIAN PROCESS WITH A GAUSSIAN AT TRAINING POINTS ONLY?
-    HOW DOES IT HELP US EVERYWHERE ELSE?
+    \frametitle{Why do we want an the posterior anyway?}
+    True posterior, posterior approximation, or samples are needed to make predictions at new locations, $\xV^{*}$.
+    \begin{align*}
+        p(\fV^{*}|\xV^{*}, \xV, \yV) &= \int p(\fV^{*}|\fV, \xV^{*}){\color{intract}{p(\fV|\yV, \xV)}} d\fV\\
+        q(\fV^{*}|\xV^{*}, \xV, \yV) &= \int p(\fV^{*}|\fV, \xV^{*})q(\fV|\xV) d\fV
+    \end{align*}
 }
 
 \section{Approximate methods}
@@ -394,12 +393,12 @@
 
 \frame{
     \frametitle{Parameters effect - mean}
-    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/mean-change-frame-}{0}{199}
+    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/mean-change-frame-}{0}{199}
 }
 
 \frame{
     \frametitle{Parameters effect - variance}
-    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/L-change-frame-}{0}{199}
+    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/L-change-frame-}{0}{199}
 }
 
 \frame{
@@ -412,7 +411,7 @@
 
     \begin{itemize}
         \item Laplace takes the former
-        \item KL-method takes the latter
+        \item Variational bayes takes the latter
         \item EP kind of takes the latter
     \end{itemize}
 }
@@ -425,25 +424,71 @@
 
 \frame{
     \frametitle{Laplace approximation}
+    Task: for some generic random variable, $z$, and data, $y$, find a good approximation to difficult to compute posterior distribution, $\color{intract}p(z|y)$.\\~\\
+    Laplace approach: fit a Gaussian by matching the curvature at the modal point of the posterior.
+    \begin{itemize}
+        \item Use a second-order taylor expansion around the mode of the log-posterior.
+        \item Use the expansion to find an equivalent Gaussian in the probability space.
+    \end{itemize}
+}
+
+\frame{
+    \frametitle{Laplace approximation}
     \begin{itemize}
         \item Log of a Gaussian distribution, $q(\fV) = \gaussianDist{\fV}{\hat{\mu}}{\hat{\Cmat}}$, is a quadratic function of $\fV$.
-        \item Idea of Laplace approximation is to find the values of the quadratic function that match at the mode of the log posterior.
-        \item It is an approximation of the true posterior, based on the curvature at a single point, the mode.
-        \item Many of you will know this as a second-order Taylor expansion around the modal value.
+        \item A second-order taylor expansion is an approximation of a function using only quadratic terms.
+        \item Laplace approximation expands the un-normalised posterior, and then uses it to set the linear and quadratic terms of the log $q(\fV)$.
         \item The first and second derivatives of the form of the log-posterior, at the mode, will match the derivatives of the approximate Gaussian at this same point.
     \end{itemize}
 }
 
 \frame{
-    \frametitle{Laplace approximation - algorithm}
+    \frametitle{Second-order taylor expansion}
+    \begin{align*}
+        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\fV)\\}
+        \uncover<+->{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + \log h(\fV)\\}
+        \uncover<+->{&\approx \log \frac{1}{{\color{intract}Z}} + \log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)\\
+        &+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV)}
+    \end{align*}
+    \uncover<+->{
+    In our case we want to make our expansion around the mode, $\hat{\fV}$:
+    \begin{align*}
+        \left.\frac{d\log h(\aV)}{d\aV}\right|_{\aV=\hat{\fV}} = \zerosVector
+    \end{align*}
+}
+}
+
+\frame{%
+    \frametitle{Second-order taylor expansion}
+    \begin{align*}
+        \uncover<+->{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\
+        &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}
+        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}}\right)(\fV - \hat{\fV})\right\}\\}
+        \uncover<+->{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}}\right)^{-1}}}
+    \end{align*}
+}
+
+\frame{%
+    \frametitle{Laplace appoximation for Gaussian processes}
+    In our case, $h(\hat{\fV}) = p(\yV|\fV)p(\fV)$, so we need to evaluate
+    \begin{align*}
+        -\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}} &= -\frac{d^{2}(\log p(\yV|\hat{\fV}) + \log p(\hat{\fV}))}{d\fV^{2}}\\
+        &= -\frac{d^{2}\log p(\yV|\hat{\fV})}{d\fV^{2}} + \mathbf{K}^{-1}\\
+        &\triangleq \Wmat + \mathbf{K}^{-1}
+    \end{align*}
+    giving a posterior approximation:
+    \begin{align*}
+        p(\fV|\yV) \approx q(\fV) = \gaussianDist{\fV}{\hat{\fV}}{\left(\Wmat + \mathbf{K}^{-1}\right)^{-1}}
+    \end{align*}
+    }
+
+\frame{
+    \frametitle{Laplace approximation - algorithm overview}
     \begin{itemize}
-        \item Find the mode of the true log posterior, via Newton's method.
-        \item Use second order Taylor expansion around this modal value.
-            \begin{itemize}
-                \item i.e obtain curvature at this point.
-            \end{itemize}
+        \item Find the mode, $\hat{\fV}$ of the true log posterior, via Newton's method.
+        \item Use second-order Taylor expansion around this modal value.
         \item Form Gaussian approximation setting the mean equal to the posterior mode, $\hat{\fV}$, and matching the curvature.
-        \item ${\color{intract}p(\fV|\yV)} \approx q(\fV|\muV,\Cmat) = \gaussianDist{\fV}{\hat{\fV}}{(\Kff^{-1} + \Wmat)^{-1}}$
+        \item ${\color{intract}p(\fV|\yV)} \approx q(\fV|\muV,\Cmat) = \gaussianDist{\fV}{\hat{\fV}}{(\mathbf{K}^{-1} + \Wmat)^{-1}}$
         \item $\Wmat \triangleq -\frac{d^{2}\log p(\yV|\hat{\fV})}{d\hat{\fV}^{2}}$.
         \item For factorizing likelihoods (most), $\Wmat$ is diagonal.
     \end{itemize}
@@ -469,19 +514,19 @@
     \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Bernoulli}
 }
 
-\subsection{KL-method}
+\subsection{Variational bayes}
 \frame{
 \frametitle{Outline}
     \tableofcontents[currentsection]
 }
 
 \frame{
-    \frametitle{KL-method}
+    \frametitle{Variational Bayes (VB)}
+    Task: for some generic random variable, $z$, and data, $y$, find a good approximation to difficult to compute posterior distribution, $\color{intract}p(z|y)$.\\~\\
+    VB approach: minimise a divergence measure between an approximate posterior, $\color{tract}q(z)$ and true posterior, $\color{intract}p(z|y)$.
     \begin{itemize}
-        \item Make a Gaussian approximation, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$, as similar possible to true posterior, ${\color{intract}p(\fV|\yV)}$.
-        \item Treat $\muV$ and $\Cmat$ as variational parameters, effecting quality of approximation.
-        \item Define a divergence measure between two distributions, KL divergence, ${\color{intract}\KL{q(\fV)}{p(\fV|\yV)}}$.
-        \item Minimize this divergence between the two distributions~\citep{Nickisch:class08}, with respect to $\muV$ and $\Cmat$ and other parameters.
+        \item KL divergence, $\color{intract}\KL{q(z)}{p(z|y)}$.
+        \item Minimize this with respect to parameters of $\color{tract}q(z)$.
     \end{itemize}
 }
 % previously tried to approximate the posterior using a local point. Really want something that more globally captures the characteristics of the non-Gaussian posterior
@@ -513,16 +558,79 @@
 }
 
 \frame{
-    \frametitle{Optimisation illustration}
-    \animategraphics[loop,width=1\linewidth]{12}{../diagrams/animations/vb-frame-}{0}{39}
+    \frametitle{Variational Bayes}
+    Don't have access to or can't compute for computational reasons: $\color{intract}p(z|y)$ or $\color{intract}p(y)$, and hence $\color{intract}\KL{q(z)}{p(z|y)}$\\~\\
+    How can we minimize something we can't compute?
+    \begin{itemize}
+        \item Can compute $q(z)$ and $p(y|z)$ for any $z$. 
+        \item $q(z)$ is parameterised by `variational parameters'.
+        \item True posterior using Bayes rule, ${\color{intract}p(z|y)} = \frac{p(y|z)p(z)}{{\color{intract}p(y)}}$.
+        \item $\color{intract}p(y)$ doesn't change when variational parameters are changed.
+    \end{itemize}
+}
+
+%\frame{
+    %\frametitle{Variational Bayes - Derivation}
+    %\begin{align*}
+        %\color{intract}\KL{q(z)}{p(z|y)} &= \expectationDist{\log \frac{q(z)}{{\color{intract}p(z|y)}}}{q(z)}\\
+        %&= \expectationDist{\log \frac{q(z)}{p(z)}p(y|z)p(y)}{q(z)}\\
+        %&= \expectationDist{\log \frac{q(z)}{p(z)} - \log p(y|z) + {\color{intract}\log p(y)}}{q(z)}\\
+        %&= \KL{q(z)}{p(z)} - \expectationDist{\log p(y|z)}{q(z)} + {\color{intract}\log p(y)}\\
+        %{\color{intract}\log p(y)} &= {\color{tract}\expectationDist{\log p(y|z)}{q(z)}} - {\color{tract}\KL{q(z)}{p(z)}} + {\color{intract}\KL{q(z)}{p(z|y)}}
+    %\end{align*}
+%}
+
+\frame{
+    \frametitle{Variational Bayes - Derivation}
+    \begin{align*}
+        \uncover<+->{&\color{intract}\KL{q(z)}{p(z|y)}\\}
+        \uncover<+->{&= \int q(z)\left[\log \frac{q(z)}{{\color{intract}p(z|y)}}\right] dz\\}
+        %&= \int q(z)\left[\log \frac{q(z)p(y|z)p(y)}{p(z)}\right] dz\\
+        \uncover<+->{&= \int q(z)\left[\log \frac{q(z)}{p(z)} - \log p(y|z) + {\color{intract}\log p(y)}\right] dz\\}
+        \uncover<+->{&= {\color{tract}\KL{q(z)}{p(z)}} - {\color{tract}\int q(z)\left[\log p(y|z)\right] dz} + {\color{intract}\log p(y)}\\}
+        \uncover<+->{{\color{intract}\log p(y)} &= {\color{tract}\int q(z)\left[\log p(y|z)\right] dz} - {\color{tract}\KL{q(z)}{p(z)}} + {\color{intract}\KL{q(z)}{p(z|y)}}\\}
+    \end{align*}
+}
+\frame{
+    \frametitle{Variational Bayes - Derivation}
+    \begin{align*}
+        {\color{intract}\log p(y)} &= {\color{tract}\int q(z)\left[\log p(y|z)\right] dz} - {\color{tract}\KL{q(z)}{p(z)}} + {\color{intract}\KL{q(z)}{p(z|y)}}\\
+        &\geq {\color{tract} \int q(z)\left[\log p(y|z)\right] dz} - {\color{tract}\KL{q(z)}{p(z)}}
+    \end{align*}
+    \begin{itemize}
+        \item Tractable terms give lower bound on $\log p(y)$ as $\color{intract}\KL{q(z)}{p(z|y)}$ always positive.
+        \item Adjust variational parameters of $q(z)$ to make tractable terms as large as possible, thus $\color{intract}\KL{q(z)}{p(z|y)}$ as small as possible.
+    \end{itemize}
 }
 
 \frame{
-    \frametitle{KL-method derivation}
+    \frametitle{VB optimisation illustration}
+    %\animategraphics[loop,width=1\linewidth]{15}{../diagrams/animations/vb-frame-}{0}{39}
+}
+
+%\frame{
+    %\frametitle{Variational Bayes derivation}
+    %\begin{itemize}
+        %\item Assume Gaussian approximate posterior, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$.
+        %\item True posterior using Bayes rule, ${\color{intract}p(\fV|\yV)} = \frac{p(\yV|\fV)p(\fV)}{{\color{intract}p(\yV)}}$.
+        %\item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$.
+    %\end{itemize}
+    %\begin{align*}
+        %\color{intract}\KL{q(\fV)}{p(\fV|\yV)} &= \expectationDist{\log \frac{q(\fV)}{{\color{intract}p(\fV|\yV)}}}{q(\fV)}\\
+                                               %%&= \expectationDist{\log \frac{q(\fV)}{p(\fV)}p(\yV|\fV)p(\yV)}{q(\fV)}\\
+                                               %&= \expectationDist{\log \frac{q(\fV)}{p(\fV)} - \log p(\yV|\fV) + {\color{intract}\log p(\yV)}}{q(\fV)}\\
+                                               %&= \KL{q(\fV)}{p(\fV)} - \expectationDist{\log p(\yV|\fV)}{q(\fV)} + {\color{intract}\log p(\yV)}\\
+        %{\color{intract}\log p(\yV)} &= {\color{tract}\expectationDist{\log p(\yV|\fV)}{q(\fV)}} - {\color{tract}\KL{q(\fV)}{p(\fV)}} + {\color{intract}\KL{q(\fV)}{p(\fV|\yV)}}
+    %\end{align*}
+%}
+
+\frame{
+    \frametitle{Variational Bayes for Gaussian processes}
     \begin{itemize}
-        \item Assume Gaussian approximate posterior, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$.
+        \item Make a Gaussian approximation, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$, as similar possible to true posterior, ${\color{intract}p(\fV|\yV)}$.
+        \item Treat $\muV$ and $\Cmat$ as `variational parameters', effecting quality of approximation.
         \item True posterior using Bayes rule, ${\color{intract}p(\fV|\yV)} = \frac{p(\yV|\fV)p(\fV)}{{\color{intract}p(\yV)}}$.
-        \item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$.
+        \item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$..
     \end{itemize}
     \begin{align*}
         \color{intract}\KL{q(\fV)}{p(\fV|\yV)} &= \expectationDist{\log \frac{q(\fV)}{{\color{intract}p(\fV|\yV)}}}{q(\fV)}\\
@@ -534,13 +642,12 @@
 }
 
 \frame{
-    \frametitle{KL-method derivation}
+    \frametitle{Variational Bayes for Gaussian processes - bound}
     \begin{align*} 
         {\color{intract}\log p(\yV)} &= {\color{tract}\expectationDist{\log p(\yV|\fV)}{q(\fV)}} - {\color{tract}\KL{q(\fV)}{p(\fV)}} + {\color{intract}\KL{q(\fV)}{p(\fV|\yV)}}\\
         &\geq {\color{tract}\expectationDist{\log p(\yV|\fV)}{q(\fV)}} - {\color{tract}\KL{q(\fV)}{p(\fV)}}
     \end{align*}
     \begin{itemize}
-        \item Tractable terms give lower bound on $\log p(\yV)$ as $\color{intract}\KL{q(\fV)}{p(\fV|\yV)}$ always positive.
         \item Adjust variational parameters $\muV$ and $\Cmat$ to make tractable terms as large as possible, thus $\color{intract}\KL{q(\fV)}{p(\fV|\yV)}$ as small as possible.
         \item ${\color{tract}\expectationDist{\log p(\yV|\fV)}{q(\fV)}}$ with factorizing likelihood can be done with a series of $\numData$ 1 dimensional integrals.
         \item In practice, can reduce the number of variational parameters by reparameterizing $\Cmat = (\Kff - 2\Lambda)^{-1}$ by noting that the bound is constant in off diagonal terms of $\Cmat$.
@@ -548,18 +655,23 @@
 }
 
 \frame{
-    \frametitle{KL validity}
-    WHY IS IT OKAY TO DEFINE THE KL DIVERGENCE BETWEEN TWO INFINITE PROCESSES BASED ON ONLY TRAINING POINTS?
+    \frametitle{VB optimisation illustration for Gaussian processes }
+    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/VGP-classification-frame-}{0}{237}
 }
 
-\subsection{Expectation Propagation}
+%\frame{
+    %\frametitle{KL validity}
+    %WHY IS IT OKAY TO DEFINE THE KL DIVERGENCE BETWEEN TWO INFINITE PROCESSES BASED ON ONLY TRAINING POINTS?
+%}
+
+\subsection{Expectation propagation}
 \frame{
 \frametitle{Outline}
     \tableofcontents[currentsection]
 }
 
 \frame{
-    \frametitle{Expectation Propagation}
+    \frametitle{Expectation propagation}
     \begin{align*}
         {\color{red}p(\fV|\yV)} &\propto p(\fV)\prod^{\numData}_{i=1}p(\yV_{i}|\fV_{i})\\
         q(\fV|\yV) &\triangleq \frac{1}{Z_{ep}}p(\fV)\prod^{\numData}_{i=1}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i}) = \gaussianDist{\fV}{\muV}{\Sigma}\\
@@ -573,7 +685,7 @@
 }
 
 \frame{
-    \frametitle{Expectation Propagation}
+    \frametitle{Expectation propagation}
     \begin{enumerate}
         \item From the approximate current posterior, $q(\fV|\yV)$, leave out one of the local likelihoods, $t_{i}$, and marginalise $\fV_{j}$ where $j \neq i$, giving rise to the marginal \emph{cavity distribution}, $q_{-i}(\fV_{i})$.
         \item Combine resulting cavity distribution, $q_{-i}(\fV_{i})$, with exact likelihood contribution, $p(\yV_{i}|\fV_{i})$, giving non-Gaussian un-normalized distribution, $\hat{q}(\fV_{i}) \triangleq p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})$.
@@ -585,7 +697,7 @@
 }
 
 \frame{
-    \frametitle{Expectation Propagation - in math}
+    \frametitle{Expectation propagation - in math}
     Step 1. First choose a local likelihood contribution, $i$, to leave out, and find the marginal cavity distribution,
     \begin{align*}
         q(\fV|\yV) \propto p(\fV)\prod^{\numData}_{j=1}t_{j}(\fV_{j}) 
@@ -603,7 +715,7 @@
 \note{Write full unnormalized posterior down, marginalize all $j \neq i$. Calculate moments of left hand side. Find new $t_{i}$ which matches these moments for this marginal}
 
 \frame{
-    \frametitle{Expectation Propgation - illustrated}
+    \frametitle{Expectation propgation - illustrated}
     ILLUSTRATION OF EP. Titlted distribution, cavity distribution, etc.
 }
 
@@ -651,20 +763,20 @@
         \end{itemize}
         \onslide<3> \begin{itemize}
             \item True posterior is non-Gaussian. 
-            \item KL approximate with a Gaussian that has minimal KL divergence, $\KL{q(\fV)}{p(\fV|\yV)}$. 
+            \item VB approximate with a Gaussian that has minimal KL divergence, $\KL{q(\fV)}{p(\fV|\yV)}$. 
             \item This leads to distributions that avoid regions in which $p(\fV|\yV)$ is small. 
             \item It has a large penality for assigning density where there is none.
         \end{itemize}
         \onslide<4> \begin{itemize}
             \item True posterior is non-Gaussian. 
             \item EP tends to try and put density where $p(\fV|\yV)$ is large
-            \item Cares less about assigning density density where there is none. Contrasts to KL method.
+            \item Cares less about assigning density density where there is none. Contrasts to VB method.
         \end{itemize}
     \end{overprint}
 }
 
 \frame{
-    \frametitle{EP vs KL}
+    \frametitle{EP vs VB}
     ILLUSTRATE ON MULTI-MODAL THE EFFECT OF USING KL pq vs KL qp, i.e. BISHOP PLOT
 }
 
@@ -675,7 +787,7 @@
         \hspace{-4em}
         \begin{itemize}
             \item Laplace: Poor approximation.
-            \item KL: Avoids assigning density to areas where there is none, at the expense of areas where there is some (right tail).
+            \item VB: Avoids assigning density to areas where there is none, at the expense of areas where there is some (right tail).
             \item EP: Assigns density to areas with density, at the expense of areas where there is none (left tail).
         \end{itemize}
 }
@@ -696,8 +808,8 @@
 }
 
 \frame{
-    \frametitle{Pros - Cons - When - KL}
-    KL method
+    \frametitle{Pros - Cons - When - VB}
+    Variational Bayes
     \begin{itemize}
         \item Pros \begin{itemize}
                 \item Principled in that it we are directly optimizing a measure of divergence between an approximation and true distribution.

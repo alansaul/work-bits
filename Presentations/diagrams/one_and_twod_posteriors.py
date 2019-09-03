@@ -1,12 +1,22 @@
 import numpy as np
 import scipy as sp
 import GPy
+import matplotlib
 import matplotlib.pyplot as plt
+from matplotlib import rc
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica'], 'size': 22})
+rc('text', usetex=True)
+rc('xtick',**{'labelsize':15})
+rc('ytick',**{'labelsize':15})
+
+label_fontsize = 22
+# matplotlib.rcParams['figure.figsize'] = (10, 6)
+matplotlib.rcParams['lines.linewidth'] = 3
 plt.close('all')
 import seaborn
 # seaborn.despine()
-seaborn.set_style("white")
-seaborn.set_context("talk")
+# seaborn.set_style("white")
+# seaborn.set_context("talk")
 form = 'pdf'
 title_size = 23
 label_size = 20
@@ -41,7 +51,7 @@ def multivariate_normal_pdf(X, mu, cov):
 def inv_logit(f):
     return np.exp(f) / (1 + np.exp(f))
 
-def inv_probit(f, sharpness_param=1):
+def inv_probit(f, sharpness_param=3.5):
     return 0.5*(1+sp.special.erf((f*sharpness_param)/np.sqrt(2)))
 
 def class_likelihood(y, f):
@@ -76,7 +86,7 @@ def make_prior(kern, fs_mean, fs_cov, X, ind_1=0, ind_2=1):
 
 #Redefine prior to make it wide to increase sharpness of likelihood
 # kern = GPy.kern.RBF(1, variance=80.0)
-kern = GPy.kern.RBF(1, variance=60.0)
+kern = GPy.kern.RBF(1, variance=10.0)
 fs_cov = kern.K(X_f)
 fs_mean = np.zeros(fs_cov.shape[0])
 f12, f12_x, f12_y, f12_prior, f12_cov, f1s_min, f2s_min, f1s_max, f2s_max = make_prior(kern, fs_mean, fs_cov, X_f, ind_1=0, ind_2=1)
@@ -88,29 +98,34 @@ like_f12 = like_f12.reshape(res,res)
 #Unnormalised posterior = prior * likelihood
 post_f12 = f12_prior * like_f12
 
-def compute_marginals(unnorm_joint_density, f12_x):
-    norm_joint = unnorm_joint_density / unnorm_joint_density.sum()
-    norm_joint /= np.diff(f12_x,axis=1)[0,0]**2
+def compute_marginals(unnorm_joint_density, f12_x, normalise=True):
+    norm_joint = unnorm_joint_density
+    if normalise:
+        norm_joint /= unnorm_joint_density.sum()
+        norm_joint /= np.diff(f12_x,axis=1)[0,0]**2
 
     marg1 = unnorm_joint_density.sum(0)
-    marg1 /= marg1.sum()
-    marg1 /= (f12_x[0][1] - f12_x[0][0])
+    if normalise:
+        marg1 /= marg1.sum()
+        marg1 /= (f12_x[0][1] - f12_x[0][0])
 
     marg2 = unnorm_joint_density.sum(1)
-    marg2 /= marg2.sum()
-    marg2 /= (f12_x[0][1] - f12_x[0][0])
+    if normalise:
+        marg2 /= marg2.sum()
+        marg2 /= (f12_x[0][1] - f12_x[0][0])
     return norm_joint, marg1, marg2
 
 #Renormalize all (Laplace should be normalized already, and EP should be aswell)
 post_approx, post_marg1, post_marg2 = compute_marginals(post_f12, f12_x)
-lik_approx, lik_marg1, lik_marg2 = compute_marginals(like_f12, f12_x)
+lik_approx, lik_marg1, lik_marg2 = like_f12, like_f12[:, -1], like_f12[-1, :]
+# lik_approx, lik_marg1, lik_marg2 = compute_marginals(like_f12, f12_x, normalise=False)
 prior_approx, prior_marg1, prior_marg2 = compute_marginals(f12_prior, f12_x)
 
 #Plot the two approximations as contours
 plt.figure()
 plt.contour(f12_x, f12_y, post_approx)
 plt.colorbar()
-plt.title('Real posterior p(f|y=1)')
+plt.title('Real posterior $p(f|y=1)$')
 plt.xlabel('f1', fontsize=label_size)
 plt.ylabel('f2', fontsize=label_size)
 
@@ -136,9 +151,11 @@ def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f
     fig = plt.figure()
     ax2 = plt.subplot(gs[1,0])
     cax = ax2.contourf(f12_x, f12_y, density, origin = 'lower',
-            extent=(f1s_min, f1s_max, f2s_min, f2s_max), aspect='auto', cmap=plt.cm.coolwarm)
-    ax2.contour(density, origin = 'lower', extent = (f1s_min, f1s_max, f2s_min, f2s_max),
-                aspect = 'auto', cmap = plt.cm.bone)	# Contour Lines
+                       extent=(f1s_min, f1s_max, f2s_min, f2s_max),
+                       aspect='auto', cmap=plt.cm.coolwarm, levels=10)
+    # ax2.contour(density, levels=np.linspace(density.min()+0.1, density.max(), 5),
+                # origin = 'lower', extent = (f1s_min, f1s_max, f2s_min, f2s_max),
+                # aspect = 'auto', cmap = plt.cm.bone)	# Contour Lines
     ax2.set_xlabel('$f_1$', fontsize=label_size)
     ax2.set_ylabel('$f_2$', fontsize=label_size)
 
@@ -148,7 +165,7 @@ def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f
     #Create Y-marginal (right)
     axr = plt.subplot(gs[1,1], sharey=ax2, frameon=False, # xticks=[], yticks=[],
                     xlim=(0, 1.4*marg2.max()), ylim=(f2s_min, f2s_max))
-    axr.plot(marg2, f12_x[1], color='black')
+    axr.plot(marg2, f12_x[1], color='black', lw=1)
     axr.fill_betweenx(f12_x[1], 0, marg2, alpha=.75, color='#5673E0')
     axr.xaxis.set_visible(False)
     axr.yaxis.set_visible(False)
@@ -156,7 +173,7 @@ def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f
     #Create X-marginal (top)
     axt = plt.subplot(gs[0,0], sharex = ax2, frameon = False, #xticks=[], yticks=[],
                     xlim=(f1s_min, f1s_max), ylim=(0, 1.4*marg1.max()))
-    axt.plot(f12_x[1], marg1, color='black')
+    axt.plot(f12_x[1], marg1, color='black', lw=1)
     axt.fill_between(f12_x[1], 0, marg1, alpha=.75, color='#5673E0')
     axt.xaxis.set_visible(False)
     axt.yaxis.set_visible(False)
@@ -175,14 +192,17 @@ fig_joint_prior.suptitle('Prior $p(f_1,f_2)$', fontsize=title_size)
 fig_joint_post.suptitle('True posterior $p(f_1,f_2|y_{1}=1, y_{2}=1)$', fontsize=title_size)
 
 fig_margs, ax_margs = plt.subplots(1,1)
-approxs = [('posterior p(f|y=1)', post_marg1, 'r'),
-           ('likelihood p(y=1|f)', lik_marg1, 'g'),
-           ('prior p(f)', prior_marg1, 'b')]
+approxs = [('posterior $p(f|y=1)$', post_marg1, 'C0'),
+           ('likelihood $p(y=1|f)$', lik_marg1, 'C1'),
+           ('prior $p(f)$', prior_marg1, 'C2')]
 for (name, marg, color) in approxs:
-    ax_margs.plot(f12_x[0], marg, color=color, label=name)
+    ax_margs.plot(f12_x[0], marg, color=color, label=name, lw=2.0)
     if name.startswith('posterior'):
         ax_margs.fill_between(f12_x[0], 0, marg, color=color, alpha=.5)
-ax_margs.legend()
+
+leg = ax_margs.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(0.52, 1.00))
+leg.get_frame().set_linewidth(0.0)
+# ax_margs.legend()
 ax_margs.set_ylim(bottom=0.0)
 ax_margs.set_xlabel("$f_{1}$")
 fig_margs.tight_layout()
@@ -201,11 +221,6 @@ save=True
 # sns.set_style("white")
 # sns.set_context("paper")
 # sns.set_palette('Set2')
-from matplotlib import rc
-rc('font',**{'family':'sans-serif','sans-serif':['Helvetica'], 'size': 22})
-rc('text', usetex=True)
-rc('xtick',**{'labelsize':15})
-rc('ytick',**{'labelsize':15})
 
 label_fontsize = 22
 #import prettyplotlib as pp
@@ -230,26 +245,29 @@ squashed_F = inv_probit(F.T)
 
 def plot_prior(Xs):
     fig_prior, ax = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
-    ax.plot(X, F.T, 'b')
+    ax.plot(X, F.T, 'C0', lw=1)
     for i, X_ in enumerate(Xs):
-        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i+1), c='k')
+        ax.axvline(X_, label='$f_{}$'.format(i+1), c='k')
         # ax.axvline(X_f[1], F.min(), F.max(), label='$f_2$', c='k')
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
-    ax.set_ylabel('$f$', fontsize=label_fontsize)
     seaborn.despine()
+    ax.set_ylabel('$f$', fontsize=label_fontsize)
+    ax.set_xlim(X.min(), X.max())
     return fig_prior
 
 def plot_prior_squashed(Xs):
     fig_squashed, ax_squashed = plt.subplots(1, 1, figsize=(10, 5), sharex=True)
-    ax_squashed.plot(X, squashed_F, 'b')
+    ax_squashed.plot(X, squashed_F, 'C0', lw=1)
     for i, X_ in enumerate(Xs):
-        ax_squashed.axvline(X_, 0, 1, label='$f_{}$'.format(i+1), c='k')
+        ax_squashed.axvline(X_, label='$f_{}$'.format(i+1), c='k')
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
     ax_squashed.set_ylabel('$\lambda(f)$', fontsize=label_fontsize)
     ax_squashed.set_xlabel('$x$', fontsize=label_fontsize)
     seaborn.despine()
+    ax_squashed.set_ylim(0, 1)
+    ax_squashed.set_xlim(X.min(), X.max())
     return fig_squashed
 
 def plot_likelihood_alpha(Xs):
@@ -273,16 +291,17 @@ def plot_likelihood_alpha(Xs):
     fig_lik, ax = plt.subplots(1, 1, figsize=(10, 5))
 
     for i in range(all_lik.shape[0]):
-        ax.plot(X, squashed_F[:,i:i+1], 'b', alpha=all_lik[i, 0])
+        ax.plot(X, squashed_F[:,i:i+1], 'C0', lw=1, alpha=all_lik[i, 0])
 
     for i, X_ in enumerate(Xs):
-        ax.axvline(X_, F.min(), F.max(), label='$f_{}$'.format(i+1), c='k')
-        ax.plot(X_, 1, 'r*')
+        ax.axvline(X_, label='$f_{}$'.format(i+1), c='k')
+        ax.plot(X_, 1, color='C1', marker='o', markersize=12)
     leg = plt.legend(fontsize=label_fontsize/1.5, frameon=True, bbox_to_anchor=(1.02, 1.00))
     leg.get_frame().set_linewidth(0.0)
+    seaborn.despine()
     ax.set_ylabel('$\lambda(f)$', fontsize=label_fontsize)
     ax.set_xlabel('$x$', fontsize=label_fontsize)
-    seaborn.despine()
+    ax.set_xlim(X.min(), X.max())
     return fig_lik
 
 fig_1d_prior = plot_prior(Xs=[X_f[0]])
