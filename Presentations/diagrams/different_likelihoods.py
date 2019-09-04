@@ -1,5 +1,6 @@
 import scipy as sp
 from scipy import stats
+from scipy import integrate
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -32,9 +33,13 @@ for ax, (dist, continuous, dist_name) in zip(axes.flatten(), distributions):
                         300
                         )
         if 'lognorm' in dist.dist.name:
-            ax.plot(x, stats.lognorm.pdf(x, s=0.7, loc=mean), 'b-')
+            pdf = stats.lognorm.pdf(x, s=0.7, scale=mean)
         else:
-            ax.plot(x, dist.pdf(x), 'b-')
+            pdf = dist.pdf(x)
+            integrand = integrate.quad(dist.pdf, dist.ppf(0), dist.ppf(1))
+            print(integrand)
+        ax.plot(x, pdf, 'b-')
+        ax.fill_between(x, np.zeros_like(pdf), pdf, alpha=0.3, color='C0')
     else:
         x = np.arange(dist.ppf(0.00001),
                     dist.ppf(0.99999)
@@ -69,29 +74,49 @@ for ax, (dist, scale, continuous, dist_name, y) in zip(axes.flatten(), distribut
     if dist == stats.norm:
         ff = np.linspace(-4*scale, 8*scale, 500)
         lik_f = np.nan_to_num(np.array([dist(loc=f, scale=scale).pdf(x=y) for f in ff]))
-        ax.plot(ff, lik_f, 'b-')
-    if dist == stats.t:
+
+        dist_in_f = lambda f: dist(loc=f, scale=scale).pdf(x=y)
+        integrand = integrate.quad(dist_in_f, -50*scale, 50*scale)[0]
+        print(integrand)
+    elif dist == stats.t:
         ff = np.linspace(-4*scale, 8*scale, 500)
         lik_f = np.nan_to_num(np.array([dist(loc=f, scale=scale, df=4).pdf(x=y) for f in ff]))
-        ax.plot(ff, lik_f, 'b-')
-    if dist == stats.lognorm:
-        ff = np.linspace(-5, 5, 500)
-        lik_f = np.nan_to_num(np.array([dist.pdf(x=y, s=scale, loc=f) for f in ff]))
-        ax.plot(ff, lik_f, 'b-')
-    if dist == stats.beta:
+
+        dist_in_f = lambda f: dist(loc=f, scale=scale, df=4).pdf(x=y)
+        integrand = integrate.quad(dist_in_f, -50*scale, 50*scale)[0]
+        print(integrand)
+    elif dist == stats.lognorm:
+        ff = np.linspace(-4*scale, 35*scale, 500)
+        lik_f = np.nan_to_num(np.array([dist.pdf(x=y, s=scale, scale=f) for f in ff]))
+
+        dist_in_f = lambda f: dist(scale=f, s=scale).pdf(x=y)
+        integrand = integrate.quad(dist_in_f, 1e-15, 35*scale)[0]
+        print(integrand)
+    elif dist == stats.beta:
         ff = np.linspace(-4*scale, 8*scale, 500)
         lik_f = np.nan_to_num(np.array([dist(a=f, b=scale).pdf(x=y) for f in ff]))
-        ax.plot(ff, lik_f, 'b-')
         ax.set_ylabel('p(y={}|f)'.format(y))
+
+        dist_in_f = lambda f: dist(a=f, b=scale).pdf(x=y)
+        integrand = integrate.quad(dist_in_f, 1e-15, 35*scale)[0]
+        print(integrand)
     elif dist==stats.bernoulli:
-        ff = np.linspace(0, 1, 500)
+        ff = np.linspace(-0.5, 1.5, 500)
         lik_f = np.array([dist(p=f).pmf(y) for f in ff])
-        ax.plot(ff, lik_f, 'b-')
+
+        dist_in_f = lambda f: dist(p=f).pmf(y)
+        integrand = integrate.quad(dist_in_f, 0, 1)[0]
+        print(integrand)
     elif dist==stats.poisson:
         ff = np.linspace(-12, 12, 500)
         lik_f = np.array([dist(f).pmf(y) for f in ff])
-        ax.plot(ff, lik_f, 'b-')
 
+        dist_in_f = lambda f: dist(f).pmf(y)
+        integrand = integrate.quad(dist_in_f, 0, 100)[0]
+        print(integrand)
+
+    ax.plot(ff, lik_f, 'b-')
+    ax.fill_between(ff, np.zeros_like(lik_f), lik_f, alpha=0.3, color='C0')
     ax.grid(False)
     ax.title.set_text(dist_name)
     sns.despine()
