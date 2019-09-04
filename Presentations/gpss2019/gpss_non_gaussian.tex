@@ -4,7 +4,7 @@
 %\documentclass[notes=only]{beamer}   % only notes
 %\documentclass{beamer}              % only frames
 \usepackage{animate}
-\usetheme{BlueGrey}
+\usetheme{Prowler}
 \usenavigationsymbolstemplate{}
 \renewcommand{\newblock}{}
 \setlength{\parskip}{1em}
@@ -53,9 +53,25 @@
 \definecolor{tract}{RGB}{86, 130, 3}
 
 \title{Non-Gaussian likelihoods for Gaussian Processes}
-\author{Alan Saul}
-\institute{PROWLER.IO}
+\author{\large Alan Saul}
+\institute{{\includegraphics[height=1.1cm]{../diagrams/prowler-primary-logo-lbg.png}}}
 \date{}
+
+\defbeamertemplate*{title page}{customized}[1][]
+{
+	\centering
+    %\setbeamercolor{coloredboxstuff}{fg=yellow,bg=blue}
+  	\begin{beamercolorbox}[wd=\paperwidth,ht=8.8ex,dp=5.8ex]{frametitle}
+   		 \centering  \usebeamerfont{title}\inserttitle
+     \end{beamercolorbox}
+ 
+   %\vspace{1.4cm}
+   \bigskip
+   \insertauthor\par
+   \insertinstitute\par
+   \insertdate\par
+ 
+}
 
 \begin{document}
 %\frame{
@@ -68,7 +84,13 @@
     %%\includegraphics[width=0.4\textwidth]{../../../logo_sheff}
 %\end{center}
 %}
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=2pt] at (current page.north east) {\includegraphics[height=0.8cm]{../diagrams/prowler-icon-agent.png}};
+\end{tikzpicture}}
+
 \frame{\titlepage}
+
 
 \frame{
 \frametitle{Outline}
@@ -177,10 +199,11 @@
 \frame{
     \frametitle{Likelihood}
     \begin{itemize}
-        \item $p(\yV|\fV)$ is the probability that we would see some random variables, $\yV$, if we knew the latent function values $\fV$, which act as parameters.
-        \item Given the observed values for $\yV$ are fixed, it can also be seen as the likelihood that some latent function values, $\fV$, would give rise to the observed values of $\yV$. Note this is a \emph{function} of $\fV$, and doesn't integrate to $1$ in $\fV$.
-        \item So far assumed that the distortion of the underlying latent function, $\fV$, that gives rise to the observed data, $\yV$, is independent and normally distributed.
-        \item This is often not the case, count data, binary data, etc.
+        \uncover<+->{\item $p(\yV|\fV)$ is the probability that we would see some random variables, $\yV$, if we knew the latent function values $\fV$, which act as parameters.}
+        \uncover<+->{\item Given the observed values for $\yV$ are fixed, it can also be seen as the likelihood that some latent function values, $\fV$, would give rise to the observed values of $\yV$. Note this is a \emph{function} of $\fV$, and doesn't integrate to $1$ in $\fV$.}
+        \uncover<+->{\item Often observations aren't observed by simple Gaussian corruptions of the underlying latent function, $\fV$.}
+        %\item So far assumed that the distortion of the underlying latent function, $\fV$, that gives rise to the observed data, $\yV$, is independent and normally distributed.
+        \uncover<+->{\item In the case of count data, binary data, etc, we need to choose a different likelihood function.}
     \end{itemize}
 }
 
@@ -249,7 +272,7 @@
     \end{align*}
 \end{overprint}
 \begin{overprint}
-    \centerline{\includegraphics[width=.9\textwidth]{../diagrams/PoissonPosterior.pdf}}
+    \centerline{\includegraphics[width=.8\textwidth]{../diagrams/PoissonPosterior.pdf}}
 \end{overprint}
 }
 
@@ -271,10 +294,10 @@
 \end{columns}
 }
 
-\frame{
-    \frametitle{Application example}
-    MORE COMPLEX MOTIVATING APPLICATION. MNIST MULTICLASS
-}
+%\frame{
+    %\frametitle{Application example}
+    %MORE COMPLEX MOTIVATING APPLICATION. MNIST MULTICLASS
+%}
 
 
 \section{Non-Gaussian posteriors}
@@ -351,9 +374,11 @@
         \item Approximation of the posterior with something of known form.
    \end{itemize}
 
-   Today we will focus on the latter. This leads to more scalable methods, however this comes at the expense of them no longer being exact in the limit of infinite computation time.
+   Today we will focus on the latter.\\~\\
 
-   IMAGE WITH TRUE NON-GAUSSIAN 2D POSTERIOR, SAMPLES TAKEN FROM THE TRUE POSTERIOR, AND A GAUSSIAN APPROXIMATION
+    \centerline{\includegraphics[width=0.3\textwidth]{../diagrams/2d_joint_posterior_no_marginals.pdf}
+                \includegraphics[width=0.3\textwidth]{../diagrams/2d_joint_posterior_samples.pdf}
+                \includegraphics[width=0.31\textwidth]{../diagrams/joint_kl_no_marginals.pdf}}
 }
 
 \frame{
@@ -470,7 +495,7 @@
 
 \frame{%
     \frametitle{Laplace appoximation for Gaussian processes}
-    In our case, $h(\hat{\fV}) = p(\yV|\fV)p(\fV)$, so we need to evaluate
+    In our case, $h(\fV) = p(\yV|\fV)p(\fV)$, so we need to evaluate
     \begin{align*}
         -\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}} &= -\frac{d^{2}(\log p(\yV|\hat{\fV}) + \log p(\hat{\fV}))}{d\fV^{2}}\\
         &= -\frac{d^{2}\log p(\yV|\hat{\fV})}{d\fV^{2}} + \mathbf{K}^{-1}\\
@@ -499,19 +524,19 @@
     \frametitle{Visualization of Laplace}
     %\animategraphics[controls]{1}{../diagrams/laplace-anim}{0}{6}
     \centering
-    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-log-Poisson}
+    \multiinclude[<+>][format=pdf,graphics={scale=0.6}]{../diagrams/animations/laplace-anim-log-Poisson}
 }
 \frame{
     \frametitle{Visualization of Laplace}
     %\animategraphics[controls]{1}{../diagrams/laplace-anim}{0}{6}
     \centering
-    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Poisson}
+    \multiinclude[<+>][format=pdf,graphics={scale=0.6}]{../diagrams/animations/laplace-anim-full-Poisson}
 }
 
 \frame{
     \frametitle{Visualise of Laplace - Bernoulli}
     \centering
-    \multiinclude[<+>][format=pdf,graphics={scale=0.7}]{../diagrams/animations/laplace-anim-full-Bernoulli}
+    \multiinclude[<+>][format=pdf,graphics={scale=0.6}]{../diagrams/animations/laplace-anim-full-Bernoulli}
 }
 
 \subsection{Variational bayes}
@@ -630,7 +655,7 @@
         \item Make a Gaussian approximation, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$, as similar possible to true posterior, ${\color{intract}p(\fV|\yV)}$.
         \item Treat $\muV$ and $\Cmat$ as `variational parameters', effecting quality of approximation.
         \item True posterior using Bayes rule, ${\color{intract}p(\fV|\yV)} = \frac{p(\yV|\fV)p(\fV)}{{\color{intract}p(\yV)}}$.
-        \item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$..
+        \item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$.
     \end{itemize}
     \begin{align*}
         \color{intract}\KL{q(\fV)}{p(\fV|\yV)} &= \expectationDist{\log \frac{q(\fV)}{{\color{intract}p(\fV|\yV)}}}{q(\fV)}\\
@@ -658,11 +683,6 @@
     \frametitle{VB optimisation illustration for Gaussian processes }
     %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/VGP-classification-frame-}{0}{237}
 }
-
-%\frame{
-    %\frametitle{KL validity}
-    %WHY IS IT OKAY TO DEFINE THE KL DIVERGENCE BETWEEN TWO INFINITE PROCESSES BASED ON ONLY TRAINING POINTS?
-%}
 
 \subsection{Expectation propagation}
 \frame{
@@ -714,17 +734,10 @@
 }
 \note{Write full unnormalized posterior down, marginalize all $j \neq i$. Calculate moments of left hand side. Find new $t_{i}$ which matches these moments for this marginal}
 
-\frame{
-    \frametitle{Expectation propgation - illustrated}
-    ILLUSTRATION OF EP. Titlted distribution, cavity distribution, etc.
-}
-
-\frame{
-    \frametitle{Sampling}
-    ALTHOUGH NOT OUR FOCUS, WHY IS IT DIFFICUILT AND WHAT METHODS ARE CURRENTLY USED?
-
-    HOW CAN SAMPLES (HOWEVER THEY ARE OBTAINED) BE USED TO COMPUTE QUANTITIES OF INTEREST?
-}
+%\frame{
+    %\frametitle{Expectation propgation - illustrated}
+    %ILLUSTRATION OF EP. Titlted distribution, cavity distribution, etc.
+%}
 
 \subsection{Comparisons}
 \frame{
@@ -776,14 +789,9 @@
 }
 
 \frame{
-    \frametitle{EP vs VB}
-    ILLUSTRATE ON MULTI-MODAL THE EFFECT OF USING KL pq vs KL qp, i.e. BISHOP PLOT
-}
-
-\frame{
     \frametitle{Comparing posterior marginal approximations}
         \hspace{0.2em}
-        \centerline{\includegraphics[width=0.7\textwidth,trim={0 1.7cm 0.5cm 0},clip]{../diagrams/marginals.pdf}}
+        \centerline{\includegraphics[width=0.6\textwidth,trim={0 1.7cm 0.5cm 0},clip]{../diagrams/marginals.pdf}}
         \hspace{-4em}
         \begin{itemize}
             \item Laplace: Poor approximation.
@@ -886,19 +894,50 @@
 }
 
 \frame{
-    \frametitle{Bonus}
-    HETEROSCEDASTIC LIKELIHOODS
+    \frametitle{Bonus - Hetroscedastic likelihoods}
+    \centerline{\includegraphics[width=0.7\textwidth]{../diagrams/silverman_het_gauss.png}}
+    \begin{itemize}
+        \item Likelihood whos parameters are governed by two known functions, $\fV$ and $\mathbf{g}$.
+        \item $p(\yV|\fV, \mathbf{g}) = \gaussianDist{\yV}{\mu=\fV}{\sigma^{2}=\exp(\mathbf{g})}$
+    \end{itemize}
 }
 
 \frame{
-    \frametitle{Bonus}
-    HOW TO ENSURE YOU HAVE THE RIGHT LIKELIHOOD?
-    WHAT TESTS CAN BE DONE?
-    HOW DO WE KNOW OUR APPROXIMATION IS GOOD ENOUGH?
+    \frametitle{Bonus - non-Gaussian hetroscedastic likelihoods}
+    \begin{center}
+    \resizebox{1.0\textwidth}{!}{%
+        \input{../diagrams/corrupt_motorcycle_all.tikz}
+    }
+    \end{center}
+    \begin{itemize}
+        \item Likelihood whos parameters are governed by two known functions, $\fV$ and $\mathbf{g}$.
+        \item $p(\yV|\fV, \mathbf{g}) = t(\yV|\mu=\fV, \sigma^{2}=\exp(\mathbf{g}), \nu=3.0)$
+    \end{itemize}
 }
+%\caption{Corrupted motorcycle dataset, fitted with a Gaussian
+%process model with a Gaussian likelihood, a Gaussian process
+%with input-dependent noise (heteroscedastic) with a Gaussian
+%likelihood, and a Gaussian process with Student-$t$ likelihood,
+%with an input-dependent shape parameter. The mean is
+%shown in solid and the variance is shown as dotted}
+
+\frame{
+    \frametitle{Bonus - non-Gaussian hetroscedastic likelihoods}
+    \begin{center}
+        \includegraphics[width=0.33\textwidth,keepaspectratio]{../diagrams/crime_func_f_fast.pdf}
+        \includegraphics[width=0.33\textwidth,keepaspectratio]{../diagrams/crime_func_g_slow.pdf}\\
+        \includegraphics[width=0.33\textwidth,keepaspectratio]{../diagrams/time_f_fig.pdf}
+        \includegraphics[width=0.33\textwidth,keepaspectratio]{../diagrams/time_g_fig.pdf}\\
+    \end{center}
+    \begin{itemize}
+        %\item Rate parameter of Poisson as sum of spatial GP and temporal GP.
+        \item $\Lambda(\xV, \mathbf{t}) = \lambda_1(\xV)\mu_1(\mathbf{t}) + \lambda_2(\xV)\mu_2(\mathbf{t})$
+    \end{itemize}
+}
+%Homicide rate maps for Chicago. The short length scale spatial process, $\lambda_1(x)$ (above-left) is multiplied in the model by a temporal process, $\mu_1(t)$ (below-left) which fluctuates with passing seasons. Contours of spatial process are plotted as deaths per month per zip code area. Error bars on temporal processes are at 5th and 95th percentile. The longer length scale spatial process, $\lambda_2(x)$ (above-right) has been modeled with little to no fluctuation temporally $\mu_2(t)$ (below-right)
 
 
-\frame[allowframebreaks]{
+\frame[allowframebreaks]{%
     \frametitle{References}
     {\small
     \bibliography{lawrence,other,zbooks,../library}

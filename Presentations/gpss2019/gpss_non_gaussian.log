@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.14)  3 SEP 2019 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.12.14)  4 SEP 2019 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -830,13 +830,13 @@ Package: ocgbase 2017/03/30 v0.10 support package for ocgx2.sty
 \@anim@curfield=\count272
 \@anim@@resizeflags=\count273
 )
-(./beamerthemeBlueGrey.sty
+(./beamerthemeProwler.sty
 
-LaTeX Warning: You have requested package `beamerthemeBlueGrey',
+LaTeX Warning: You have requested package `beamerthemeProwler',
                but the package provides `beamerthemeWarsaw'.
 
 Package: beamerthemeWarsaw 2010/06/17  (rcs-revision d02a7cf4d8ae)
-(./beamercolorthemeBlueGrey.sty))
+(./beamercolorthemeProwler.sty))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip66
@@ -1247,44 +1247,44 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 (./gpss_non_gaussian.aux)
 \openout1 = `gpss_non_gaussian.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/pxmi/m/it on input line 60.
-LaTeX Font Info:    Try loading font information for OML+pxmi on input line 60.
+LaTeX Font Info:    Checking defaults for OML/pxmi/m/it on input line 76.
+LaTeX Font Info:    Try loading font information for OML+pxmi on input line 76.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/omlpxmi.fd
 File: omlpxmi.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/pxsy/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for OMS+pxsy on input line 60.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/pxsy/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+pxsy on input line 76.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/omspxsy.fd
 File: omspxsy.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/pxex/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for OMX+pxex on input line 60.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/pxex/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for OMX+pxex on input line 76.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/omxpxex.fd
 File: omxpxex.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/pxexa/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for U+pxexa on input line 60.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/pxexa/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for U+pxexa on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxexa.fd
 File: upxexa.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Try loading font information for OT1+pxr on input line 60.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+pxr on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/ot1pxr.fd
 File: ot1pxr.fd 2000/12/14 v1.0
@@ -1355,7 +1355,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 76.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1365,9 +1365,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count318
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
 
 (./gpss_non_gaussian.out) (./gpss_non_gaussian.out)
 \@outlinefile=\write6
@@ -1398,483 +1398,826 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 60.
+LaTeX Info: Redefining \includegraphics on input line 76.
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.14}).
 
-(./gpss_non_gaussian.nav) [1
+(./gpss_non_gaussian.nav)
+<../diagrams/prowler-primary-logo-lbg.png, id=41, 2168.1pt x 671.50874pt>
+File: ../diagrams/prowler-primary-logo-lbg.png Graphic file (type png)
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./gpss
-_non_gaussian.toc) [2
+<use ../diagrams/prowler-primary-logo-lbg.png>
+Package pdftex.def Info: ../diagrams/prowler-primary-logo-lbg.png used on input
+ line 92.
+(pdftex.def)             Requested size: 101.03395pt x 31.2982pt.
+ [1
 
-]
-LaTeX Font Info:    Try loading font information for U+pxsya on input line 145.
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../diag
+rams/prowler-primary-logo-lbg.png>] (./gpss_non_gaussian.toc)
+<../diagrams/prowler-icon-agent.png, id=58, 803.0pt x 803.0pt>
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+98.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [2
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxsya.fd
+ <../diagrams/prowler-icon-agent.png>]
+LaTeX Font Info:    Try loading font information for U+pxsya on input line 167.
+
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxsya.fd
 File: upxsya.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+pxsyb on input line 145.
+LaTeX Font Info:    Try loading font information for U+pxsyb on input line 167.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxsyb.fd
 File: utxsyb.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+pxmia on input line 145.
+LaTeX Font Info:    Try loading font information for U+pxmia on input line 167.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxmia.fd
 File: upxmia.fd 2000/12/14 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+pxsyc on input line 145.
+LaTeX Font Info:    Try loading font information for U+pxsyc on input line 167.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/upxsyc.fd
 File: upxsyc.fd 2000/12/14 v1.0
 )
-<../diagrams/PosteriorGP.pdf, id=67, 552.1914pt x 221.06276pt>
+<../diagrams/PosteriorGP.pdf, id=72, 552.1914pt x 221.06276pt>
 File: ../diagrams/PosteriorGP.pdf Graphic file (type pdf)
 
 <use ../diagrams/PosteriorGP.pdf>
-Package pdftex.def Info: ../diagrams/PosteriorGP.pdf used on input line 145.
+Package pdftex.def Info: ../diagrams/PosteriorGP.pdf used on input line 167.
 (pdftex.def)             Requested size: 307.28987pt x 123.01846pt.
- [3
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+167.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
 
- <../diagrams/PosteriorGP.pdf>] [4
+[3
+
+ <../diagrams/PosteriorGP.pdf>]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+178.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[4
+
+] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+184.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [5
 
 ]
-(./gpss_non_gaussian.toc) [5
-
-]
-<../diagrams/datatypes.pdf, id=152, 1084.05pt x 361.35pt>
+<../diagrams/datatypes.pdf, id=156, 1084.05pt x 361.35pt>
 File: ../diagrams/datatypes.pdf Graphic file (type pdf)
 
 <use ../diagrams/datatypes.pdf>
-Package pdftex.def Info: ../diagrams/datatypes.pdf used on input line 175.
+Package pdftex.def Info: ../diagrams/datatypes.pdf used on input line 197.
 (pdftex.def)             Requested size: 304.21866pt x 101.40337pt.
- [6
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+197.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
 
- <../diagrams/datatypes.pdf>] [7
+[6
+
+ <../diagrams/datatypes.pdf>]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+208.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[7
 
 ]
-<../diagrams/all_likelihoods.pdf, id=198, 1084.05pt x 650.43pt>
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+208.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [8
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+208.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [9
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+208.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [10
+
+]
+<../diagrams/all_likelihoods.pdf, id=216, 1084.05pt x 650.43pt>
 File: ../diagrams/all_likelihoods.pdf Graphic file (type pdf)
 
 <use ../diagrams/all_likelihoods.pdf>
-Package pdftex.def Info: ../diagrams/all_likelihoods.pdf used on input line 193
+Package pdftex.def Info: ../diagrams/all_likelihoods.pdf used on input line 216
 .
 (pdftex.def)             Requested size: 304.21866pt x 182.52606pt.
- [8
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+216.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[11
 
  <../diagrams/all_likelihoods.pdf>]
-<../diagrams/all_actual_likelihoods.pdf, id=284, 1084.05pt x 650.43pt>
+<../diagrams/all_actual_likelihoods.pdf, id=302, 1084.05pt x 650.43pt>
 File: ../diagrams/all_actual_likelihoods.pdf Graphic file (type pdf)
 
 <use ../diagrams/all_actual_likelihoods.pdf>
 Package pdftex.def Info: ../diagrams/all_actual_likelihoods.pdf used on input l
-ine 201.
+ine 224.
 (pdftex.def)             Requested size: 304.21866pt x 182.52606pt.
- [9
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/all_actual_likelihoods.pdf>]
-<../diagrams/BernoulliPosterior.pdf, id=370, 334.8677pt x 104.65692pt>
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+224.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [12
+
+ <../diagrams/all_actual_likelihoods.pdf>] <../diagrams/BernoulliPosterior.pdf,
+ id=384, 334.8677pt x 104.65692pt>
 File: ../diagrams/BernoulliPosterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/BernoulliPosterior.pdf>
 Package pdftex.def Info: ../diagrams/BernoulliPosterior.pdf used on input line 
-236.
+259.
 (pdftex.def)             Requested size: 307.28987pt x 96.04439pt.
- [10
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/BernoulliPosterior.pdf>] <../diagrams/PoissonPosterior.pdf, id=42
-1, 552.0832pt x 212.7738pt>
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+259.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [13
+
+ <../diagrams/BernoulliPosterior.pdf>] <../diagrams/PoissonPosterior.pdf, id=43
+5, 552.0832pt x 212.7738pt>
 File: ../diagrams/PoissonPosterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/PoissonPosterior.pdf>
-Package pdftex.def Info: ../diagrams/PoissonPosterior.pdf used on input line 25
-4.
-(pdftex.def)             Requested size: 276.559pt x 106.58792pt.
+Package pdftex.def Info: ../diagrams/PoissonPosterior.pdf used on input line 27
+7.
+(pdftex.def)             Requested size: 245.83282pt x 94.7441pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \vbox (13.91156pt too high) detected at line 254
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+277.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+Overfull \vbox (15.66774pt too high) detected at line 277
  []
 
-[11
+[14
 
  <../diagrams/PoissonPosterior.pdf>]
-<../diagrams/crime_func_f_fast.pdf, id=484, 377.24939pt x 523.9575pt>
+<../diagrams/crime_func_f_fast.pdf, id=497, 377.24939pt x 523.9575pt>
 File: ../diagrams/crime_func_f_fast.pdf Graphic file (type pdf)
 
 <use ../diagrams/crime_func_f_fast.pdf>
 Package pdftex.def Info: ../diagrams/crime_func_f_fast.pdf used on input line 2
-72.
+95.
 (pdftex.def)             Requested size: 153.64493pt x 213.40086pt.
- [12
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/crime_func_f_fast.pdf>] [13
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+295.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [15
 
-] (./gpss_non_gaussian.toc) [14
-
-] [15
+ <../diagrams/crime_func_f_fast.pdf>] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+307.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [16
 
 ]
-<../diagrams/1d_gp_prior_samples.pdf, id=530, 640.22334pt x 313.60207pt>
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+319.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [17
+
+]
+<../diagrams/1d_gp_prior_samples.pdf, id=536, 720.15497pt x 313.60207pt>
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 309.
-(pdftex.def)             Requested size: 276.559pt x 135.46353pt.
+ 332.
+(pdftex.def)             Requested size: 276.559pt x 120.4333pt.
 
-<../diagrams/1d_squashed_gp_prior_samples.pdf, id=531, 710.08936pt x 343.32152p
+<../diagrams/1d_squashed_gp_prior_samples.pdf, id=537, 710.08936pt x 343.32152p
 t>
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 309.
+nput line 332.
 (pdftex.def)             Requested size: 276.559pt x 133.71674pt.
 
-<../diagrams/1d_gp_post_samples.pdf, id=532, 710.08936pt x 337.9778pt>
+<../diagrams/1d_gp_post_samples.pdf, id=538, 710.08936pt x 337.9778pt>
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-309.
+332.
 (pdftex.def)             Requested size: 276.559pt x 131.63545pt.
- [16
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+332.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [18
 
  <../diagrams/1d_gp_prior_samples.pdf>]
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 309.
-(pdftex.def)             Requested size: 276.559pt x 135.46353pt.
+ 332.
+(pdftex.def)             Requested size: 276.559pt x 120.4333pt.
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 309.
+nput line 332.
 (pdftex.def)             Requested size: 276.559pt x 133.71674pt.
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-309.
+332.
 (pdftex.def)             Requested size: 276.559pt x 131.63545pt.
- [17
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+332.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [19
 
  <../diagrams/1d_squashed_gp_prior_samples.pdf>]
 File: ../diagrams/1d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/1d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_prior_samples.pdf used on input line
- 309.
-(pdftex.def)             Requested size: 276.559pt x 135.46353pt.
+ 332.
+(pdftex.def)             Requested size: 276.559pt x 120.4333pt.
 File: ../diagrams/1d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_squashed_gp_prior_samples.pdf used on i
-nput line 309.
+nput line 332.
 (pdftex.def)             Requested size: 276.559pt x 133.71674pt.
 File: ../diagrams/1d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/1d_gp_post_samples.pdf used on input line 
-309.
+332.
 (pdftex.def)             Requested size: 276.559pt x 131.63545pt.
- [18
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/1d_gp_post_samples.pdf>] <../diagrams/1d_marginals.pdf, id=601, 4
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+332.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [20
+
+ <../diagrams/1d_gp_post_samples.pdf>] <../diagrams/1d_marginals.pdf, id=605, 4
 62.52798pt x 346.89601pt>
 File: ../diagrams/1d_marginals.pdf Graphic file (type pdf)
 
 <use ../diagrams/1d_marginals.pdf>
-Package pdftex.def Info: ../diagrams/1d_marginals.pdf used on input line 317.
+Package pdftex.def Info: ../diagrams/1d_marginals.pdf used on input line 340.
 (pdftex.def)             Requested size: 276.559pt x 207.42992pt.
- [19
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+340.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[21
 
  <../diagrams/1d_marginals.pdf>]
-<../diagrams/2d_gp_prior_samples.pdf, id=624, 720.15497pt x 313.60207pt>
+<../diagrams/2d_gp_prior_samples.pdf, id=626, 720.15497pt x 313.60207pt>
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 331.
+ 354.
 (pdftex.def)             Requested size: 245.83282pt x 107.04916pt.
 
-<../diagrams/2d_squashed_gp_prior_samples.pdf, id=625, 710.08936pt x 343.32152p
+<../diagrams/2d_squashed_gp_prior_samples.pdf, id=627, 710.08936pt x 343.32152p
 t>
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 331.
+nput line 354.
 (pdftex.def)             Requested size: 245.83282pt x 118.85466pt.
 
-<../diagrams/2d_gp_post_samples.pdf, id=626, 710.08936pt x 337.9778pt>
+<../diagrams/2d_gp_post_samples.pdf, id=628, 710.08936pt x 337.9778pt>
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-331.
+354.
 (pdftex.def)             Requested size: 245.83282pt x 117.00471pt.
- [20
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+354.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [22
 
  <../diagrams/2d_gp_prior_samples.pdf>]
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 331.
+ 354.
 (pdftex.def)             Requested size: 245.83282pt x 107.04916pt.
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 331.
+nput line 354.
 (pdftex.def)             Requested size: 245.83282pt x 118.85466pt.
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-331.
+354.
 (pdftex.def)             Requested size: 245.83282pt x 117.00471pt.
- [21
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+354.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [23
 
  <../diagrams/2d_squashed_gp_prior_samples.pdf>]
 File: ../diagrams/2d_gp_prior_samples.pdf Graphic file (type pdf)
  <use ../diagrams/2d_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_prior_samples.pdf used on input line
- 331.
+ 354.
 (pdftex.def)             Requested size: 245.83282pt x 107.04916pt.
 File: ../diagrams/2d_squashed_gp_prior_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_squashed_gp_prior_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_squashed_gp_prior_samples.pdf used on i
-nput line 331.
+nput line 354.
 (pdftex.def)             Requested size: 245.83282pt x 118.85466pt.
 File: ../diagrams/2d_gp_post_samples.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_gp_post_samples.pdf>
 Package pdftex.def Info: ../diagrams/2d_gp_post_samples.pdf used on input line 
-331.
+354.
 (pdftex.def)             Requested size: 245.83282pt x 117.00471pt.
- [22
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/2d_gp_post_samples.pdf>] <../diagrams/2d_joint_prior.pdf, id=685,
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+354.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [24
+
+ <../diagrams/2d_gp_post_samples.pdf>] <../diagrams/2d_joint_prior.pdf, id=684,
  462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 344.
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 367.
 
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 
-<../diagrams/2d_joint_likelihood.pdf, id=686, 462.52798pt x 346.89601pt>
+<../diagrams/2d_joint_likelihood.pdf, id=685, 462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_likelihood.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 344.
+ 367.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 
-<../diagrams/2d_joint_posterior.pdf, id=687, 462.52798pt x 346.89601pt>
+<../diagrams/2d_joint_posterior.pdf, id=686, 462.52798pt x 346.89601pt>
 File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_posterior.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-344.
+367.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
- [23
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+367.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+Overfull \vbox (8.42694pt too high) detected at line 367
+ []
+
+[25
 
  <../diagrams/2d_joint_prior.pdf>]
 File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
+ <use ../diagrams/2d_joint_prior.pdf>
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 367.
+
+(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
+File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
+
+<use ../diagrams/2d_joint_likelihood.pdf>
+Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
+ 367.
+(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
+File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
+
+<use ../diagrams/2d_joint_posterior.pdf>
+Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
+367.
+(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+367.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+Overfull \vbox (8.42694pt too high) detected at line 367
+ []
+
+[26
+
+ <../diagrams/2d_joint_likelihood.pdf>]
+File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 344.
+Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 367.
 
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/2d_joint_likelihood.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 344.
+ 367.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
 File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/2d_joint_posterior.pdf>
 Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-344.
+367.
 (pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
- [24
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
- <../diagrams/2d_joint_likelihood.pdf>]
-File: ../diagrams/2d_joint_prior.pdf Graphic file (type pdf)
- <use ../diagrams/2d_joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_prior.pdf used on input line 344.
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+367.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
 
-(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
-File: ../diagrams/2d_joint_likelihood.pdf Graphic file (type pdf)
+Overfull \vbox (8.42694pt too high) detected at line 367
+ []
 
-<use ../diagrams/2d_joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_likelihood.pdf used on input line
- 344.
-(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
-File: ../diagrams/2d_joint_posterior.pdf Graphic file (type pdf)
+[27
 
-<use ../diagrams/2d_joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/2d_joint_posterior.pdf used on input line 
-344.
-(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
- [25
+ <../diagrams/2d_joint_posterior.pdf>]
+<../diagrams/2d_joint_posterior_no_marginals.pdf, id=751, 262.25636pt x 190.992
+52pt>
+File: ../diagrams/2d_joint_posterior_no_marginals.pdf Graphic file (type pdf)
+ <use ../diagrams/2d_joint_posterior_no_marginals.pdf>
+Package pdftex.def Info: ../diagrams/2d_joint_posterior_no_marginals.pdf used o
+n input line 382.
+(pdftex.def)             Requested size: 92.1879pt x 67.13689pt.
 
- <../diagrams/2d_joint_posterior.pdf>] [26
+<../diagrams/2d_joint_posterior_samples.pdf, id=752, 355.95753pt x 257.3781pt>
+File: ../diagrams/2d_joint_posterior_samples.pdf Graphic file (type pdf)
 
-] [27
+<use ../diagrams/2d_joint_posterior_samples.pdf>
+Package pdftex.def Info: ../diagrams/2d_joint_posterior_samples.pdf used on inp
+ut line 382.
+(pdftex.def)             Requested size: 92.1879pt x 66.65752pt.
 
-] [28
+<../diagrams/joint_kl_no_marginals.pdf, id=753, 491.7396pt x 343.9478pt>
+File: ../diagrams/joint_kl_no_marginals.pdf Graphic file (type pdf)
 
-] (./gpss_non_gaussian.toc) [29
+<use ../diagrams/joint_kl_no_marginals.pdf>
+Package pdftex.def Info: ../diagrams/joint_kl_no_marginals.pdf used on input li
+ne 382.
+(pdftex.def)             Requested size: 95.25911pt x 66.62607pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [30
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+382.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [28
 
-] [31
-
-] [32
-
-] [33
+ <../diagrams/2d_joint_posterior_no_marginals.pdf> <../diagrams/2d_joint_poster
+ior_samples.pdf> <../diagrams/joint_kl_no_marginals.pdf>]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+395.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [29
 
 ]
-(./gpss_non_gaussian.toc) [34
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [35
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+404.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [30
 
-] [36
+] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-] [41
-
-] [42
-
-] [43
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+410.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [31
 
 ]
-[44
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [45
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+417.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [32
 
 ]
-<../diagrams/animations/laplace-anim-log-Poisson-0.pdf, id=872, 462.52798pt x 3
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+422.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [33
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+427.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [34
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+442.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [35
+
+] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+448.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [36
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+458.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [37
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+468.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [38
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+484.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [39
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+484.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [40
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+484.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [41
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+484.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [42
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+494.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [43
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+494.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [44
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+494.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [45
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+508.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [46
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+520.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [47
+
+]
+<../diagrams/animations/laplace-anim-log-Poisson-0.pdf, id=921, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-1.pdf, id=873, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-1.pdf, id=922, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-2.pdf, id=874, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-2.pdf, id=923, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-3.pdf, id=875, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-3.pdf, id=924, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-4.pdf, id=876, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-4.pdf, id=925, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-5.pdf, id=877, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-5.pdf, id=926, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-6.pdf, id=878, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-6.pdf, id=927, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-7.pdf, id=879, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-7.pdf, id=928, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-8.pdf, id=880, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-8.pdf, id=929, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-9.pdf, id=881, 462.52798pt x 3
+<../diagrams/animations/laplace-anim-log-Poisson-9.pdf, id=930, 462.52798pt x 3
 46.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 
-<../diagrams/animations/laplace-anim-log-Poisson-10.pdf, id=882, 462.52798pt x 
+<../diagrams/animations/laplace-anim-log-Poisson-10.pdf, id=931, 462.52798pt x 
 346.89601pt>
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[46
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [48
 
  <../diagrams/animations/laplace-anim-log-Poisson-0.pdf> <../diagrams/animation
 s/laplace-anim-log-Poisson-1.pdf
@@ -1923,969 +2266,969 @@ File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type
 pdf)
  <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[47
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [49
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[48
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [50
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[49
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [51
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[50
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [52
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[51
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [53
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[52
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [54
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[53
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [55
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[54
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [56
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[55
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [57
 
 ]
 File: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf Graphic file (type 
 pdf)
- <use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
+
+<use ../diagrams/animations/laplace-anim-log-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-0.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-1.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-1.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-2.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-2.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-3.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-3.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-4.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-4.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-5.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-5.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-6.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-6.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-7.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-7.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-8.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-8.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf Graphic file (type 
 pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-9.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-9.pdf 
-used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
 File: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf Graphic file (type
  pdf)
 
 <use ../diagrams/animations/laplace-anim-log-Poisson-10.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-log-Poisson-10.pdf
- used on input line 503.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 528.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 503--503
- [][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 503
- []
-
-[56
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+528.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [58
 
 ]
-<../diagrams/animations/laplace-anim-full-Poisson-0.pdf, id=1492, 462.52798pt x
+<../diagrams/animations/laplace-anim-full-Poisson-0.pdf, id=1540, 462.52798pt x
  346.89601pt>
 File: ../diagrams/animations/laplace-anim-full-Poisson-0.pdf Graphic file (type
  pdf)
  <use ../diagrams/animations/laplace-anim-full-Poisson-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-full-Poisson-0.pdf
- used on input line 509.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+ used on input line 534.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 509--509
- [][][][][][][][] 
- []
-
-
-Overfull \vbox (4.3811pt too high) detected at line 509
- []
-
-[57
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+534.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [59
 
  <../diagrams/animations/laplace-anim-full-Poisson-0.pdf>]
-<../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf, id=1548, 462.52798pt
+<../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf, id=1595, 462.52798pt
  x 346.89601pt>
 File: ../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf Graphic file (ty
 pe pdf)
  <use ../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf>
 Package pdftex.def Info: ../diagrams/animations/laplace-anim-full-Bernoulli-0.p
-df used on input line 515.
-(pdftex.def)             Requested size: 323.76736pt x 242.82555pt.
+df used on input line 540.
+(pdftex.def)             Requested size: 277.51892pt x 208.1392pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \hbox (16.4775pt too wide) in paragraph at lines 515--515
- [][][][][][][][] 
- []
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+540.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [60
 
+ <../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf>] (./gpss_non_gaussi
+an.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-Overfull \vbox (4.3811pt too high) detected at line 515
- []
-
-[58
-
- <../diagrams/animations/laplace-anim-full-Bernoulli-0.pdf>]
-(./gpss_non_gaussian.toc) [59
-
-] [60
-
-] [61
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+546.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [61
 
 ]
-<../diagrams/KL_gaussian_mu-0.pdf, id=1626, 751.60799pt x 516.73048pt>
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+556.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [62
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+569.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [63
+
+]
+<../diagrams/KL_gaussian_mu-0.pdf, id=1671, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-1.pdf, id=1627, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-1.pdf, id=1672, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-2.pdf, id=1628, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-2.pdf, id=1673, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-3.pdf, id=1629, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-3.pdf, id=1674, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_mu-4.pdf, id=1630, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_mu-4.pdf, id=1675, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [62
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+576.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [64
 
  <../diagrams/KL_gaussian_mu-0.pdf> <../diagrams/KL_gaussian_mu-1.pdf
 
@@ -2906,167 +3249,197 @@ pdfTeX warning: pdflatex (file ../diagrams/KL_gaussian_mu-4.pdf): PDF inclusion
 >]
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_mu-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_mu-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 55
-1.
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-[63
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+576.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [65
 
 ]
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-0.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-1.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-2.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-3.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 55
-1.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-[64
+<use ../diagrams/KL_gaussian_mu-4.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 57
+6.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+576.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [66
 
 ]
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-0.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-1.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-2.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-3.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 55
-1.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-[65
+<use ../diagrams/KL_gaussian_mu-4.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 57
+6.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+576.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [67
 
 ]
 File: ../diagrams/KL_gaussian_mu-0.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-0.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-0.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-1.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-1.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-1.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-2.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-2.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-2.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_mu-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 55
-1.
+ <use ../diagrams/KL_gaussian_mu-3.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-3.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_mu-4.pdf Graphic file (type pdf)
- <use ../diagrams/KL_gaussian_mu-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 55
-1.
+
+<use ../diagrams/KL_gaussian_mu-4.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_mu-4.pdf used on input line 57
+6.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-[66
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+576.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [68
 
-] <../diagrams/KL_gaussian_var-0.pdf, id=1934, 751.60799pt x 516.73048pt>
+]
+<../diagrams/KL_gaussian_var-0.pdf, id=1979, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-1.pdf, id=1935, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-1.pdf, id=1980, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-2.pdf, id=1936, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-2.pdf, id=1981, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-3.pdf, id=1937, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-3.pdf, id=1982, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 
-<../diagrams/KL_gaussian_var-4.pdf, id=1938, 751.60799pt x 516.73048pt>
+<../diagrams/KL_gaussian_var-4.pdf, id=1983, 751.60799pt x 516.73048pt>
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [67
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+583.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [69
 
  <../diagrams/KL_gaussian_var-0.pdf> <../diagrams/KL_gaussian_var-1.pdf
 
@@ -3088,98 +3461,38 @@ n: multiple pdfs with page group included in a single page
 File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
  <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [68
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-]
-File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
- [69
-
-]
-File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-0.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-1.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-2.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-3.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
-File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
-
-<use ../diagrams/KL_gaussian_var-4.pdf>
-Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
-58.
-(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+583.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
  [70
 
 ]
@@ -3187,161 +3500,347 @@ File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-0.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-1.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-2.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-3.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
 File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
 
 <use ../diagrams/KL_gaussian_var-4.pdf>
 Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
-58.
+83.
 (pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+583.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
  [71
 
-] [72
+]
+File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-0.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-1.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-2.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-3.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-4.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+583.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [72
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 593--593
+File: ../diagrams/KL_gaussian_var-0.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-0.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-0.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-1.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-1.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-1.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-2.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-2.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-2.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-3.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-3.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-3.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/KL_gaussian_var-4.pdf Graphic file (type pdf)
+
+<use ../diagrams/KL_gaussian_var-4.pdf>
+Package pdftex.def Info: ../diagrams/KL_gaussian_var-4.pdf used on input line 5
+83.
+(pdftex.def)             Requested size: 300.63786pt x 206.68852pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+583.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [73
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+595.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [74
+
+]
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 618--618
 []  
  []
 
-[73
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+618.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [75
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 593--593
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 618--618
 []  
  []
 
-[74
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+618.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [76
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 593--593
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 618--618
 []  
  []
 
-[75
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+618.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [77
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 593--593
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 618--618
 []  
  []
 
-[76
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+618.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [78
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 593--593
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 618--618
 []  
  []
 
-[77
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+618.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [79
 
 ]
-Overfull \hbox (5.96196pt too wide) in paragraph at lines 604--604
+Overfull \hbox (5.96196pt too wide) in paragraph at lines 629--629
 []  
  []
 
-[78
-
-] [79
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+629.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [80
 
 ]
-Overfull \hbox (10.54977pt too wide) in paragraph at lines 642--642
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+634.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [81
+
+]
+Overfull \hbox (10.54977pt too wide) in paragraph at lines 667--667
 []  
  []
 
-[80
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+667.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
 
-] [81
+Overfull \vbox (6.5109pt too high) detected at line 667
+ []
 
-] [82
-
-] (./gpss_non_gaussian.toc) [83
-
-] [84
-
-] [85
-
-] [86
-
-] [87
-
-] [88
+[82
 
 ]
-(./gpss_non_gaussian.toc) [89
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+680.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [83
 
 ]
-<../diagrams/joint_prior.pdf, id=2364, 751.60799pt x 516.73048pt>
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+685.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [84
+
+] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+691.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [85
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+705.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [86
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+717.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [87
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+734.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [88
+
+] (./gpss_non_gaussian.toc)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+746.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [89
+
+]
+<../diagrams/joint_prior.pdf, id=2397, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_likelihood.pdf, id=2365, 751.60799pt x 516.73048pt>
+<../diagrams/joint_likelihood.pdf, id=2398, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 77
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 78
+9.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_posterior.pdf, id=2366, 751.60799pt x 516.73048pt>
+<../diagrams/joint_posterior.pdf, id=2399, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_laplace.pdf, id=2367, 751.60799pt x 516.73048pt>
+<../diagrams/joint_laplace.pdf, id=2400, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_kl.pdf, id=2368, 751.60799pt x 516.73048pt>
+<../diagrams/joint_kl.pdf, id=2401, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 
-<../diagrams/joint_ep.pdf, id=2369, 751.60799pt x 516.73048pt>
+<../diagrams/joint_ep.pdf, id=2402, 751.60799pt x 516.73048pt>
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
- [90
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+789.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[90
 
  <../diagrams/joint_prior.pdf> <../diagrams/joint_likelihood.pdf
 
@@ -3350,43 +3849,49 @@ pdfTeX warning: pdflatex (file ../diagrams/joint_likelihood.pdf): PDF inclusion
 >]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 77
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 78
+9.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
  <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
  <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
  <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+789.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
  [91
 
  <../diagrams/joint_posterior.pdf> <../diagrams/joint_laplace.pdf
@@ -3396,123 +3901,253 @@ ultiple pdfs with page group included in a single page
 >]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
  <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
  <use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 77
-6.
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 78
+9.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
  <use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
  <use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
 
 <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
  <use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 776.
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+789.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
  [92
 
  <../diagrams/joint_kl.pdf>]
 File: ../diagrams/joint_prior.pdf Graphic file (type pdf)
- <use ../diagrams/joint_prior.pdf>
-Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 776.
+
+<use ../diagrams/joint_prior.pdf>
+Package pdftex.def Info: ../diagrams/joint_prior.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_likelihood.pdf Graphic file (type pdf)
-
-<use ../diagrams/joint_likelihood.pdf>
-Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 77
-6.
+ <use ../diagrams/joint_likelihood.pdf>
+Package pdftex.def Info: ../diagrams/joint_likelihood.pdf used on input line 78
+9.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
- <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+
+<use ../diagrams/joint_posterior.pdf>
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_laplace.pdf Graphic file (type pdf)
-
-<use ../diagrams/joint_laplace.pdf>
-Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 776.
+ <use ../diagrams/joint_laplace.pdf>
+Package pdftex.def Info: ../diagrams/joint_laplace.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
- <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+
+<use ../diagrams/joint_posterior.pdf>
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_kl.pdf Graphic file (type pdf)
-
-<use ../diagrams/joint_kl.pdf>
-Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 776.
+ <use ../diagrams/joint_kl.pdf>
+Package pdftex.def Info: ../diagrams/joint_kl.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_posterior.pdf Graphic file (type pdf)
- <use ../diagrams/joint_posterior.pdf>
-Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 776
+
+<use ../diagrams/joint_posterior.pdf>
+Package pdftex.def Info: ../diagrams/joint_posterior.pdf used on input line 789
 .
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
 File: ../diagrams/joint_ep.pdf Graphic file (type pdf)
-
-<use ../diagrams/joint_ep.pdf>
-Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 776.
+ <use ../diagrams/joint_ep.pdf>
+Package pdftex.def Info: ../diagrams/joint_ep.pdf used on input line 789.
 (pdftex.def)             Requested size: 169.01036pt x 116.19626pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+789.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
  [93
 
- <../diagrams/joint_ep.pdf>] [94
-
-]
-<../diagrams/marginals.pdf, id=2596, 751.60799pt x 516.73048pt>
+ <../diagrams/joint_ep.pdf>]
+<../diagrams/marginals.pdf, id=2622, 751.60799pt x 516.73048pt>
 File: ../diagrams/marginals.pdf Graphic file (type pdf)
 
 <use ../diagrams/marginals.pdf>
-Package pdftex.def Info: ../diagrams/marginals.pdf used on input line 793.
-(pdftex.def)             Requested size: 215.10196pt x 136.6216pt.
- [95
+Package pdftex.def Info: ../diagrams/marginals.pdf used on input line 801.
+(pdftex.def)             Requested size: 184.3758pt x 117.10423pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+801.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
 
- <../diagrams/marginals.pdf>] [96
+[94
 
-] [97
+ <../diagrams/marginals.pdf>]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+816.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[95
 
 ]
-[98
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+837.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [96
 
-] [99
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [100
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+857.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [97
 
-] [101
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] [102
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+874.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [98
 
-] [103
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
 
-] (./gpss_non_gaussian.bbl
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+884.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [99
+
+]
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+894.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [100
+
+]
+<../diagrams/silverman_het_gauss.png, id=2714, 578.16pt x 433.62pt>
+File: ../diagrams/silverman_het_gauss.png Graphic file (type png)
+
+<use ../diagrams/silverman_het_gauss.png>
+Package pdftex.def Info: ../diagrams/silverman_het_gauss.png used on input line
+ 903.
+(pdftex.def)             Requested size: 215.10196pt x 161.3235pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+903.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [101
+
+ <../diagrams/silverman_het_gauss.png>] (../diagrams/corrupt_motorcycle_all.tik
+z)
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+916.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [102
+
+]
+File: ../diagrams/crime_func_f_fast.pdf Graphic file (type pdf)
+
+<use ../diagrams/crime_func_f_fast.pdf>
+Package pdftex.def Info: ../diagrams/crime_func_f_fast.pdf used on input line 9
+36.
+(pdftex.def)             Requested size: 101.40622pt x 140.8388pt.
+
+<../diagrams/crime_func_g_slow.pdf, id=2726, 377.24939pt x 523.9575pt>
+File: ../diagrams/crime_func_g_slow.pdf Graphic file (type pdf)
+
+<use ../diagrams/crime_func_g_slow.pdf>
+Package pdftex.def Info: ../diagrams/crime_func_g_slow.pdf used on input line 9
+36.
+(pdftex.def)             Requested size: 101.40622pt x 140.8388pt.
+
+<../diagrams/time_f_fig.pdf, id=2727, 433.62pt x 144.54pt>
+File: ../diagrams/time_f_fig.pdf Graphic file (type pdf)
+
+<use ../diagrams/time_f_fig.pdf>
+Package pdftex.def Info: ../diagrams/time_f_fig.pdf used on input line 936.
+(pdftex.def)             Requested size: 101.40622pt x 33.80148pt.
+
+<../diagrams/time_g_fig.pdf, id=2728, 433.62pt x 144.54pt>
+File: ../diagrams/time_g_fig.pdf Graphic file (type pdf)
+
+<use ../diagrams/time_g_fig.pdf>
+Package pdftex.def Info: ../diagrams/time_g_fig.pdf used on input line 936.
+(pdftex.def)             Requested size: 101.40622pt x 33.80148pt.
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+ <use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+936.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+
+[103
+
+ <../diagrams/crime_func_g_slow.pdf> <../diagrams/time_f_fig.pdf
+
+pdfTeX warning: pdflatex (file ../diagrams/time_f_fig.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <../diagrams/time_g_fig.pdf
+
+pdfTeX warning: pdflatex (file ../diagrams/time_g_fig.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>] (./gpss_non_gaussian.bbl
 LaTeX Font Info:    Try loading font information for OT1+pxtt on input line 24.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pxfonts/ot1pxtt.fd
 File: ot1pxtt.fd 2000/12/14 v1.0
-)) [104
+))
+File: ../diagrams/prowler-icon-agent.png Graphic file (type png)
+
+<use ../diagrams/prowler-icon-agent.png>
+Package pdftex.def Info: ../diagrams/prowler-icon-agent.png used on input line 
+946.
+(pdftex.def)             Requested size: 22.7534pt x 22.76228pt.
+ [104
 
 ]
 \tf@nav=\write7
@@ -3524,23 +4159,22 @@ File: ot1pxtt.fd 2000/12/14 v1.0
 \tf@snm=\write9
 \openout9 = `gpss_non_gaussian.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 909.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 909.
-
-(./gpss_non_gaussian.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 909.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 909.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 948.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 948.
+ (./gpss_non_gaussian.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 948.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 948.
 Package rerunfilecheck Info: File `gpss_non_gaussian.out' has not changed.
-(rerunfilecheck)             Checksum: 766B2981926A449D3E7DFAEF25DB74C9;429.
+(rerunfilecheck)             Checksum: DA38CC1AE2B4DB38DC2C610B90EC0A6A;429.
  ) 
 Here is how much of TeX's memory you used:
- 40101 strings out of 492995
- 920368 string characters out of 6132703
- 1107343 words of memory out of 5000000
- 42623 multiletter control sequences out of 15000+600000
+ 41231 strings out of 492995
+ 953387 string characters out of 6132703
+ 1318093 words of memory out of 5000000
+ 43739 multiletter control sequences out of 15000+600000
  43237 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,21n,120p,10419b,624s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,21n,120p,10418b,2146s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/te
@@ -3560,10 +4194,10 @@ r.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/txtt.pfb><
 cal/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/20
 17/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on gpss_non_gaussian.pdf (104 pages, 2347188 bytes).
+Output written on gpss_non_gaussian.pdf (104 pages, 2757790 bytes).
 PDF statistics:
- 2810 PDF objects out of 2984 (max. 8388607)
- 1322 compressed objects within 14 object streams
+ 2889 PDF objects out of 2984 (max. 8388607)
+ 1383 compressed objects within 14 object streams
  221 named destinations out of 1000 (max. 500000)
- 340 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -144,12 +144,16 @@ ax.set_zlim([0,post_f12.max()])
 from matplotlib import gridspec
 # seaborn.set_style('white')
 
-def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max):
+def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max, marginals=True):
     #Define grid for subplots
-    gs = gridspec.GridSpec(2, 2, width_ratios=[3, 1], height_ratios=[1, 4])
+    if marginals:
+        gs = gridspec.GridSpec(2, 2, width_ratios=[3, 1], height_ratios=[1, 4])
 
-    fig = plt.figure()
-    ax2 = plt.subplot(gs[1,0])
+        fig = plt.figure()
+        ax2 = plt.subplot(gs[1,0])
+    else:
+        fig, ax2 = plt.subplots(1,1)
+
     cax = ax2.contourf(f12_x, f12_y, density, origin = 'lower',
                        extent=(f1s_min, f1s_max, f2s_min, f2s_max),
                        aspect='auto', cmap=plt.cm.coolwarm, levels=10)
@@ -159,27 +163,94 @@ def plot_joint(density, marg1, marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f
     ax2.set_xlabel('$f_1$', fontsize=label_size)
     ax2.set_ylabel('$f_2$', fontsize=label_size)
 
-    #Turn off all axes
-    # ax2.axis('off')
+    if marginals:
+        #Turn off all axes
+        # ax2.axis('off')
 
-    #Create Y-marginal (right)
-    axr = plt.subplot(gs[1,1], sharey=ax2, frameon=False, # xticks=[], yticks=[],
-                    xlim=(0, 1.4*marg2.max()), ylim=(f2s_min, f2s_max))
-    axr.plot(marg2, f12_x[1], color='black', lw=1)
-    axr.fill_betweenx(f12_x[1], 0, marg2, alpha=.75, color='#5673E0')
-    axr.xaxis.set_visible(False)
-    axr.yaxis.set_visible(False)
+        #Create Y-marginal (right)
+        axr = plt.subplot(gs[1,1], sharey=ax2, frameon=False, # xticks=[], yticks=[],
+                        xlim=(0, 1.4*marg2.max()), ylim=(f2s_min, f2s_max))
+        axr.plot(marg2, f12_x[1], color='black', lw=1)
+        axr.fill_betweenx(f12_x[1], 0, marg2, alpha=.75, color='#5673E0')
+        axr.xaxis.set_visible(False)
+        axr.yaxis.set_visible(False)
 
-    #Create X-marginal (top)
-    axt = plt.subplot(gs[0,0], sharex = ax2, frameon = False, #xticks=[], yticks=[],
-                    xlim=(f1s_min, f1s_max), ylim=(0, 1.4*marg1.max()))
-    axt.plot(f12_x[1], marg1, color='black', lw=1)
-    axt.fill_between(f12_x[1], 0, marg1, alpha=.75, color='#5673E0')
-    axt.xaxis.set_visible(False)
-    axt.yaxis.set_visible(False)
+        #Create X-marginal (top)
+        axt = plt.subplot(gs[0,0], sharex = ax2, frameon = False, #xticks=[], yticks=[],
+                        xlim=(f1s_min, f1s_max), ylim=(0, 1.4*marg1.max()))
+        axt.plot(f12_x[1], marg1, color='black', lw=1)
+        axt.fill_between(f12_x[1], 0, marg1, alpha=.75, color='#5673E0')
+        axt.xaxis.set_visible(False)
+        axt.yaxis.set_visible(False)
 
     #Bring the marginals closer to the contour plot
     fig.tight_layout(pad=1)
+    return fig
+
+def plot_joint_samples(density, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max):
+    #Define grid for subplots
+    def multidim_cumsum(a):
+        out = a[::-1,:].cumsum(-1)[::-1,...]
+        for i in range(2,a.ndim+1):
+            np.cumsum(out, axis=-i, out=out)
+        return out
+    cdf = multidim_cumsum(density)
+
+
+    # gibbs sample
+    num_samples = 150
+    x, y = np.unravel_index(np.argmax(density, axis=None), density.shape)
+    samples_x, samples_y = np.zeros(num_samples), np.zeros(num_samples)
+    j = 0
+    for i in range(num_samples):
+        density_x = density[x, :] / density[x, :].sum()
+        cdf = np.cumsum(density_x)
+        rand_u = np.random.uniform(0,1,1)
+        x_new = np.argmin(np.abs(cdf - rand_u))
+        if (x_new != 0) and (x_new != density.shape[0]-1):
+            x = x_new
+
+        density_y = density[:, y] / density[:, y].sum()
+        cdf = np.cumsum(density_y)
+        rand_u = np.random.uniform(0,1,1)
+        y_new = np.argmin(np.abs(cdf - rand_u))
+        if (y_new != 0) and (y_new != density.shape[0]-1):
+            y = y_new
+
+        samples_x[j] = x
+        samples_y[j] = y
+        j += 1
+
+    remove_mask = density[samples_x.astype(int), samples_y.astype(int)] > 5e-3
+    order = density[samples_x.astype(int), samples_y.astype(int)]
+    samples_x = samples_x[remove_mask]
+    samples_y = samples_y[remove_mask]
+    samples_x_y = np.array([[x, y] for _, x, y in sorted(zip(order, samples_x, samples_y),
+                                                         key=lambda pair: pair[0])])
+    sample_x = samples_x_y[:, 0][::-1]
+    sample_y = samples_x_y[:, 1][::-1]
+
+    fig, ax = plt.subplots(1,1)
+    fake_density = np.ones_like(density)*density.min()
+    fake_density[0,0] = density.max()
+    cax = ax.contourf(f12_x, f12_y, fake_density, origin = 'lower',
+                       extent=(f1s_min, f1s_max, f2s_min, f2s_max),
+                       aspect='auto', cmap=plt.cm.coolwarm, levels=10)
+    # samples_x, samples_y = gibbs_samples(density, num_samples = 20)
+    # import matplotlib.cm as cm
+    colors = plt.get_cmap('coolwarm')(np.linspace(0, 1, samples_x.shape[0]))
+    for x, y, c in zip(f12_x[0, samples_x.astype(int)],
+                       f12_y[samples_y.astype(int), 0],
+                       colors):
+        ax.scatter(x, y, color='C2', alpha=0.5)
+    # ax.contour(density, levels=np.linspace(density.min()+0.1, density.max(), 5),
+                # origin = 'lower', extent = (f1s_min, f1s_max, f2s_min, f2s_max),
+                # aspect = 'auto', cmap = plt.cm.bone)	# Contour Lines
+    ax.set_xlabel('$f_1$', fontsize=label_size)
+    ax.set_ylabel('$f_2$', fontsize=label_size)
+
+    #Bring the marginals closer to the contour plot
+    fig.tight_layout()#pad=1)
     return fig
 
 fig_joint_like = plot_joint(lik_approx, lik_marg1, lik_marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max)
@@ -187,9 +258,12 @@ fig_joint_prior = plot_joint(prior_approx, prior_marg1, prior_marg2, f12_x, f12_
 
 fig_joint_post = plot_joint(post_approx, post_marg1, post_marg2, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max)
 
+fig_joint_post_samples = plot_joint_samples(post_approx, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max)
+
 fig_joint_like.suptitle('Likelihood $p(y_{1}=1, y_{2}=1|f_1,f_2)$', fontsize=title_size)
 fig_joint_prior.suptitle('Prior $p(f_1,f_2)$', fontsize=title_size)
 fig_joint_post.suptitle('True posterior $p(f_1,f_2|y_{1}=1, y_{2}=1)$', fontsize=title_size)
+# fig_joint_post_samples.suptitle('Samples of posterior $p(f_1,f_2|y_{1}=1, y_{2}=1)$', fontsize=title_size)
 
 fig_margs, ax_margs = plt.subplots(1,1)
 approxs = [('posterior $p(f|y=1)$', post_marg1, 'C0'),
@@ -211,6 +285,7 @@ fig_margs.tight_layout()
 fig_joint_like.savefig('2d_joint_likelihood.pdf')
 fig_joint_prior.savefig('2d_joint_prior.pdf')
 fig_joint_post.savefig('2d_joint_posterior.pdf')
+fig_joint_post_samples.savefig('2d_joint_posterior_samples.pdf')
 fig_margs.savefig('1d_marginals.pdf')
 
 import numpy as np

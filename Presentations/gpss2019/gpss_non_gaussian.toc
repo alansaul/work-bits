@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Motivation}{5}{0}{1}
-\beamer@sectionintoc {2}{Non-Gaussian posteriors}{14}{0}{2}
-\beamer@sectionintoc {3}{Approximate methods}{29}{0}{3}
-\beamer@subsectionintoc {3}{1}{Laplace approximation}{34}{0}{3}
-\beamer@subsectionintoc {3}{2}{Variational bayes}{59}{0}{3}
-\beamer@subsectionintoc {3}{3}{Expectation propagation}{83}{0}{3}
+\beamer@sectionintoc {2}{Non-Gaussian posteriors}{16}{0}{2}
+\beamer@sectionintoc {3}{Approximate methods}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Laplace approximation}{36}{0}{3}
+\beamer@subsectionintoc {3}{2}{Variational bayes}{61}{0}{3}
+\beamer@subsectionintoc {3}{3}{Expectation propagation}{85}{0}{3}
 \beamer@subsectionintoc {3}{4}{Comparisons}{89}{0}{3}
