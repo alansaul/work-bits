@@ -449,7 +449,7 @@
 
 \frame{
     \frametitle{Laplace approximation}
-    Task: for some generic random variable, $z$, and data, $y$, find a good approximation to difficult to compute posterior distribution, $\color{intract}p(z|y)$.\\~\\
+    Task: for some generic random variable, $f$, and data, $y$, find a good approximation to difficult to compute posterior distribution, $\color{intract}p(f|y)$.\\~\\
     Laplace approach: fit a Gaussian by matching the curvature at the modal point of the posterior.
     \begin{itemize}
         \item Use a second-order taylor expansion around the mode of the log-posterior.
@@ -469,29 +469,68 @@
 
 \frame{
     \frametitle{Second-order taylor expansion}
-    \begin{align*}
-        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\fV)\\}
-        \uncover<+->{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + \log h(\fV)\\}
-        \uncover<+->{&\approx \log \frac{1}{{\color{intract}Z}} + \log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)\\
-        &+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV)}
-    \end{align*}
-    \uncover<+->{
-    In our case we want to make our expansion around the mode, $\hat{\fV}$:
-    \begin{align*}
-        \left.\frac{d\log h(\aV)}{d\aV}\right|_{\aV=\hat{\fV}} = \zerosVector
-    \end{align*}
-}
-}
+    \begin{minipage}[t][3cm][t]{\textwidth}
+        \begin{align*}
+            \only<1>{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\fV)\\}%
+            \only<2-3>{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + \log h(\fV)\\}%
+            \only<3-4>{&\approx \log \frac{1}{{\color{intract}Z}} + \log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)\\%
+            &+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV) + \cdots}
+            \only<5>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\}%
+            \only<6>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
+            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})}
+            \only<7-8>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
+            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV}) + \cdots\\}%
+            \only<9>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
+            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}%
+            \only<10-11>{p(\fV|\yV) &\approx \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}\\}%
+            \only<11>{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}%
+        \end{align*}
+        \only<1>{{\center In our case: $h(\fV) = p(\yV|\fV)p(\fV)$}\\}%
+    \end{minipage}
+    \begin{minipage}[t][2cm][t]{\textwidth}
+        \only<1>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/hf.pdf}}%
+        \only<2>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf.pdf}}%
+        \only<5>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_1.pdf}}%
+        \only<6>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_2.pdf}}%
+        \only<7>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_3.pdf}}%
+        \only<8>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_4.pdf}}%
+        \only<9>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_2_only.pdf}}%
+        \only<10>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/exp_approx.pdf}}%
+        \only<11>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/norm_approx.pdf}}%
+        \only<4>{%
+            {\centering Want to make the expansion around the mode, $\hat{\fV}$:}
+            \begin{align*}
+                \left.\frac{d\log h(\aV)}{d\aV}\right|_{\aV=\hat{\fV}} = \zerosVector
+            \end{align*}
+            }%
+    \end{minipage}
+    }
 
-\frame{%
-    \frametitle{Second-order taylor expansion}
-    \begin{align*}
-        \uncover<+->{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\
-        &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}
-        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}\\}
-        \uncover<+->{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}
-    \end{align*}
-}
+%\frame{
+    %\frametitle{Second-order taylor expansion}
+    %\begin{align*}
+        %\uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\fV)\\}
+        %\uncover<+->{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + \log h(\fV)\\}
+        %\uncover<+->{&\approx \log \frac{1}{{\color{intract}Z}} + \log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)\\
+        %&+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV)}
+    %\end{align*}
+    %\uncover<+->{
+    %In our case we want to make our expansion around the mode, $\hat{\fV}$:
+    %\begin{align*}
+        %\left.\frac{d\log h(\aV)}{d\aV}\right|_{\aV=\hat{\fV}} = \zerosVector
+    %\end{align*}
+%}
+%}
+
+%\frame{%
+    %\frametitle{Second-order taylor expansion}
+    %\begin{align*}
+        %\uncover<+->{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\
+        %&+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}
+        %\uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}\\}
+        %\uncover<+->{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}
+    %\end{align*}
+%}
 
 \frame{%
     \frametitle{Laplace appoximation for Gaussian processes}
@@ -938,7 +977,6 @@
     \end{itemize}
 }
 %Homicide rate maps for Chicago. The short length scale spatial process, $\lambda_1(x)$ (above-left) is multiplied in the model by a temporal process, $\mu_1(t)$ (below-left) which fluctuates with passing seasons. Contours of spatial process are plotted as deaths per month per zip code area. Error bars on temporal processes are at 5th and 95th percentile. The longer length scale spatial process, $\lambda_2(x)$ (above-right) has been modeled with little to no fluctuation temporally $\mu_2(t)$ (below-right)
-
 
 \frame[allowframebreaks]{%
     \frametitle{References}
