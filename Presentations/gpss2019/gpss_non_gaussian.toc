@@ -4,4 +4,4 @@
 \beamer@subsectionintoc {3}{1}{Laplace approximation}{36}{0}{3}
 \beamer@subsectionintoc {3}{2}{Variational bayes}{61}{0}{3}
 \beamer@subsectionintoc {3}{3}{Expectation propagation}{85}{0}{3}
-\beamer@subsectionintoc {3}{4}{Comparisons}{89}{0}{3}
+\beamer@subsectionintoc {3}{4}{Comparisons}{94}{0}{3}

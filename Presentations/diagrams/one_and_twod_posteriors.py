@@ -236,8 +236,7 @@ def plot_joint_samples(density, f12_x, f12_y, f1s_min, f1s_max, f2s_min, f2s_max
     cax = ax.contourf(f12_x, f12_y, fake_density, origin = 'lower',
                        extent=(f1s_min, f1s_max, f2s_min, f2s_max),
                        aspect='auto', cmap=plt.cm.coolwarm, levels=10)
-    # samples_x, samples_y = gibbs_samples(density, num_samples = 20)
-    # import matplotlib.cm as cm
+
     colors = plt.get_cmap('coolwarm')(np.linspace(0, 1, samples_x.shape[0]))
     for x, y, c in zip(f12_x[0, samples_x.astype(int)],
                        f12_y[samples_y.astype(int), 0],

@@ -275,7 +275,7 @@ def animate_fit_binary(plot_Z=False):
         samples = np.dot(L, white_samples) + mean
         samples_squashed = inv_probit(samples)
         [l.set_data(x_test.flatten(), s) for l, s in zip(samples_lines, samples_squashed.T)]
-        text.set_text('ELBO:{0:.2f}'.format(m.compute_log_likelihood()))
+        text.set_text('ELBO:{0:.2f}'.format(-m.compute_log_likelihood()))
         Z_line.set_xdata(session.run(m.feature.Z.parameter_tensor).flatten())
 
         print(m.kern.read_trainables(session=session))#session.run(m.kern.variance.parameter_tensor).flatten())

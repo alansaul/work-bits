@@ -344,7 +344,7 @@
     \begin{itemize}
         \item Now two observations, $y_{1} = 1$ and $y_{2} = 1$ at $x_{1}$ and $x_{2}$
         \item Need to calculate the joint posterior, $p(\fV|\yV) = p(f_{1}, f_{2}| y_{1}=1, y_{2}=1)$.
-        \item Requires 2D integral $p(y_1=1,y_2=1|\lambda(f_1),\lambda(f_2))p(f_1, f_2) df_1 df_2$.
+        \item Requires 2D integral $\int \int p(y_1=1,y_2=1|\lambda(f_1),\lambda(f_2))p(f_1, f_2) df_1 df_2$.
     \end{itemize}
     \begin{overprint}
         \onslide<1>\centerline{\includegraphics[width=0.8\textwidth]{../diagrams/2d_gp_prior_samples.pdf}}
@@ -390,12 +390,12 @@
     \end{itemize}
     \begin{align*}
         p(\fV, \fV^{*}|\xV^{*}, \xV, \yV) &= p(\fV^*|\fV, \xV^{*})p(\fV|\xV, \yV)\\
-        &\propto p(\fV^{*}|\fV, \xV^{*})p(\yV|\fV, \xV)p(\fV|\xV)
+        %&\propto p(\fV^{*}|\fV, \xV^{*})p(\yV|\fV, \xV)p(\fV|\xV)
     \end{align*}
 }
 
 \frame{
-    \frametitle{Why do we want an the posterior anyway?}
+    \frametitle{Why do we want the posterior anyway?}
     True posterior, posterior approximation, or samples are needed to make predictions at new locations, $\xV^{*}$.
     \begin{align*}
         p(\fV^{*}|\xV^{*}, \xV, \yV) &= \int p(\fV^{*}|\fV, \xV^{*}){\color{intract}{p(\fV|\yV, \xV)}} d\fV\\
@@ -418,12 +418,12 @@
 
 \frame{
     \frametitle{Parameters effect - mean}
-    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/mean-change-frame-}{0}{199}
+    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/mean-change-frame-}{0}{199}
 }
 
 \frame{
     \frametitle{Parameters effect - variance}
-    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/L-change-frame-}{0}{199}
+    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/L-change-frame-}{0}{199}
 }
 
 \frame{
@@ -460,7 +460,7 @@
 \frame{
     \frametitle{Laplace approximation}
     \begin{itemize}
-        \item Log of a Gaussian distribution, $q(\fV) = \gaussianDist{\fV}{\hat{\mu}}{\hat{\Cmat}}$, is a quadratic function of $\fV$.
+        \item Log of a Gaussian distribution, $q(\fV) = \gaussianDist{\fV}{\mu}{\Cmat}$, is a quadratic function of $\fV$.
         \item A second-order taylor expansion is an approximation of a function using only quadratic terms.
         \item Laplace approximation expands the un-normalised posterior, and then uses it to set the linear and quadratic terms of the log $q(\fV)$.
         \item The first and second derivatives of the form of the log-posterior, at the mode, will match the derivatives of the approximate Gaussian at this same point.
@@ -488,8 +488,8 @@
     \begin{align*}
         \uncover<+->{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\
         &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}
-        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}}\right)(\fV - \hat{\fV})\right\}\\}
-        \uncover<+->{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}}\right)^{-1}}}
+        \uncover<+->{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}\\}
+        \uncover<+->{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}
     \end{align*}
 }
 
@@ -497,8 +497,8 @@
     \frametitle{Laplace appoximation for Gaussian processes}
     In our case, $h(\fV) = p(\yV|\fV)p(\fV)$, so we need to evaluate
     \begin{align*}
-        -\frac{d^{2}\log h(\hat{\fV})}{d\fV^{2}} &= -\frac{d^{2}(\log p(\yV|\hat{\fV}) + \log p(\hat{\fV}))}{d\fV^{2}}\\
-        &= -\frac{d^{2}\log p(\yV|\hat{\fV})}{d\fV^{2}} + \mathbf{K}^{-1}\\
+        -\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}} &= -\frac{d^{2}(\log p(\yV|\hat{\fV}) + \log p(\hat{\fV}))}{d\hat{\fV}^{2}}\\
+        &= -\frac{d^{2}\log p(\yV|\hat{\fV})}{d\hat{\fV}^{2}} + \mathbf{K}^{-1}\\
         &\triangleq \Wmat + \mathbf{K}^{-1}
     \end{align*}
     giving a posterior approximation:
@@ -561,7 +561,9 @@
     \frametitle{KL divergence}
     \begin{itemize}
         \item General for any two distributions $q(\xV)$ and $p(\xV)$.
-        \item $\KL{q(\xV)}{p(\xV)}$ is the average additional amount of information required to specify the values of $\xV$ as a result of using an approximate distribution $q(\xV)$ instead of the true distribution, $p(\xV)$.
+        %\item $\KL{q(\xV)}{p(\xV)}$ is the average additional amount of information required to specify the values of $\xV$ as a result of using an approximate distribution $q(\xV)$ instead of the true distribution, $p(\xV)$.
+        \item $\KL{q(\xV)}{p(\xV)}$ is the average additional amount of information lost when $p(\xV)$ is used to approximate $q(\xV)$. It's a measure of divergence of one distribution to another.
+        %\item in information theory it is ued to measure the differences in information contained within the two distributions, and hence how much "suprise" there is of seeing a particular value.
         \item $\KL{q(\xV)}{p(\xV)} = \expectationDist{\log \frac{q(\xV)}{p(\xV)}}{q(\xV)}$
         \item Always 0 or positive, not symmetric.
         \item Lets look at how it changes with response to changes in the approximating distribution.
@@ -630,7 +632,7 @@
 
 \frame{
     \frametitle{VB optimisation illustration}
-    %\animategraphics[loop,width=1\linewidth]{15}{../diagrams/animations/vb-frame-}{0}{39}
+    \animategraphics[loop,width=1\linewidth]{15}{../diagrams/animations/vb-frame-}{0}{39}
 }
 
 %\frame{
@@ -654,8 +656,8 @@
     \begin{itemize}
         \item Make a Gaussian approximation, $q(\fV) = \gaussianDist{\fV}{\muV}{\Cmat}$, as similar possible to true posterior, ${\color{intract}p(\fV|\yV)}$.
         \item Treat $\muV$ and $\Cmat$ as `variational parameters', effecting quality of approximation.
-        \item True posterior using Bayes rule, ${\color{intract}p(\fV|\yV)} = \frac{p(\yV|\fV)p(\fV)}{{\color{intract}p(\yV)}}$.
-        \item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$.
+        %\item True posterior using Bayes rule, ${\color{intract}p(\fV|\yV)} = \frac{p(\yV|\fV)p(\fV)}{{\color{intract}p(\yV)}}$.
+        %\item Cannot compute the KL divergence as we cannot compute the true posterior, $p(\fV|\yV)$.
     \end{itemize}
     \begin{align*}
         \color{intract}\KL{q(\fV)}{p(\fV|\yV)} &= \expectationDist{\log \frac{q(\fV)}{{\color{intract}p(\fV|\yV)}}}{q(\fV)}\\
@@ -681,7 +683,7 @@
 
 \frame{
     \frametitle{VB optimisation illustration for Gaussian processes }
-    %\animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/VGP-classification-frame-}{0}{237}
+    \animategraphics[loop,width=1\linewidth]{20}{../diagrams/animations/VGP-classification-frame-}{0}{237}
 }
 
 \subsection{Expectation propagation}
@@ -698,8 +700,8 @@
         t_{i} &\triangleq \tilde{Z}_{i} \gaussianDist{\fV_{i}}{\tilde{\muV}_{i}}{\tilde{\sigmaV}^{2}_{i}}
     \end{align*}
     \begin{itemize}
-        \item Individual likelihood terms, $p(\yV_{i}|\fV_{i})$, replaced by independent local likelihood functions, $t_{i}$.
-        \item Uses an iterative algorithm to update $t_{i}$'s. 
+        \item Individual likelihood terms, $p(\yV_{i}|\fV_{i})$, replaced by independent un-normalised 1D Gaussians, $t_{i}$.
+        \item Uses an iterative algorithm to update $t_{i}$'s, such that the approximate marginal moments of $q(\fV_{i})$, match the marginal moments if $t_{i}$ was replaced with the true likelihood $p(\yV_{i}|\fV_{i})$. 
         %\item Visit each $i$ and find $t_{i}$ such that the approximate marginal moments of $q(\fV_{i}) = \int p(\fV)\prod^{n}_{j=1}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})\,d\fV_{k \neq i}$ agree with marginals of $\int p(\fV)p(\yV_{i}|\fV_{i})\prod^{n}_{j \neq i}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})\,d\fV_{k \neq i}$
     \end{itemize}
 }
@@ -707,12 +709,13 @@
 \frame{
     \frametitle{Expectation propagation}
     \begin{enumerate}
-        \item From the approximate current posterior, $q(\fV|\yV)$, leave out one of the local likelihoods, $t_{i}$, and marginalise $\fV_{j}$ where $j \neq i$, giving rise to the marginal \emph{cavity distribution}, $q_{-i}(\fV_{i})$.
-        \item Combine resulting cavity distribution, $q_{-i}(\fV_{i})$, with exact likelihood contribution, $p(\yV_{i}|\fV_{i})$, giving non-Gaussian un-normalized distribution, $\hat{q}(\fV_{i}) \triangleq p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})$.
-        \item Choose a un-normalized Gaussian approximation to this distribution, $\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$, by finding moments of $\hat{q}(\fV_{i})$.
-            %, thus minimizing $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}}$
-        \item Replace parameters of $t_{i}$ with those that produce the same moments as this approximation.
-        \item Choose another $i$ and start again. Repeat to convergence.
+        \uncover<+->{\item From the approximate current posterior, $q(\fV|\yV)$, leave out one of the local likelihoods, $t_{i}$, and marginalise $\fV_{j}$ where $j \neq i$, giving rise to the approximate marginal with the contribution of one data removed; known as the \emph{cavity distribution}, $q_{-i}(\fV_{i})$.}
+        \uncover<+->{\item Combine resulting cavity distribution, $q_{-i}(\fV_{i})$, with exact likelihood contribution, $p(\yV_{i}|\fV_{i})$, giving a non-Gaussian un-normalized distribution, $\hat{q}(\fV_{i}) \triangleq p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})$.}
+        \uncover<+->{\item Choose a un-normalized Gaussian approximation to this distribution, $\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$, by finding moments of $\hat{q}(\fV_{i})$.}
+        %, thus minimizing $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}}$
+        \uncover<+->{\item Replace parameters of $t_{i}$ with those that produce the same moments as this approximation.}
+        \uncover<+->{\item This minimizes $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}}$}
+        \uncover<+->{\item Choose another $i$ and start again. Repeat to convergence.}
     \end{enumerate}
 }
 
