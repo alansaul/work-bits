@@ -34,8 +34,15 @@
 \usepgfplotslibrary{groupplots}
 \definecolor{english}{rgb}{0.0, 0.5, 0.0}
 \definecolor{ballblue}{rgb}{0.13, 0.67, 0.8}
+\definecolor{MediumSeaGreen}{rgb}{0.235, 0.7, 0.444}
+\definecolor{SaddleBrown}{rgb}{0.545, 0.27, 0.075}
+\definecolor{SlateBlue}{rgb}{0.415, 0.352, 0.804}
+\definecolor{FireBrick}{rgb}{0.698, 0.132, 0.132}
+
+
 \input{definitions.tex}
 \input{notationDef.tex}
+\usepackage{xcolor}
 
 \newcommand{\aV}{\mathbf{a}}
 \newcommand{\fV}{\mappingFunctionVector}
@@ -180,7 +187,9 @@
 \section{Motivation}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -303,7 +312,9 @@
 \section{Non-Gaussian posteriors}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -406,7 +417,9 @@
 \section{Approximate methods}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -443,8 +456,10 @@
 
 \subsection{Laplace approximation}
 \frame{
-\frametitle{Outline}
-    \tableofcontents[currentsection]
+    \frametitle{Outline}
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -471,19 +486,19 @@
     \frametitle{Second-order taylor expansion}
     \begin{minipage}[t][3cm][t]{\textwidth}
         \begin{align*}
-            \only<1>{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}h(\fV)\\}%
-            \only<2-3>{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + \log h(\fV)\\}%
-            \only<3-4>{&\approx \log \frac{1}{{\color{intract}Z}} + \log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)\\%
-            &+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV) + \cdots}
-            \only<5>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\}%
-            \only<6>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
-            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})}
-            \only<7-8>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
-            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV}) + \cdots\\}%
-            \only<9>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + \log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})\\%
-            &+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})\\}%
-            \only<10-11>{p(\fV|\yV) &\approx \frac{1}{{\color{intract}Z}}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}\\}%
-            \only<11>{&= \gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}%
+            \only<1>{p(\fV|\yV) &= \frac{1}{{\color{intract}Z}}{\color{SlateBlue}h(\fV)}\\}%
+            \only<2-3>{\log p(\fV|\yV) &= \log \frac{1}{{\color{intract}Z}} + {\color{SlateBlue}\log h(\fV)}\\}%
+            \only<3-4>{&\approx \log \frac{1}{{\color{intract}Z}} + {\color{black}\log h(\aV) + \frac{d\log h(\aV)}{d\aV}(\fV - \aV)}\\%
+            &{\color{black}+ \frac{1}{2}(\fV - \aV)^\top\frac{d^{2}\log h(\aV)}{d\aV^{2}}(\fV - \aV) + \cdots}}
+            \only<5>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + {\color{orange}\log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})}\\}%
+            \only<6>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + {\color{MediumSeaGreen}\log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})}\\%
+            &{\color{MediumSeaGreen}+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})}}
+            \only<7>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + {\color{FireBrick}\log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})}\\%
+            &{\color{FireBrick}+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV}) + \cdots}\\}%
+            \only<8>{\log p(\fV|\yV) &\approx \log \frac{1}{{\color{intract}Z}} + {\color{MediumSeaGreen}\log h(\hat{\fV}) + \frac{d\log h(\hat{\fV})}{d\hat{\fV}}(\fV - \hat{\fV})}\\%
+            &{\color{MediumSeaGreen}+ \frac{1}{2}(\fV - \hat{\fV})^\top\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}(\fV - \hat{\fV})}\\}%
+            \only<9-10>{p(\fV|\yV) &\approx \frac{1}{{\color{intract}Z}}{\color{SaddleBrown}h(\hat{\fV})\exp\left\{-\frac{1}{2}(\fV - \hat{\fV})^{\top}\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)(\fV - \hat{\fV})\right\}}\\}%
+            \only<10>{&= {\color{MediumSeaGreen}\gaussianDist{\fV}{\hat{\fV}}{\left(-\frac{d^{2}\log h(\hat{\fV})}{d\hat{\fV}^{2}}\right)^{-1}}}}%
         \end{align*}
         \only<1>{{\center In our case: $h(\fV) = p(\yV|\fV)p(\fV)$}\\}%
     \end{minipage}
@@ -493,10 +508,10 @@
         \only<5>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_1.pdf}}%
         \only<6>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_2.pdf}}%
         \only<7>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_3.pdf}}%
-        \only<8>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_4.pdf}}%
-        \only<9>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_2_only.pdf}}%
-        \only<10>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/exp_approx.pdf}}%
-        \only<11>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/norm_approx.pdf}}%
+        %\only<8>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_4.pdf}}%
+        \only<8>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/log_hf_taylor_2_only.pdf}}%
+        \only<9>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/exp_approx.pdf}}%
+        \only<10>{\centering \includegraphics[height=3.5cm,keepaspectratio]{../diagrams/taylor/norm_approx.pdf}}%
         \only<4>{%
             {\centering Want to make the expansion around the mode, $\hat{\fV}$:}
             \begin{align*}
@@ -581,7 +596,9 @@
 \subsection{Variational bayes}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -728,19 +745,22 @@
 \subsection{Expectation propagation}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
     \frametitle{Expectation propagation}
     \begin{align*}
         {\color{red}p(\fV|\yV)} &\propto p(\fV)\prod^{\numData}_{i=1}p(\yV_{i}|\fV_{i})\\
-        q(\fV|\yV) &\triangleq \frac{1}{Z_{ep}}p(\fV)\prod^{\numData}_{i=1}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i}) = \gaussianDist{\fV}{\muV}{\Sigma}\\
+        q(\fV) &\triangleq \frac{1}{Z_{ep}}p(\fV)\prod^{\numData}_{i=1}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i}) = \gaussianDist{\fV}{\muV}{\Sigma}\\
         t_{i} &\triangleq \tilde{Z}_{i} \gaussianDist{\fV_{i}}{\tilde{\muV}_{i}}{\tilde{\sigmaV}^{2}_{i}}
     \end{align*}
     \begin{itemize}
         \item Individual likelihood terms, $p(\yV_{i}|\fV_{i})$, replaced by independent un-normalised 1D Gaussians, $t_{i}$.
-        \item Uses an iterative algorithm to update $t_{i}$'s, such that the approximate marginal moments of $q(\fV_{i})$, match the marginal moments if $t_{i}$ was replaced with the true likelihood $p(\yV_{i}|\fV_{i})$. 
+        \item Uses an iterative algorithm to update $t_{i}$'s, to get more and more accurate approximation.
+        %such that the approximate marginal moments of $q(\fV_{i})$, match the marginal moments if $t_{i}$ was replaced with the true likelihood $p(\yV_{i}|\fV_{i})$. 
         %\item Visit each $i$ and find $t_{i}$ such that the approximate marginal moments of $q(\fV_{i}) = \int p(\fV)\prod^{n}_{j=1}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})\,d\fV_{k \neq i}$ agree with marginals of $\int p(\fV)p(\yV_{i}|\fV_{i})\prod^{n}_{j \neq i}t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})\,d\fV_{k \neq i}$
     \end{itemize}
 }
@@ -748,33 +768,64 @@
 \frame{
     \frametitle{Expectation propagation}
     \begin{enumerate}
-        \uncover<+->{\item From the approximate current posterior, $q(\fV|\yV)$, leave out one of the local likelihoods, $t_{i}$, and marginalise $\fV_{j}$ where $j \neq i$, giving rise to the approximate marginal with the contribution of one data removed; known as the \emph{cavity distribution}, $q_{-i}(\fV_{i})$.}
-        \uncover<+->{\item Combine resulting cavity distribution, $q_{-i}(\fV_{i})$, with exact likelihood contribution, $p(\yV_{i}|\fV_{i})$, giving a non-Gaussian un-normalized distribution, $\hat{q}(\fV_{i}) \triangleq p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})$.}
-        \uncover<+->{\item Choose a un-normalized Gaussian approximation to this distribution, $\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$, by finding moments of $\hat{q}(\fV_{i})$.}
-        %, thus minimizing $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}}$
-        \uncover<+->{\item Replace parameters of $t_{i}$ with those that produce the same moments as this approximation.}
-        \uncover<+->{\item This minimizes $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}}$}
-        \uncover<+->{\item Choose another $i$ and start again. Repeat to convergence.}
+        \uncover<+->{\item Remove one factor $t_{i}$ from the approximation $q(\fV)$.}
+        \uncover<+->{\item The approximate marginal $q(\fV_{i})$ with $t_{i}$ contribution removed is called cavity distribution, $q_{-i}(\fV_{i})$}
+        %\uncover<+->{\item Minimize $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}}$ by matching moments.}
+        \uncover<+->{\item Find $t_{i}$ that minimises $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})/z_{i}}{q(\fV_{i})}$ by matching moments.}
+        %\uncover<+->{\item Update $t_{i}$ to share these moments and move onto another $i$}
+        \uncover<+->{\item Repeat until convergence.}
     \end{enumerate}
+    \uncover<+->{This approximately minimises $\KL{p(\fV|\yV)}{q(\fV)}$ locally, but not globally.}
 }
 
 \frame{
     \frametitle{Expectation propagation - in math}
-    Step 1. First choose a local likelihood contribution, $i$, to leave out, and find the marginal cavity distribution,
+    \uncover<+->{Step 1 \& 2. First choose a local likelihood contribution, $i$, to leave out, and find the marginal cavity distribution,
     \begin{align*}
         q(\fV|\yV) \propto p(\fV)\prod^{\numData}_{j=1}t_{j}(\fV_{j}) 
         &\rightarrow \frac{p(\fV)\prod^{\numData}_{j=1}t_{j}(\fV_{j})}{t_{i}(\fV_{i})} 
         \rightarrow p(\fV)\prod^{\numData}_{j \neq i}t_{j}(\fV_{j})\\
         &\rightarrow \int p(\fV)\prod_{j \neq i}t_{j}(\fV_{j})\,d\fV_{j \neq i}\triangleq q_{-i}(\fV_{i})
-    \end{align*}
-    Step 2.  $p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i}) \triangleq \hat{q}(\fV_{i})$
+    \end{align*}}
+    %Step 3.  $p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i}) \triangleq \hat{q}(\fV_{i})$
 
-    Step 3.  $\hat{q}(\fV_{i}) \approx \gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$
+    \uncover<+->{Step 3.1.  $\hat{q}(\fV_{i}) \approx \min \KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}}$}
     
-    Step 4: Compute parameters of $t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})$ making moments of $q(\fV_{i})$ match those of $\hat{Z}_{i}\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}$.
-
+    \uncover<+->{Step 3.2: Compute parameters of $t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})$ making moments of $q(\fV_{i})$ match those of $\hat{Z}_{i}\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}$.}
 }
 \note{Write full unnormalized posterior down, marginalize all $j \neq i$. Calculate moments of left hand side. Find new $t_{i}$ which matches these moments for this marginal}
+
+
+%\frame{
+    %\frametitle{Expectation propagation}
+    %\begin{enumerate}
+        %\uncover<+->{\item From the approximate current posterior, $q(\fV|\yV)$, leave out one of the local likelihoods, $t_{i}$, and marginalise $\fV_{j}$ where $j \neq i$, giving rise to the approximate marginal with the contribution of one data removed; known as the \emph{cavity distribution}, $q_{-i}(\fV_{i})$.}
+        %\uncover<+->{\item Combine resulting cavity distribution, $q_{-i}(\fV_{i})$, with exact likelihood contribution, $p(\yV_{i}|\fV_{i})$, giving a non-Gaussian un-normalized distribution, $\hat{q}(\fV_{i}) \triangleq p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})$.}
+        %\uncover<+->{\item Choose a un-normalized Gaussian approximation to this distribution, $\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$, by finding moments of $\hat{q}(\fV_{i})$.}
+        %%, thus minimizing $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}}$
+        %\uncover<+->{\item Replace parameters of $t_{i}$ with those that produce the same moments as this approximation.}
+        %\uncover<+->{\item This minimizes $\KL{p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i})}{\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}}$}
+        %\uncover<+->{\item Choose another $i$ and start again. Repeat to convergence.}
+    %\end{enumerate}
+%}
+
+%\frame{
+    %\frametitle{Expectation propagation - in math}
+    %Step 1. First choose a local likelihood contribution, $i$, to leave out, and find the marginal cavity distribution,
+    %\begin{align*}
+        %q(\fV|\yV) \propto p(\fV)\prod^{\numData}_{j=1}t_{j}(\fV_{j}) 
+        %&\rightarrow \frac{p(\fV)\prod^{\numData}_{j=1}t_{j}(\fV_{j})}{t_{i}(\fV_{i})} 
+        %\rightarrow p(\fV)\prod^{\numData}_{j \neq i}t_{j}(\fV_{j})\\
+        %&\rightarrow \int p(\fV)\prod_{j \neq i}t_{j}(\fV_{j})\,d\fV_{j \neq i}\triangleq q_{-i}(\fV_{i})
+    %\end{align*}
+    %Step 2.  $p(\yV_{i}|\fV_{i})q_{-i}(\fV_{i}) \triangleq \hat{q}(\fV_{i})$
+
+    %Step 3.  $\hat{q}(\fV_{i}) \approx \gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}\hat{Z}_{i}$
+    
+    %Step 4: Compute parameters of $t_{i}(\fV_{i}|\tilde{Z}_{i}, \tilde{\mu}_{i}, \tilde{\sigma}^{2}_{i})$ making moments of $q(\fV_{i})$ match those of $\hat{Z}_{i}\gaussianDist{\fV_{i}}{\hat{\muV_{i}}}{\hat{\sigmaV}^{2}_{i}}$.
+
+%}
+%\note{Write full unnormalized posterior down, marginalize all $j \neq i$. Calculate moments of left hand side. Find new $t_{i}$ which matches these moments for this marginal}
 
 %\frame{
     %\frametitle{Expectation propgation - illustrated}
@@ -784,7 +835,9 @@
 \subsection{Comparisons}
 \frame{
 \frametitle{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,
+    currentsubsection,
+    subsectionstyle=show/shaded]
 }
 
 \frame{
@@ -846,7 +899,8 @@
     Laplace approximation 
     \begin{itemize}
         \item Pros \begin{itemize}
-                \item Very fast.
+                \item Simple to implement.
+                \item Fast.
             \end{itemize}
         \item Cons \begin{itemize}
                 \item Poor approximation if the mode does not well describe the posterior, for example Bernoulli likelihood.
@@ -872,8 +926,8 @@
                 %\item Often requires numerical quadrature as part of inference, though in practice this can be very accurate.
             \end{itemize}
         \item When \begin{itemize}
-                \item Applicable to a range of likelihoods, but is known in some cases to underestimate variance, might need to be careful if you wish to be conservative with predictive uncertainty.
-                \item In conjunction with sparse methods.
+                \item Applicable to a range of likelihood
+                \item Might need to be careful if you wish to be conservative with predictive uncertainty.
             \end{itemize}
     \end{itemize}
 }
@@ -887,9 +941,9 @@
                 \item Also lends itself to sparse approximations.
             \end{itemize}
         \item Cons \begin{itemize}
-                \item Standard algorithm is slow though possible to extend to sparse case. 
-                \item Convergence issues for some likelihoods.
-                \item Must be able to match moments.
+                \item Standard algorithm is slow; though possible to extend to sparse case. 
+                \item Not always guaranteed to converge.
+                \item Can be brittle with initialisation and tricky implement.
             \end{itemize}
         \item When \begin{itemize}
                 \item Binary data~\citep{Nickisch:class08,Kuss:robust06}, perhaps with truncated likelihood (censored data)~\citep{Vanhatalo:gpstuff15}.
@@ -903,10 +957,10 @@
     MCMC methods
     \begin{itemize}
         \item Pros \begin{itemize}
-                \item Theoretical limit gives true distribution
+                \item Theoretical limit gives true distribution.
             \end{itemize}
         \item Cons \begin{itemize}
-                \item Can be very slow
+                \item Can be very slow.
             \end{itemize}
         \item When \begin{itemize}
                 \item If time is not an issue, but exact accuracy is.

@@ -10,11 +10,13 @@ import matplotlib
 matplotlib.rcParams['figure.figsize'] = (10, 6)
 matplotlib.rcParams['lines.linewidth'] = 3
 
+np.random.seed(11)
+
 def inv_probit(x):
     jitter = 1e-5  # ensures output is strictly between 0 and 1
     return 0.5 * (1.0 + special.erf(x / np.sqrt(2.0))) * (1 - 2 * jitter) + jitter
 
-binary = True
+binary = False
 
 if binary:
     N = 60
@@ -24,6 +26,7 @@ if binary:
     inv_link_f = inv_probit(f)
     y = (np.random.uniform(low=0, high=1.0, size=inv_link_f.shape) > inv_link_f).astype(np.float64)
     likelihood = gpflow.likelihoods.Bernoulli()
+    kern = gpflow.kernels.Matern52(1, lengthscales=1.5, variance=7.0)
 else:
     M = 30
     x = np.random.rand(30,1) * 10
@@ -31,12 +34,11 @@ else:
     y = f + np.random.randn(x.size, 1) * 0.05
     likelihood = gpflow.likelihoods.Gaussian()
     likelihood.variance = 0.01
+    kern = gpflow.kernels.Matern52(1, lengthscales=3.)
 
 # Z = np.linspace(2,8,M)[:, None]
 Z = x.copy()
-m = gpflow.models.SVGP(x, y, Z=Z,
-                       kern=gpflow.kernels.Matern52(1, lengthscales=1.5, variance=7.0),
-                       likelihood=likelihood)
+m = gpflow.models.SVGP(x, y, Z=Z, kern=kern, likelihood=likelihood)
 m.q_sqrt = (np.eye(M) * .2).reshape(1, M, M)
 m.kern.trainable = False #True #False
 m.likelihood.trainable = False
@@ -51,9 +53,13 @@ def interpolate(x_start, x_end, i, num_iter, loop=False):
 
 
 def animate_mean():
+    if binary:
+        raise ValueError("Make sure you meant binary data!")
     np.random.seed(12)
-    q_mu_start = np.random.randn(M,1) * 3
-    q_mu_end = np.random.randn(M,1)* 0.1
+    q_mu_start = np.random.randn(M,1) * 0.9
+    m.q_mu = q_mu_start
+
+    q_mu_end = np.random.randn(M,1)* 0.05
     fig, ax = plt.subplots(1, 1)
     x_test = np.linspace(0, 10, 200)[:, None]
     mean, var = m.predict_f_full_cov(x_test)
@@ -67,7 +73,7 @@ def animate_mean():
     ip_line, = ax.plot(m.feature.Z.read_value(), m.predict_f(m.feature.Z.read_value())[0], "C1o", ms=3)
 
     ax.set_xlim(0, 10)
-    ax.set_ylim(-2.6, 2.6)
+    ax.set_ylim(-3.2, 3.2)
 
     def init():
         return samples_lines + [ip_line]
@@ -87,30 +93,61 @@ def animate_mean():
     ani.save('mean.gif', writer=w)
 
 def animate_variance():
+    if binary:
+        raise ValueError("Make sure you meant binary data!")
     np.random.seed(12)
-    m.q_mu = np.random.randn(M, 1)
+    q_mu_start = np.random.randn(M,1) * 0.9
+    m.q_mu = q_mu_start
+
     q_sqrt_start = np.random.randn(1, M*(M+1)//2) * 0.01
-    q_sqrt_end = np.random.randn(1, M*(M+1)//2) * 0.4
+    q_sqrt_end = np.random.randn(1, M*(M+1)//2) * 0.3
     fig, ax = plt.subplots(1, 1)
     x_test = np.linspace(0, 10, 200)[:, None]
+
     mean, _ = m.predict_f(x_test)
     white_samples = np.random.randn(200, num_samples)
     samples_lines = ax.plot(x_test, white_samples, "C0", lw=1)
 
-    ax.set_xlim(0, 10)
-    ax.set_ylim(-2.6, 2.6)
+    mu_Z = m.predict_f(m.feature.Z.read_value(),
+                       feed_dict={m.q_sqrt.parameter_tensor:q_sqrt_start})[0]
+    ymin = mu_Z - 2*q_sqrt_start
+    ymax = mu_Z + 2*q_sqrt_start
+
+    ip_line = [ax.plot([z_i, z_i], [ymin_i, ymax_i], "C1")[0]
+               for z_i, ymin_i, ymax_i
+               in zip(Z.flatten(),
+                      ymin.flatten(),
+                      ymax.flatten()
+                      )]
+
+    ax.set_xlim(x_test.min(), x_test.max())
+    ax.set_ylim(-3.2, 3.2)
 
     def init():
-        return samples_lines
+        return samples_lines + ip_line
 
     def animate(i):
+        print(i)
         q_sqrt = interpolate(q_sqrt_start, q_sqrt_end, i, 100)
         _, var = m.predict_f_full_cov(x_test, feed_dict={m.q_sqrt.parameter_tensor:q_sqrt})
         var = var.squeeze()
         L = np.linalg.cholesky(var)
         samples = np.dot(L, white_samples) + mean
         [l.set_data(x_test.flatten(), s) for l, s in zip(samples_lines, samples.T)]
-        return samples_lines
+
+        mu_Z, var_Z = m.predict_f(m.feature.Z.read_value(),
+                                  feed_dict={m.q_sqrt.parameter_tensor:q_sqrt})
+        ymin = mu_Z - 2*np.sqrt(var_Z)
+        ymax = mu_Z + 2*np.sqrt(var_Z)
+        [l.set_data([z_i, z_i], [ymin_i, ymax_i])
+         for l, z_i, ymin_i, ymax_i
+         in zip(ip_line,
+                Z.flatten(),
+                ymin.flatten(),
+                ymax.flatten()
+                )]
+
+        return samples_lines + ip_line
 
     ani = animation.FuncAnimation(
         fig, animate, init_func=init, interval=40, blit=True, save_count=200)
